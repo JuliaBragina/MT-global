@@ -1,0 +1,115 @@
+.services{
+    background-color: var(--color-accent-blue);
+    color: var(--color-white);
+}
+
+.services__container{
+    width: 64%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 105px 0;
+    gap: 100px;
+}
+
+.services__title{
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.76px;
+    margin: 0;
+    padding-bottom: 48px;
+}
+
+.services__list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services__button {
+    border: 0;
+    background-color: transparent;
+    margin: 0;
+    padding: 30px 0;
+    width: 586px;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.26px;
+    text-align: left;
+    color: var(--color-white);
+
+    cursor: pointer;
+}
+
+.services__button_active{
+    background-color: var(--color-accent-pink);
+}
+
+.services__navContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+
+    padding-bottom: 42px;
+}
+
+.services__counter{
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    opacity: .5;
+}
+
+.services__currentCounter{
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.26px;
+    margin: 0;
+    opacity: 1;
+    margin: 0;
+}
+
+.services__maxCounter{
+    margin: 0;
+}
+
+.services__currentTitle{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.38px;
+    margin: 0;
+    padding-right: 127px;
+}
+
+.services__prevButton, .services__nextButton{
+    width: 41px;
+    height: 41px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.services__img{
+    width: 200px;
+    height: 200px;
+}
+
+.services__paragraph{
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.01px;
+}
