@@ -1,0 +1,224 @@
+.header__container {
+    width: 64%;
+    margin: 0 auto;
+}
+
+.header__details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 0;
+}
+
+.header__logo{
+    width: 70px;
+    height: 70px;
+}
+
+.header__phoneContainer {
+    width: 32px;
+    height: 32px;
+    position: relative
+}
+
+.header__iconPhone {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -56%);
+    width: 16px;
+    height: 16px;
+}
+
+.header__slogan {
+    width: 250px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.header__phone {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    margin: 0;
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.header__callback-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;
+    width: 234px;
+    height: 68px;
+    background-color: var(--color-accent-pink);
+    border: none;
+    border-radius: 100px;
+    color: var(--color-white);
+
+    cursor: pointer;
+}
+
+.header__accreditation, 
+.header__support-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--color-accent-blue);
+    padding: 0;
+    margin: 0;
+    cursor: pointer
+}
+
+.header__support-button {
+    background-color: transparent;
+    border: none;
+}
+
+.header__contact-block {
+    display: flex;
+    gap: 23px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 232px;
+}
+
+.header__contact-block:first-child {
+    padding-right: 123px;
+}
+
+.header__nav {
+    margin: 10px 0;
+    padding: 22px 0;
+    border-top: 1px solid var(--color-black-opacity);
+    border-bottom: 1px solid var(--color-black-opacity);
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 64%;
+    margin: auto;
+}
+
+.header__item {
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.header__link {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.header__item:first-child {
+    position: relative;
+    padding-left: 30px;
+}
+
+.header__item:first-child:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url('../../img/burger-button-small.svg');
+    background-size: cover;
+}
+
+.header__mobile-buttons-container {
+    display: none;
+}
+
+@media screen and (max-width: 1750px) {
+    .header__container, .header__list {
+        width: 84%;
+    }
+
+    .header__phoneContainer {
+        width: 36px;
+        height: 36px;
+    }
+
+    .header__details {
+        padding: 20px 0;
+    }
+
+    .header__logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .header__contact-block {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .header__container {
+        width: 94%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__nav, .header__callback-button, .header__contact-block:not(:first-child) {
+        display: none;
+    }
+
+    .header__mobile-buttons-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    .header__burger-button {
+        background-image: url('../../img/burger-button-small.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 28px;
+        height: 28px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .header__contact-block:first-child {
+        padding-right: 0;
+    }
+    
+    .header__slogan {
+        font-size: 12px;
+        line-height: 15px;
+        width: 100%;
+    }
+
+    .header__accreditation, .header__support-button {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .header__phone-button{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+}

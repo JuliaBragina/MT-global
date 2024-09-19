@@ -1,0 +1,20 @@
+:root {
+  --color-black: #222128;
+  --color-white: #fff;
+
+  --color-black-opacity: rgba(34, 33, 40, 0.1);
+  --color-background-light: #F5F5F5;
+  --color-accent-blue: #1F40E5;
+  --color-accent-pink: #ED7180;
+}
+
+.root{
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 360px;
+  background-color: var(--color-background-light);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  color: var(--color-black);
+}
