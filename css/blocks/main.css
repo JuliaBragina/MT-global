@@ -1,0 +1,150 @@
+.main {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.main__container {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main__description {
+    flex-basis: 687px;
+    padding: 90px 0;
+    z-index: 1;
+}
+
+.main__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.51px;
+    margin: 0;
+    padding-bottom: 32px;
+}
+
+.main__slogan {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 39px;
+    margin: 0;
+    padding-bottom: 37px;
+}
+
+.main__button {
+    width: 325px;
+    height: 70px;
+    border-radius: 100px;
+    border: 1px solid var(--color-accent-pink);
+    color: var(--color-accent-pink);
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.main__video-container {
+    position: absolute;
+    top: -76px;
+    right: 60px;
+    width: 850px;
+    height: 876px;
+}
+
+.main__video-container:last-child{
+    top: -76px;
+    right: 0px;
+    width: 850px;
+    height: 876px;
+}
+
+.main__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mask: url(#video-mask);
+    -webkit-mask: url(#video-mask);
+}
+
+.second-video .main__video {
+    mask: url(#video-mask-2);
+    -webkit-mask: url(#video-mask-2);
+    opacity: 0.2;
+    transform: rotate(129deg);
+}
+
+@media screen and (max-width: 1750px) {
+    .main__container {
+        width: 84%;
+    }
+
+    .main__title {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .main__slogan {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .main__container {
+        width: 94%;
+    }
+
+    .main__mask {
+        display: none;
+    }
+
+    .main__video-container {
+        position: static;
+        width: 100%;
+        height: 380px;
+    }
+
+    .second-video {
+        display: none;
+    }
+
+    .main__video {
+        mask: none;
+        -webkit-mask: none;
+        background-color: aliceblue;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main__title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .main__description {
+        flex-basis: auto;
+        padding: 30px 0;
+    }
+
+    .main__title {
+        padding-bottom: 22px;
+    }
+
+    .main__slogan {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .main__button {
+        width: 100%;
+    }
+}
