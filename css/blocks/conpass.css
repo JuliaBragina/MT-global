@@ -1,0 +1,75 @@
+.compass {
+    width: 416px;
+    height: 416px;
+    border: 13px solid var(--color-white);
+    border-radius: 50%;
+    position: relative;
+}
+
+.compass__base {
+    width: 132px;
+    height: 132px; 
+    border-radius: 50%;
+    background-color: var(--color-accent-pink);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.compass__needle {
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    z-index: 2;
+}
+
+.tick {
+    stroke: var(--color-white);
+    stroke-width: 2;
+    transition: stroke 0.3s;
+}
+
+.tick.active {
+    stroke: var(--color-accent-pink);
+}
+
+
+.major-tick {
+    stroke: white;
+    stroke-width: 2;
+}
+
+.minor-tick {
+    stroke: white;
+    stroke-width: 1;
+}
+
+.active {
+    stroke: #ED7180;
+}
+
+.compass__directions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+.compass__direction {
+    position: absolute;
+    color: var(--color-accent-pink);
+    font-size: 20px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+}

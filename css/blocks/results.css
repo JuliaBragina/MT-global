@@ -1,0 +1,123 @@
+.results {
+}
+
+.results__container {
+    padding: 94px 0;
+    margin: 0 auto;
+    width: 64%;
+}
+
+.results__title {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding-bottom: 52px;
+
+    width: 500px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.76px;
+}
+
+.results__text {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    color: var(--color-accent-blue);
+    margin: 0;
+    opacity: .5;
+}
+
+.results__number {
+    font-family: 'Montserrat';
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 50.14px;
+    color: var(--color-accent-blue);
+    margin: 0;
+}
+
+.results__description {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    text-align: left;
+}
+
+.results__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.results__item {
+    background-color: white;
+    border-radius: 30px;
+    padding: 49px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.results__flex-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 31px;
+    padding-bottom: 26px;
+}
+
+@media (max-width: 1700px) {
+    .results__container {
+        width: 84%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .results__container {
+        width: 94%;
+        padding: 34px 0;
+    }
+
+    .results__title{
+        font-size: 24px;
+        line-height: 29.26px;
+        width: 273px;
+        padding-bottom: 12px;
+    }
+
+    .results__number{
+        font-size: 32px;
+        line-height: 39.01px;
+    }
+
+    .results__description{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .results__item{
+        padding: 29px 25px;
+    }
+
+    .results__flex-row {
+        padding-bottom: 6px;
+        align-items: baseline;
+    }
+}
+
+@media (max-width: 768px) {
+    .results__list {
+        grid-template-columns: 1fr;
+    }
+
+    .results__item {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+}

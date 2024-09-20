@@ -54,3 +54,51 @@ document.addEventListener("DOMContentLoaded", function () {
     updateSlider();
     disableButtons();
 });
+
+const slider = document.querySelector('.slider');
+const slides = slider.querySelectorAll('.slider__item');
+const slideCount = slides.length;
+const sliderLine = document.querySelector('.slider__line');
+const yellowBar = document.querySelector('.slider__line_pink');
+const lineWidth = sliderLine.offsetWidth;
+
+let slideIndex = 0;
+
+function updateSlider() {
+    const margin = window.innerWidth <= 1300 ? 10 : 20;
+    console.log(margin);
+    const offset = slideIndex * -(292 + margin);
+    slider.querySelector('.slider__items').style.transform = `translateX(${offset}px)`;
+
+    const yellowBarOffset = (slideIndex / (slideCount - 1)) * (lineWidth - yellowBar.offsetWidth);
+    yellowBar.style.transform = `translateX(${yellowBarOffset}px)`;
+}
+
+let isDragging = false;
+
+sliderLine.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    const startX = e.clientX;
+    const startSlideIndex = slideIndex;
+
+    const onMouseMove = (moveEvent) => {
+        if (!isDragging) return;
+
+        const dx = moveEvent.clientX - startX;
+        const percentage = dx / lineWidth;
+        slideIndex = Math.min(Math.max(startSlideIndex + Math.round(percentage * slideCount), 0), slideCount - 1);
+        updateSlider();
+    };
+
+    const onMouseUp = () => {
+        isDragging = false;
+        window.removeEventListener('mousemove', onMouseMove);
+        window.removeEventListener('mouseup', onMouseUp);
+    };
+
+    window.addEventListener('mousemove', onMouseMove);
+    window.addEventListener('mouseup', onMouseUp);
+});
+
+// Initialize the slider position
+updateSlider();

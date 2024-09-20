@@ -1,11 +1,13 @@
 :root {
   --color-black: #222128;
   --color-white: #fff;
+  --color-white-opacity: rgba(255, 255, 255, .1);
 
   --color-black-opacity: rgba(34, 33, 40, 0.1);
   --color-background-light: #F5F5F5;
   --color-accent-blue: #1F40E5;
   --color-accent-pink: #ED7180;
+  --color-accent-pink-opacity: rgba(238, 114, 129, .1);
 }
 
 .root{

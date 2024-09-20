@@ -1,0 +1,97 @@
+.getPresentationSection{
+    position: relative;
+    
+}
+
+.getPresentationSection__container{
+    width: 64%;
+    margin: 0 auto;
+    background-color: var(--color-accent-pink);
+    padding: 52px 72px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+
+    box-sizing: border-box;
+}
+
+.getPresentationForm{
+    width: 322px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.getPresentationSection__title{
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.76px;
+    margin: 0;
+
+    padding-bottom: 34px;
+    color: var(--color-white);
+}
+
+.getPresentationForm__field{
+    height: 50px;
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.getPresentationForm__input{
+    border: 0;
+    border-bottom: 2px solid var(--color-white);
+    background-color: transparent;
+
+    padding: 0;
+    font-size: 16px;
+    outline: none;
+    transition: border-bottom-color 0.3s;
+}
+
+.getPresentationForm__input:focus {
+    border-bottom-color: darken(var(--color-accent-blue), 10%);
+}
+
+.getPresentationForm__label{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--color-white);
+}
+
+.getPresentationForm__button{
+    width: 200px;
+    height: 67px;
+    border-radius: 100px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;
+    background-color: var(--color-white);
+    color: var(--color-accent-pink);
+    border: 0;
+    cursor: pointer;
+}
+
+.getPresentationSection__img{
+    position: absolute;
+    bottom: 0;
+    right: 470px;
+}
+
+@media screen and (max-width: 1700px) {
+    .getPresentationSection__container{
+        width: 84%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .getPresentationSection__container{
+        width: 94%;
+    }
+}

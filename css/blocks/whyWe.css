@@ -1,0 +1,52 @@
+.whyWe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+    background-color: var(--color-accent-blue);
+    position: relative;
+}
+
+.whyWe__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.whyWe__item {
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+    width: 357px;
+    padding: 32px 10px;
+    border-radius: 10px;
+    background-color: var(--color-white-opacity);
+}
+
+.whyWe__advantage{
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: var(--color-white);
+    text-align: left;
+}
+
+.whyWe__description{
+    margin: 0;
+
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.5px;
+    color: var(--color-white);
+    text-align: left;
+}
