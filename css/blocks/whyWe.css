@@ -21,13 +21,16 @@
 
 .whyWe__item {
     position: absolute;
-    text-align: center;
     transform: translate(-50%, -50%);
 
     width: 357px;
     padding: 32px 10px;
     border-radius: 10px;
     background-color: var(--color-white-opacity);
+}
+
+.whyWe__item_center{
+    text-align: center;
 }
 
 .whyWe__advantage{
@@ -49,4 +52,27 @@
     line-height: 22.5px;
     color: var(--color-white);
     text-align: left;
+}
+
+@media screen and (max-width: 1400px) {
+    .whyWe__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        position: static !important;
+        height: max-content;
+        transform: none;
+    }
+
+    .whyWe__item {
+        width: 90%;
+        max-width: 500px;
+        margin-bottom: 20px;
+        position: static !important;
+        height: max-content;
+        transform: none;
+    }
 }

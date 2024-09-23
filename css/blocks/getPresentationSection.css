@@ -81,17 +81,59 @@
 .getPresentationSection__img{
     position: absolute;
     bottom: 0;
-    right: 470px;
+    right: 23%;
 }
 
 @media screen and (max-width: 1700px) {
     .getPresentationSection__container{
         width: 84%;
     }
+
+    .getPresentationSection__img{
+        right: 6%;
+    }
 }
 
 @media screen and (max-width: 1300px) {
     .getPresentationSection__container{
-        width: 94%;
+        width: 100%;
+        padding: 32px 32px 0 32px;
+    }
+
+    .getPresentationSection__title{
+        font-size: 32px;
+        line-height: 39.01px;
+        padding-bottom: 24px;
+    }
+
+    .getPresentationForm__field{
+        margin-bottom: 20px;
+    }
+
+    .getPresentationForm__input{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .getPresentationForm__button{
+        font-size: 16px;
+        line-height: 19.5px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .getPresentationSection__container { 
+        flex-direction: column;
+    }
+
+    .getPresentationForm{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .getPresentationSection__img{
+        position: static;
+        width: 103%;
     }
 }

@@ -33,12 +33,15 @@ const currentTitle = document.querySelector('.services__currentTitle');
 const serviceImage = document.querySelector('.services__img');
 const serviceParagraph = document.querySelector('.services__paragraph');
 
-maxCounter.textContent = (parseInt(servicesData.length.toString())).toString().padStart(2, '0');
+const prevButton = document.querySelector('.navButton__prev_services');
+const nextButton = document.querySelector('.navButton__next_services');
+
+let currentIndex = 0;
+maxCounter.textContent = (servicesData.length).toString().padStart(2, '0');
 
 function updateServiceContent(index) {
     const service = servicesData[index];
-
-    currentCounter.textContent = (parseInt(index) + 1).toString().padStart(2, '0');
+    currentCounter.textContent = (index + 1).toString().padStart(2, '0');
     currentTitle.textContent = service.title;
     serviceParagraph.textContent = service.description;
     serviceImage.src = service.image;
@@ -47,10 +50,23 @@ function updateServiceContent(index) {
     serviceButtons[index].classList.add('services__button_active');
 }
 
+function changeService(direction) {
+    currentIndex = (currentIndex + direction + servicesData.length) % servicesData.length;
+    updateServiceContent(currentIndex);
+}
+
+prevButton.addEventListener('click', () => {
+    changeService(-1);
+});
+
+nextButton.addEventListener('click', () => {
+    changeService(1);
+});
+
 serviceButtons.forEach(button => {
     button.addEventListener('click', (e) => {
-        const index = e.currentTarget.getAttribute('data-index');
-        updateServiceContent(index);
+        currentIndex = parseInt(e.currentTarget.getAttribute('data-index'));
+        updateServiceContent(currentIndex);
     });
 });
 

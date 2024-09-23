@@ -192,6 +192,12 @@
         padding: 0 15px;
     }
 
+    .services__button{
+        font-size: 14px;
+        line-height: 17.07px;
+        padding: 15px 0 15px 0;
+    }
+
     .services__button:hover::after {
         width: calc(100% + 30px);
         background-color: var(--color-accent-pink);
@@ -223,12 +229,6 @@
         left: 0;
         top: 50%;
         transform: translateY(-50%);
-    }
-
-    .services__button{
-        font-size: 14px;
-        line-height: 17.07px;
-        padding: 15px 0 15px 0;
     }
 
     .services__paragraph {

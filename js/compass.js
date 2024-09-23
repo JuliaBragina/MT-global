@@ -19,10 +19,10 @@ function createTicks() {
         const isMajorTick = i % 8 === 0;
         const tickLength = isMajorTick ? 20 : 10;
 
-        let x1 = 200 + outerRadius * Math.cos(currentAngle * Math.PI / 180);
-        let y1 = 200 + outerRadius * Math.sin(currentAngle * Math.PI / 180);
-        let x2 = 200 + (outerRadius - tickLength) * Math.cos(currentAngle * Math.PI / 180);
-        let y2 = 200 + (outerRadius - tickLength) * Math.sin(currentAngle * Math.PI / 180);
+        let x1 = 208 + outerRadius * Math.cos(currentAngle * Math.PI / 180);
+        let y1 = 208 + outerRadius * Math.sin(currentAngle * Math.PI / 180);
+        let x2 = 208 + (outerRadius - tickLength) * Math.cos(currentAngle * Math.PI / 180);
+        let y2 = 208 + (outerRadius - tickLength) * Math.sin(currentAngle * Math.PI / 180);
 
         const tick = document.createElementNS("http://www.w3.org/2000/svg", "line");
         tick.setAttribute('x1', x1);
@@ -72,14 +72,14 @@ document.querySelector('.whyWe').addEventListener('mousemove', (event) => {
 });
 
 const directionLabels = [
-    { label: 'N', angle: -90},
-    { label: 'NE', angle:-45},
-    { label: 'E', angle: 0},
-    { label: 'SE', angle: 45},
-    { label: 'S', angle: 90},
-    { label: 'SW', angle: 135},
-    { label: 'W', angle: 180},
-    { label: 'NW', angle: 235},
+    { label: 'N', angle: 90 },   // Север (вверху)
+    { label: 'NE', angle: 45 },  // Северо-восток
+    { label: 'E', angle: 0 },    // Восток
+    { label: 'SE', angle: 315 }, // Юго-восток
+    { label: 'S', angle: 270 },  // Юг
+    { label: 'SW', angle: 225 }, // Юго-запад
+    { label: 'W', angle: 180 },  // Запад
+    { label: 'NW', angle: 135 }, // Северо-запад
 ];
 
 function createDirectionLabels() {
@@ -89,9 +89,9 @@ function createDirectionLabels() {
         direction.textContent = label;
 
         const radian = angle * (Math.PI / 180);
-        const offset = 207;
-        const x = Math.cos(radian) * offset;
-        const y = Math.sin(radian) * offset;
+        const offset = 215;
+        const x = Math.cos(radian) * (offset + 1) - 4;
+        const y = Math.sin(radian) * offset - 6;
 
         direction.style.left = `calc(50% + ${x}px)`;
         direction.style.top = `calc(50% + ${y}px)`;
@@ -103,21 +103,9 @@ function createDirectionLabels() {
 
 createDirectionLabels();
 
-/*const listItems = document.querySelectorAll('.whyWe__item');
-const radius = 460;
-
-listItems.forEach((item, index) => {
-    const angle = (index / listItems.length) * (2 * Math.PI);
-    const x = radius * Math.cos(angle);
-    const y = radius * Math.sin(angle);
-
-    item.style.left = `calc(50% + ${x}px)`;
-    item.style.top = `calc(50% + ${y}px)`;
-});*/
 
 const listItems = document.querySelectorAll('.whyWe__item');
 
-// Указываем фиксированные значения left и top для каждого элемента
 const positions = [
     { left: '50%', top: '-15%' },     // "Наша цель"
     { left: '130%', top: '10%' },    // "Ответственность"
@@ -125,14 +113,13 @@ const positions = [
     { left: '130%', top: '85%' },     // "Специалисты"
     { left: '50%', top: '120%' },   // "Качество"
     { left: '-40%', top: '85%' },    // "Проактивная позиция"
-    { left: '-40%', top: '12.7%' },      // "Наша позиция"
+    { left: '-40%', top: '12.7%' },  // "Наша позиция"
     { left: '-50%', top: '50%' }
 ];
 
 listItems.forEach((item, index) => {
-    // Установка позиции для каждого элемента
     const { left, top } = positions[index];
-    item.style.position = 'absolute'; // Убедитесь, что элемент имеет абсолютное позиционирование
+    item.style.position = 'absolute';
     item.style.left = left;
     item.style.top = top;
 });

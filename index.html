@@ -118,10 +118,10 @@
                         </div>
                         <h3 class="services__currentTitle"></h3>
                         <div class="navButton">
-                            <button class="navButton__prev">
+                            <button class="navButton__prev navButton__prev_services">
                                 <img class="navButton__prevImg" src="./img/prev-button-arrow.svg" alt="">
                             </button>
-                            <button class="navButton__next">
+                            <button class="navButton__next navButton__next_services">
                                 <img class="navButton__nextImg" src="./img/next-button-arrow.svg" alt="">
                             </button>
                         </div>
@@ -161,10 +161,10 @@
         </section>
         
         <section class="about">
-            <div class="about__container">
-                <div class="about__navContainer">
+            <div class="about__container navButton">
+                <div class="about__navContainer navButton__container">
                     <h2 class="about__title">О компании</h2>
-                    <div class="navButton">
+                    <div class="navButton__nav">
                         <button type="button" class="navButton__prev navButton__prev_color_pink navButton__prev_about">
                             <img class="navButton__prevImg" src="./img/prev-button-arrow-white.svg" alt="">
                         </button>
@@ -204,14 +204,14 @@
             </div>
 
             <ul class="whyWe__list">
-                <li class="whyWe__item"><p class="whyWe__advantage">Наша цель</p><p class="whyWe__description">Рост вашего бизнеса</p></li>
-                <li class="whyWe__item"><p class="whyWe__advantage">Ответственность</p><p class="whyWe__description">Финансово отвечаем за SLA и непрерывность ИТ</p></li>
-                <li class="whyWe__item"><p class="whyWe__advantage">«Под ключ»</p><p class="whyWe__description">Отслеживаем актуальные технологии и делимся опытом лучших мировых практик</p></li>
-                <li class="whyWe__item"><p class="whyWe__advantage">Актуальность</p><p class="whyWe__description">Отслеживаем актуальные технологии и делимся опытом лучших мировых практик</p></li>
-                <li class="whyWe__item"><p class="whyWe__advantage">Специалисты</p><p class="whyWe__description">Собственные компетенции  и сертифицированные специалисты</p></li>
-                <li class="whyWe__item"><p class="whyWe__advantage">Качество</p><p class="whyWe__description">Качественный сервис и поддержка 24 на 7</p></li>
-                <li class="whyWe__item"><p class="whyWe__advantage">Проактивная позиция</p><p class="whyWe__description">Результат нашей работы — довольный Заказчик</p></li>
-                <li class="whyWe__item"><p class="whyWe__advantage">Наша задача</p><p class="whyWe__description">Внедрение цифровых технологий с заботой о вас</p></li>
+                <li class="whyWe__item whyWe__item_center"><p class="whyWe__advantage whyWe__advantage_center">Наша цель</p><p class="whyWe__description">Рост вашего бизнеса</p></li>
+                <li class="whyWe__item whyWe__item_right"><p class="whyWe__advantag">Ответственность</p><p class="whyWe__description">Финансово отвечаем за SLA и непрерывность ИТ</p></li>
+                <li class="whyWe__item whyWe__item_right"><p class="whyWe__advantage">«Под ключ»</p><p class="whyWe__description">Отслеживаем актуальные технологии и делимся опытом лучших мировых практик</p></li>
+                <li class="whyWe__item whyWe__item_right"><p class="whyWe__advantage">Актуальность</p><p class="whyWe__description">Отслеживаем актуальные технологии и делимся опытом лучших мировых практик</p></li>
+                <li class="whyWe__item whyWe__item_center"><p class="whyWe__advantage">Специалисты</p><p class="whyWe__description">Собственные компетенции  и сертифицированные специалисты</p></li>
+                <li class="whyWe__item whyWe__item_left"><p class="whyWe__advantage">Качество</p><p class="whyWe__description">Качественный сервис и поддержка 24 на 7</p></li>
+                <li class="whyWe__item whyWe__item_left"><p class="whyWe__advantage">Проактивная позиция</p><p class="whyWe__description">Результат нашей работы — довольный Заказчик</p></li>
+                <li class="whyWe__item whyWe__item_left"><p class="whyWe__advantage">Наша задача</p><p class="whyWe__description">Внедрение цифровых технологий с заботой о вас</p></li>
             </ul>
         </section>
 
@@ -283,6 +283,37 @@
             </div>
         </section>
         
+        <section class="readyProjects">
+            <div class="readyProjects__container navButton">
+                <div class="navButton__container">
+                    <h2 class="about__title">Реализованные проекты</h2>
+                    <div class="navButton__nav">
+                        <button type="button" class="navButton__prev navButton__prev_color_pink navButton__prev_readyProjects">
+                            <img class="navButton__prevImg" src="./img/prev-button-arrow-white.svg" alt="">
+                        </button>
+                        <button type="button" class="navButton__next navButton__prev_color_pink navButton__next_readyProjects">
+                            <img class="navButton__nextImg" src="./img/next-button-arrow-white.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="readyProjects__container readyProjects__slider slider slider_readyProjects">
+                <ul class="slider__items">
+                    <li class="slider__item slider__item_readyProjects"><img class="readyProjects__img" src="./img/img-readyProjects.png" alt=""><div class="readyProjects__text"><h3 class="readyProjects__title">Мультимедийные решения для бизнеса</h3><p class="readyProjects__description">#маркёр тематики</p></div></li>
+                    <li class="slider__item slider__item_readyProjects"><img class="readyProjects__img" src="./img/img-readyProjects.png" alt=""><div class="readyProjects__text"><h3 class="readyProjects__title">Мультимедийные решения для бизнеса</h3><p class="readyProjects__description">#маркёр тематики</p></div></li>
+                    <li class="slider__item slider__item_readyProjects"><img class="readyProjects__img" src="./img/img-readyProjects.png" alt=""><div class="readyProjects__text"><h3 class="readyProjects__title">Мультимедийные решения для бизнеса</h3><p class="readyProjects__description">#маркёр тематики</p></div></li>
+                    <li class="slider__item slider__item_readyProjects"><img class="readyProjects__img" src="./img/img-readyProjects.png" alt=""><div class="readyProjects__text"><h3 class="readyProjects__title">Мультимедийные решения для бизнеса</h3><p class="readyProjects__description">#маркёр тематики</p></div></li>
+                    <li class="slider__item slider__item_readyProjects"><img class="readyProjects__img" src="./img/img-readyProjects.png" alt=""><div class="readyProjects__text"><h3 class="readyProjects__title">Мультимедийные решения для бизнеса</h3><p class="readyProjects__description">#маркёр тематики</p></div></li>
+                    <li class="slider__item slider__item_readyProjects"><img class="readyProjects__img" src="./img/img-readyProjects.png" alt=""><div class="readyProjects__text"><h3 class="readyProjects__title">Мультимедийные решения для бизнеса</h3><p class="readyProjects__description">#маркёр тематики</p></div></li>
+                    <li class="slider__item slider__item_readyProjects"><img class="readyProjects__img" src="./img/img-readyProjects.png" alt=""><div class="readyProjects__text"><h3 class="readyProjects__title">Мультимедийные решения для бизнеса</h3><p class="readyProjects__description">#маркёр тематики</p></div></li>
+                </ul>
+            </div>
+            <div class="readyProjects__container">
+                <div class="slider__line">
+                    <div class="slider__line_pink"></div>
+                </div>
+            </div>
+        </section>
         
     </main>
     

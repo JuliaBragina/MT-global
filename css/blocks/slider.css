@@ -8,6 +8,11 @@
   margin-right: 0;
 }
 
+.slider_readyProjects{
+  width: 64%;
+  margin: auto;
+}
+
 .slider__items {
   list-style-type: none;
   margin: 0;
@@ -20,12 +25,15 @@
 
 .slider__item {
   width: 292px;
-  height: 432px;
   background-color: var(--color-white);
   border-radius: 30px;
   padding: 28px 14px;
   box-sizing: border-box;
   padding: 45px 36px;
+}
+
+.slider__item_readyProjects{
+  padding: 0;
 }
 
 .slider__img {
@@ -60,6 +68,10 @@
 @media screen and (max-width: 1700px) {
   .slider {
      width: 92%;
+  }
+
+  .slider_readyProjects{
+    width: 84%;
   }
 }
 

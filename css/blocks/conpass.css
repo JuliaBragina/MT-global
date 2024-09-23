@@ -73,3 +73,10 @@
     font-size: 10px;
     line-height: 12px;
 }
+
+
+@media screen and (max-width: 1400px) {
+    .compass{
+        display: none;
+    }
+}
