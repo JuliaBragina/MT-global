@@ -11,6 +11,13 @@
 .slider_readyProjects{
   width: 64%;
   margin: auto;
+  margin-bottom: 56px;
+}
+
+.slider_reviews{
+  width: 64%;
+  margin: auto;
+  margin-bottom: 83px;
 }
 
 .slider__items {
@@ -29,10 +36,16 @@
   border-radius: 30px;
   padding: 28px 14px;
   box-sizing: border-box;
-  padding: 45px 36px;
+  padding: 45px 36px 28px 36px;
 }
 
 .slider__item_readyProjects{
+  padding: 0;
+}
+
+.slider__item_reviews{
+  width: 100%;
+  background-color: transparent;
   padding: 0;
 }
 
@@ -73,11 +86,20 @@
   .slider_readyProjects{
     width: 84%;
   }
+
+  .slider_reviews{
+    width: 84%;
+  }
 }
 
 @media screen and (max-width: 1300px) {
   .slider {
      width: 97%;
+  }
+
+  
+  .slider_reviews{
+    width: 94%;
   }
 
   .slider__items {

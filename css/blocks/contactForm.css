@@ -1,0 +1,241 @@
+.contactForm__container{
+    width: 64%;
+    margin: auto;
+    display: flex;
+    background-color: var(--color-white);
+    border-radius: 30px;
+    margin-bottom: 104px;
+}
+
+.contactForm__instructions{
+    padding: 39px 40px 50px 40px;
+    box-sizing: border-box;
+}
+
+.contactForm__title{
+    padding-bottom: 20px;
+}
+
+.contactForm__submission {
+    min-width: 50%;
+    background-color: var(--color-accent-blue);
+    border-radius: 30px;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contactForm__steps {
+    list-style: none;
+    counter-reset: step;
+    margin: 0;
+    padding-bottom: 32px;
+}
+
+.contactForm__step {
+    counter-increment: step;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.5px;
+    margin: 0;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.contactForm__step::before {
+    content: counter(step, decimal-leading-zero);
+    position: absolute;
+    top: 0;
+    left: -30px;
+
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: var(--color-accent-blue);
+}
+
+.contactForm__note{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0;
+    padding-bottom: 32px;
+}
+
+.contactForm__contactsTitle{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+.contactForm__phone{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--color-accent-blue);
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+.contactForm__email{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--color-accent-blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Форма */
+.contactForm__inputFieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.contactForm__inputWrapper {
+    position: relative;
+    flex: 1;
+    margin-right: 15px;
+}
+
+.contactForm__inputWrapper:last-child {
+    margin-right: 0;
+}
+
+.contactForm__label {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-white);
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+.contactForm__input,
+.contactForm__textarea {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--color-white);
+    padding: 10px 0 25px;
+    width: 100%;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.contactForm__input:focus,
+.contactForm__textarea:focus {
+    outline: none;
+}
+
+.contactForm__input:focus + .contactForm__label,
+.contactForm__textarea:focus + .contactForm__label,
+.contactForm__input:not(:placeholder-shown) + .contactForm__label,
+.contactForm__textarea:not(:placeholder-shown) + .contactForm__label {
+    top: -10px;
+    font-size: 12px;
+    color: var(--color-accent-blue);
+}
+
+.contactForm__submit{
+    width: 100%;
+    display: block;
+}
+
+.contactForm__checkboxContainer {
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    font-family: 'Montserrat';
+    color: var(--color-white);
+}
+
+.contactForm__checkbox {
+    opacity: 0; /* Скрываем оригинальный чекбокс */
+    position: absolute;
+    cursor: pointer;
+    width: 28px; /* Ширина чекбокса */
+    height: 28px; /* Высота чекбокса */
+}
+
+.contactForm__checkboxContainer::before {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-color: var(--color-accent-light-blue);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contactForm__checkbox:checked + .contactForm__checkboxContainer::before {
+    background-color: var(--color-accent-light-blue);
+}
+
+.contactForm__checkbox:checked + .contactForm__checkboxContainer::after {
+    content: '';
+    position: absolute;
+    left: 7px; /* Положение галочки по горизонтали */
+    top: 10px; /* Положение галочки по вертикали */
+    width: 17px; /* Ширина галочки */
+    height: 10px; /* Высота галочки */
+    border: solid var(--color-accent-blue);
+    border-width: 0 3px 3px 0; /* Формируем галочку */
+    transform: rotate(45deg); /* Поворачиваем галочку */
+}
+
+
+
+@media screen and (max-width: 1700px) {
+    .contactForm__container{
+        width: 84%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .contactForm__container{
+        width: 100%;
+    }
+
+    .contactForm__instructions{
+        padding: 39px 8px 30px 8px;
+    }
+
+    .contactForm__note{
+        padding-bottom: 22px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contactForm__container{
+        flex-direction: column;
+        margin-bottom: 64px;
+    }
+
+    .contactForm__submission {
+        min-width: 100%;
+        min-height: 602px;
+        padding: 30px 10px;
+    }
+}

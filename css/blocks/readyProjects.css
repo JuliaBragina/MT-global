@@ -1,3 +1,7 @@
+.readyProjects {
+    margin-bottom: 90px;
+}
+
 .readyProjects__container {
     width: 64%;
     margin: 0 auto;
@@ -7,23 +11,20 @@
     align-items: center;
 }
 
+.readyProjects__title {
+    padding-bottom: 19px;
+}
+
 .readyProjects__text{
     padding: 32px 13px;
 }
 
-.readyProjects__title{
-    font-family: 'Montserrat';
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29.26px;
-    margin: 0;
-}
-
-.readyProjects__description{
+.readyProjects__description {
     font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    margin: 0;
 }
 
 
@@ -34,7 +35,10 @@
 }
 
 @media screen and (max-width: 1300px) {
-    .readyProjects__container{
+    .readyProjects {
+        margin-bottom: 20px;
+    }
+    .readyProjects__container {
       width: 94%;
     }
 }

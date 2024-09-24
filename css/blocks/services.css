@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 105px 0;
+    padding: 105px 0 230px;
     gap: 100px;
     position: relative;
 }
@@ -33,11 +33,6 @@
 }
 
 .services__title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 48.76px;
-    margin: 0;
     padding-bottom: 48px;
 }
 
@@ -166,7 +161,7 @@
 @media screen and (max-width: 1300px) {
     .services__container {
         width: 94%;
-        padding: 57px 0;
+        padding: 57px 0 120px;
         gap: 57px;
     }
 
@@ -175,8 +170,6 @@
     }
 
     .services__title{
-        font-size: 32px;
-        line-height: 39px;
         padding-bottom: 20px;
     }
 
@@ -227,7 +220,7 @@
         height: 1px;
         position: absolute;
         left: 0;
-        top: 50%;
+        top: 44%;
         transform: translateY(-50%);
     }
 

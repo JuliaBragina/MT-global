@@ -1,5 +1,9 @@
+.about{
+    margin-bottom: 94px;
+}
+
 .about__slider{
-    padding-bottom: 50px;
+    margin-bottom: 86px;
 }
 
 .about__container{
@@ -11,7 +15,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 54px;
 }
 
 .about__title{
@@ -57,7 +60,7 @@
     }
 
     .about__navContainer{
-        padding-bottom: 29px;
+        padding-bottom: 0;
     }
 
     .about__title{

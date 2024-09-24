@@ -1,11 +1,12 @@
-.navButton{
-}
-
 .navButton__container{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 53px;
+}
+
+.navButton__container_longMargin{
     margin-bottom: 77px;
 }
 
@@ -19,4 +20,10 @@
 
 .navButton__prev_color_pink, .navButton__prev_color_pink{
     background-color: var(--color-accent-pink);
+}
+
+@media screen and (max-width: 1300px) {
+    .navButton__container{
+        margin-bottom: 23px;
+    }
 }

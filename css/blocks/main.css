@@ -1,7 +1,7 @@
 .main {
     position: relative;
     overflow: hidden;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .main__container {
@@ -19,11 +19,6 @@
 }
 
 .main__title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 58.51px;
-    margin: 0;
     padding-bottom: 32px;
 }
 
@@ -60,6 +55,10 @@
     height: 876px;
 }
 
+.main__video-container_second{
+    z-index: -1;
+}
+
 .main__video-container:last-child{
     top: -76px;
     right: 0px;
@@ -85,11 +84,6 @@
 @media screen and (max-width: 1750px) {
     .main__container {
         width: 84%;
-    }
-
-    .main__title {
-        font-size: 42px;
-        line-height: 52px;
     }
 
     .main__slogan {
@@ -125,9 +119,8 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .main__title {
-        font-size: 24px;
-        line-height: 29px;
+    .main{
+        margin-bottom: 48px;
     }
 
     .main__description {

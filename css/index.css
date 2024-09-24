@@ -2,6 +2,8 @@
 @import url(../css/blocks/root.css);
 @import url(../vendor/fonts.css);
 
+@import url(../css/blocks/title.css);
+
 @import url(../css/blocks/header.css);
 @import url(../css/blocks/bredcrumbs.css);
 @import url(../css/blocks/main.css);
@@ -12,6 +14,9 @@
 @import url(../css/blocks/results.css);
 @import url(../css/blocks/getPresentationSection.css);
 @import url(../css/blocks/readyProjects.css);
+@import url(../css/blocks/reviews.css);
+@import url(../css/blocks/contactForm.css);
+@import url(../css/blocks/footer.css);
 
 @import url(../css/blocks/slider.css);
 @import url(../css/blocks/navButton.css);

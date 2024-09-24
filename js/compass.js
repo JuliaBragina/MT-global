@@ -12,6 +12,9 @@ const minorTickCount = 28;
 const totalTicks = majorTickCount + minorTickCount;
 const angleStep = 360 / totalTicks;
 
+const initialAngle = 90;
+let currentAngle = initialAngle;
+
 function createTicks() {
     let currentAngle = 0;
 
@@ -38,6 +41,7 @@ function createTicks() {
 }
 
 createTicks();
+needle.style.transform = `translate(-50%, -100%) rotate(${initialAngle}deg)`;
 
 document.querySelector('.whyWe').addEventListener('mousemove', (event) => {
     const rect = compass.getBoundingClientRect();
@@ -56,12 +60,12 @@ document.querySelector('.whyWe').addEventListener('mousemove', (event) => {
     needle.style.left = `${baseX - rect.left + offsetX}px`;
     needle.style.top = `${baseY - rect.top + offsetY}px`;
 
-    const rotateAngle = angle * (180 / Math.PI) + 90;
-    needle.style.transform = `translate(-50%, -100%) rotate(${rotateAngle}deg)`;
+    currentAngle = angle * (180 / Math.PI) + 90; 
+    needle.style.transform = `translate(-50%, -100%) rotate(${currentAngle}deg)`;
 
     document.querySelectorAll('.major-tick, .minor-tick').forEach(tick => {
         const tickAngle = parseFloat(tick.dataset.angle);
-        const adjustedAngle = (rotateAngle + 360 - 90) % 360;
+        const adjustedAngle = (currentAngle + 360 - 90) % 360;
 
         if (Math.abs(adjustedAngle - tickAngle) < angleStep / 2) {
             tick.classList.add('active');
@@ -72,14 +76,14 @@ document.querySelector('.whyWe').addEventListener('mousemove', (event) => {
 });
 
 const directionLabels = [
-    { label: 'N', angle: 90 },   // Север (вверху)
-    { label: 'NE', angle: 45 },  // Северо-восток
-    { label: 'E', angle: 0 },    // Восток
-    { label: 'SE', angle: 315 }, // Юго-восток
-    { label: 'S', angle: 270 },  // Юг
-    { label: 'SW', angle: 225 }, // Юго-запад
-    { label: 'W', angle: 180 },  // Запад
-    { label: 'NW', angle: 135 }, // Северо-запад
+    { label: 'N', angle: 90 },
+    { label: 'NE', angle: 45 },
+    { label: 'E', angle: 0 },
+    { label: 'SE', angle: 315 },
+    { label: 'S', angle: 270 },
+    { label: 'SW', angle: 225 },
+    { label: 'W', angle: 180 },
+    { label: 'NW', angle: 135 },
 ];
 
 function createDirectionLabels() {
@@ -103,17 +107,16 @@ function createDirectionLabels() {
 
 createDirectionLabels();
 
-
 const listItems = document.querySelectorAll('.whyWe__item');
 
 const positions = [
-    { left: '50%', top: '-15%' },     // "Наша цель"
-    { left: '130%', top: '10%' },    // "Ответственность"
-    { left: '140%', top: '46%' },   // "Под ключ"
-    { left: '130%', top: '85%' },     // "Специалисты"
-    { left: '50%', top: '120%' },   // "Качество"
-    { left: '-40%', top: '85%' },    // "Проактивная позиция"
-    { left: '-40%', top: '12.7%' },  // "Наша позиция"
+    { left: '50%', top: '-120px' },
+    { left: '130%', top: '10%' },
+    { left: '140%', top: '46%' },
+    { left: '130%', top: '85%' },
+    { left: '50%', top: '120%' },
+    { left: '-40%', top: '85%' },
+    { left: '-40%', top: '12.7%' },
     { left: '-50%', top: '50%' }
 ];
 
@@ -122,4 +125,14 @@ listItems.forEach((item, index) => {
     item.style.position = 'absolute';
     item.style.left = left;
     item.style.top = top;
+});
+
+listItems.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        item.classList.add('whyWe__item_color_pink');
+    });
+
+    item.addEventListener('mouseout', () => {
+        item.classList.remove('whyWe__item_color_pink');
+    });
 });

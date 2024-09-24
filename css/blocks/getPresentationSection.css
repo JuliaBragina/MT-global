@@ -6,6 +6,7 @@
 .getPresentationSection__container{
     width: 64%;
     margin: 0 auto;
+    margin-bottom: 139px;
     background-color: var(--color-accent-pink);
     padding: 52px 72px;
     display: flex;
@@ -97,7 +98,7 @@
 @media screen and (max-width: 1300px) {
     .getPresentationSection__container{
         width: 100%;
-        padding: 32px 32px 0 32px;
+        margin-bottom: 52px;
     }
 
     .getPresentationSection__title{
@@ -125,6 +126,7 @@
 @media screen and (max-width: 1024px) {
     .getPresentationSection__container { 
         flex-direction: column;
+        padding: 32px 32px 0 32px;
     }
 
     .getPresentationForm{
