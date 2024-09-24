@@ -42,11 +42,12 @@
     margin: 0;
 }
 
-.services__button {
+.services__link {
+    display: block;
+    padding: 30px 0;
     border: 0;
     background-color: transparent;
     margin: 0;
-    padding: 30px 0;
     width: 100%;
     box-sizing: border-box;
 
@@ -61,9 +62,11 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     z-index: 2;
+
+    text-decoration: none;
 }
 
-.services__button::after {
+.services__link::after {
     content: "";
     position: absolute;
     top: 0;
@@ -76,14 +79,14 @@
     transform: translateX(0);
 }
 
-.services__button:hover::after {
+.services__link:hover::after {
     width: calc(100% + 40px);
     transform: translateX(-40px) ;
     background-color: var(--color-accent-pink);
     z-index: -1;
 }
 
-.services__button_active::after {
+.services__link_active::after {
     width: calc(100% + 40px);
     background-color: var(--color-accent-pink);
     transform: translateX(-40px);
@@ -185,20 +188,20 @@
         padding: 0 15px;
     }
 
-    .services__button{
+    .services__link{
         font-size: 14px;
         line-height: 17.07px;
-        padding: 15px 0 15px 0;
+        padding: 15px 0;
     }
 
-    .services__button:hover::after {
+    .services__link:hover::after {
         width: calc(100% + 30px);
         background-color: var(--color-accent-pink);
         z-index: -1;
         transform: translateX(-15px);
     }
     
-    .services__button_active::after {
+    .services__link_active::after {
         width: calc(100% + 30px);
         background-color: var(--color-accent-pink);
         z-index: -1;
@@ -260,7 +263,7 @@
         order: 1;
     }
 
-    .services__buttons {
+    .services__links {
         order: 0;
         margin-bottom: 0;
     }

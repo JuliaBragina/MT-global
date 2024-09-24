@@ -27,7 +27,7 @@
     
 }
 
-.title__third_color_white{
+.title__third_color_white, .title__second_color_white{
     color: var(--color-white);
 }
 

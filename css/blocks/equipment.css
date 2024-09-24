@@ -1,0 +1,129 @@
+.equipment {
+    position: relative;
+}
+
+.equipment__container {
+    width: 64%;
+    margin: 0 auto;
+    padding: 93px 0 160px;
+}
+
+.equipment__title {
+    padding-bottom: 45px;
+    width: 100px;
+}
+
+.equipment__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    justify-items: center;
+}
+
+.equipment__itemList {
+    border-radius: 30px;
+    background-color: var(--color-white);
+    padding: 30px 30px 50px 30px;
+    box-sizing: border-box;
+}
+
+.equipment__item{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.equipment__img {
+    width: 100%;
+    height: 100%;
+    max-height: 190px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.equipment__caption {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1700px) {
+    .equipment__container {
+        width: 84%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .equipment__container {
+        width: 94%;
+        padding: 47px 0;
+    }
+
+    .equipment__title {
+        padding-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .equipment__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .equipment__itemList {
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .equipment__itemList:last-child {
+        grid-column: 1 / 3;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .equipment__img {
+        width: 100%;
+    }
+    
+    .equipment__itemList:last-child > .equipment__item {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 0;
+        align-items: center;
+    }
+
+    .equipment__itemList:last-child > .equipment__item > .equipment__img {
+        width: 205.59px;
+        height: 100%;
+        max-height: 120px;
+    }
+    
+    .equipment__caption {
+        font-size: 14px;
+        line-height: 17.07px;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    .equipment__itemList {
+        width: 165px;
+        height: 195px;
+        padding: 10px;
+    }
+
+    .equipment__img {
+        width: 145.59px;
+        height: 100%;
+        max-height: 120px;
+    }
+}

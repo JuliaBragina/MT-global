@@ -26,7 +26,7 @@ const servicesData = [
     }
 ];
 
-const serviceButtons = document.querySelectorAll('.services__button');
+const serviceButtons = document.querySelectorAll('.services__link');
 const currentCounter = document.querySelector('.services__currentCounter');
 const maxCounter = document.querySelector('.services__maxCounter');
 const currentTitle = document.querySelector('.services__currentTitle');
@@ -46,8 +46,8 @@ function updateServiceContent(index) {
     serviceParagraph.textContent = service.description;
     serviceImage.src = service.image;
 
-    serviceButtons.forEach(btn => btn.classList.remove('services__button_active'));
-    serviceButtons[index].classList.add('services__button_active');
+    serviceButtons.forEach(btn => btn.classList.remove('services__link_active'));
+    serviceButtons[index].classList.add('services__link_active');
 }
 
 function changeService(direction) {
