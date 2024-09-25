@@ -247,7 +247,7 @@
             <div class="quiz__container"></div>
         </section>
 
-        <section class="doneProjects">
+        <section class="doneProjects slider-container">
             <aside class="asideMenu">
                 <nav class="asideMenu__nav asideMenu__nav_padding">
                     <ul class="asideMenu__list">
@@ -275,6 +275,7 @@
 
                 <div class="doneProjects__slider slider slider_doneProjects">
                     <ul class="slider__items slider__items_doneProjects">
+
                         <li class="slider__item slider__item_doneProjects doneProjects__item">
                             <div class="doneProjects__imgContainer">
                                 <img class="doneProjects__img"  src="../img/img-doneProjects.png" alt="">
@@ -313,29 +314,10 @@
                             </div>
                         </li>
 
-                        <li class="slider__item slider__item_doneProjects doneProjects__item"></li>
-                            <div class="doneProjects__imgContainer">
-                                <img class="doneProjects__img"  src="../img/img-doneProjects.png" alt="">
-                                <img class="doneProjects__img"  src="../img/img-doneProjects.png" alt="">
-                                <img class="doneProjects__img"  src="../img/img-doneProjects.png" alt="">
-                                <img class="doneProjects__img"  src="../img/img-doneProjects.png" alt="">
-                            </div>
-                            <div class="doneProjects__reviewContainer">
-                                <div class="doneProjects__scrollContainer">
-                                    <h3 class="doneProjects__title title__third">Переговорные комнаты для АО «СТС»</h3>
-                                    <p class="doneProjects__paragraph">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой‑нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный Также все другие известные генераторы Lorem акже все другие известные генераторы Lorem Ipsum используют один и тот же текст, который </p>
-                                    <div class="doneProjects__gradient"></div>
-                                </div>
-                            </div>
-                            <button type="button" class="main__button doneProjects__button">Подробнее о проекте
-                                <img class="main__button-img" src="../img/img-arrow-white.svg" alt="Arrow Icon">
-                            </button>
-                        </li>
                     </ul>
                 </div>                    
             </div>
-
-            <div class="readyProjects__container slider__scrollbar">
+            <div class="doneProjects__container slider__scrollbar">
                 <div class="slider__line">
                     <div class="slider__line_pink"></div>
                 </div>
@@ -344,7 +326,9 @@
 
         <section class="trustUs">
             <div class="trustUs__container trustUs__container_animation">
-                <h2 class="trustUs__title title__second">Уже убедились в нашем професионализме</h2>
+                <div class="trustUs__containerTitle">
+                    <h2 class="trustUs__title title__second">Уже убедились в нашем професионализме</h2>
+                </div>
                 <div class="trustUs__grid trustUs__grid_animation trustUs__grid_firstLine">
                     <div class="trustUs__item"><img class="trustUs__img" src="../img/img-trustUs.png" alt=""></div>
                     <div class="trustUs__item"><img class="trustUs__img" src="../img/img-trustUs.png" alt=""></div>
@@ -388,6 +372,131 @@
                     <div class="trustUs__item"><img class="trustUs__img" src="../img/img-trustUs.png" alt=""></div>
                     <div class="trustUs__item"><img class="trustUs__img" src="../img/img-trustUs.png" alt=""></div>
                     <div class="trustUs__item"><img class="trustUs__img" src="../img/img-trustUs.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="whyWe">
+            <div class="compass">
+                <div class="compass__base"></div>
+                <svg class="compass__needle" width="31" height="49" viewBox="0 0 31 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.4992 0L30.6546 48.75L15.4993 46L0.34375 48.75L15.4992 0Z" fill="#ED7180"/>
+                </svg>
+                <svg class="compass__ticks" width="400" height="400" viewBox="0 0 400 400">
+                </svg>
+                <div class="compass__directions"></div>
+            </div>
+
+            <ul class="whyWe__list">
+                <li class="whyWe__item whyWe__item_center whyWe__item_top"><p class="whyWe__advantage">Наша цель</p><p class="whyWe__description whyWe__description_center">Рост вашего бизнеса</p><div class="whyWe__numberContainer whyWe__numberContainer_top"><span class="whyWe__number">01</span></div></li>
+                <li class="whyWe__item whyWe__item_right"><p class="whyWe__advantage">Ответственность</p><p class="whyWe__description whyWe__description_right">Финансово отвечаем за SLA и непрерывность ИТ</p><div class="whyWe__numberContainer whyWe__numberContainer_right"><span class="whyWe__number">02</span></div></li>
+                <li class="whyWe__item whyWe__item_right"><p class="whyWe__advantage">«Под ключ»</p><p class="whyWe__description whyWe__description_right">Отслеживаем актуальные технологии и делимся опытом лучших мировых практик</p><div class="whyWe__numberContainer whyWe__numberContainer_right"><span class="whyWe__number">03</span></div></li>
+                <li class="whyWe__item whyWe__item_right"><p class="whyWe__advantage">Актуальность</p><p class="whyWe__description whyWe__description_right">Отслеживаем актуальные технологии и делимся опытом лучших мировых практик</p><div class="whyWe__numberContainer whyWe__numberContainer_right"><span class="whyWe__number">04</span></div></li>
+                <li class="whyWe__item whyWe__item_center whyWe__item_bottom"><p class="whyWe__advantage">Специалисты</p><p class="whyWe__description whyWe__description_center">Собственные компетенции  и сертифицированные специалисты</p><div class="whyWe__numberContainer whyWe__numberContainer_bottom"><span class="whyWe__number">05</span></div></li>
+                <li class="whyWe__item whyWe__item_left"><p class="whyWe__advantage">Качество</p><p class="whyWe__description whyWe__description_left">Качественный сервис и поддержка 24 на 7</p><div class="whyWe__numberContainer whyWe__numberContainer_left"><span class="whyWe__number">06</span></div></li>
+                <li class="whyWe__item whyWe__item_left"><p class="whyWe__advantage">Проактивная позиция</p><p class="whyWe__description whyWe__description_left">Результат нашей работы — довольный Заказчик</p><div class="whyWe__numberContainer whyWe__numberContainer_left"><span class="whyWe__number">07</span></div></li>
+                <li class="whyWe__item whyWe__item_left"><p class="whyWe__advantage">Наша задача</p><p class="whyWe__description whyWe__description_left">Внедрение цифровых технологий с заботой о вас</p><div class="whyWe__numberContainer whyWe__numberContainer_left"><span class="whyWe__number">08</span></div></li>
+            </ul>
+        </section>
+
+        <section class="ourApproach">
+            <aside class="asideMenu">
+                <nav class="asideMenu__nav asideMenu__nav_padding">
+                    <ul class="asideMenu__list">
+                        <li class="asideMenu__item"><a class="asideMenu__link" href="#section1">Решения</a></li>
+                        <li class="asideMenu__item"><a class="asideMenu__link" href="#section2">Оборудование</a></li>
+                        <li class="asideMenu__item"><a class="asideMenu__link" href="#section3">Кейсы</a></li>
+                        <li class="asideMenu__item"><a class="asideMenu__link" href="#section4">Наш подход</a></li>
+                        <li class="asideMenu__item"><a class="asideMenu__link" href="#section5">Сертификаты</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="ourApproach__container">
+                <h2 class="ourApproach__title title__second">Наш подход</h2>
+                <div class="ourApproach__steps">
+                    <article class="ourApproach__step">
+                        <img class="ourApproach__img" src="../img/img-step.svg">
+                        <div class="ourApproach__subTitleContainer">
+                            <span class="ourApproach__number title__third">01</span>
+                            <span class="ourApproach__divider title__third">/</span>
+                            <h3 class="ourApproach__subTitle title__third">Концепция и предпроектные работы</h3>
+                        </div>
+                        <ul class="ourApproach__list">
+                            <li class="ourApproach__listItem">Обследование и техническая консультация;</li>
+                            <li class="ourApproach__listItem">Разработка концепций;</li>
+                            <li class="ourApproach__listItem">Подбор технологий под бизнес-процессы заказчика</li>
+                            <li class="ourApproach__listItem">Разработка ТЗ;</li>
+                            <li class="ourApproach__listItem">Формирование спецификаций и ТКП. Взаимодействие с производителями;</li>
+                            <li class="ourApproach__listItem">Предоставление оборудования на тестирование</li>
+                        </ul>
+
+                        <button type="button" class="main__button">Подобрать решение
+                            <img class="main__button-img" src="../img/button-arrow.svg" alt="Arrow Icon">
+                        </button>
+                    </article>
+
+                    <article class="ourApproach__step">
+                        <img class="ourApproach__img" src="../img/img-step.svg">
+                        <div class="ourApproach__subTitleContainer">
+                            <span class="ourApproach__number title__third">01</span>
+                            <span class="ourApproach__divider title__third">/</span>
+                            <h3 class="ourApproach__subTitle title__third">Концепция и предпроектные работы</h3>
+                        </div>
+                        <ul class="ourApproach__list">
+                            <li class="ourApproach__listItem">Обследование и техническая консультация;</li>
+                            <li class="ourApproach__listItem">Разработка концепций;</li>
+                            <li class="ourApproach__listItem">Подбор технологий под бизнес-процессы заказчика</li>
+                            <li class="ourApproach__listItem">Разработка ТЗ;</li>
+                            <li class="ourApproach__listItem">Формирование спецификаций и ТКП. Взаимодействие с производителями;</li>
+                            <li class="ourApproach__listItem">Предоставление оборудования на тестирование</li>
+                        </ul>
+
+                        <button type="button" class="main__button">Подобрать решение
+                            <img class="main__button-img" src="../img/button-arrow.svg" alt="Arrow Icon">
+                        </button>
+                    </article>
+
+                    <article class="ourApproach__step">
+                        <img class="ourApproach__img" src="../img/img-step.svg">
+                        <div class="ourApproach__subTitleContainer">
+                            <span class="ourApproach__number title__third">01</span>
+                            <span class="ourApproach__divider title__third">/</span>
+                            <h3 class="ourApproach__subTitle title__third">Концепция и предпроектные работы</h3>
+                        </div>
+                        <ul class="ourApproach__list">
+                            <li class="ourApproach__listItem">Обследование и техническая консультация;</li>
+                            <li class="ourApproach__listItem">Разработка концепций;</li>
+                            <li class="ourApproach__listItem">Подбор технологий под бизнес-процессы заказчика</li>
+                            <li class="ourApproach__listItem">Разработка ТЗ;</li>
+                            <li class="ourApproach__listItem">Формирование спецификаций и ТКП. Взаимодействие с производителями;</li>
+                            <li class="ourApproach__listItem">Предоставление оборудования на тестирование</li>
+                        </ul>
+
+                        <button type="button" class="main__button">Подобрать решение
+                            <img class="main__button-img" src="../img/button-arrow.svg" alt="Arrow Icon">
+                        </button>
+                    </article>
+
+                    <article class="ourApproach__step">
+                        <img class="ourApproach__img" src="../img/img-step.svg">
+                        <div class="ourApproach__subTitleContainer">
+                            <span class="ourApproach__number title__third">01</span>
+                            <span class="ourApproach__divider title__third">/</span>
+                            <h3 class="ourApproach__subTitle title__third">Концепция и предпроектные работы</h3>
+                        </div>
+                        <ul class="ourApproach__list">
+                            <li class="ourApproach__listItem">Обследование и техническая консультация;</li>
+                            <li class="ourApproach__listItem">Разработка концепций;</li>
+                            <li class="ourApproach__listItem">Подбор технологий под бизнес-процессы заказчика</li>
+                            <li class="ourApproach__listItem">Разработка ТЗ;</li>
+                            <li class="ourApproach__listItem">Формирование спецификаций и ТКП. Взаимодействие с производителями;</li>
+                            <li class="ourApproach__listItem">Предоставление оборудования на тестирование</li>
+                        </ul>
+
+                        <button type="button" class="main__button">Подобрать решение
+                            <img class="main__button-img" src="../img/button-arrow.svg" alt="Arrow Icon">
+                        </button>
+                    </article>
                 </div>
             </div>
         </section>
