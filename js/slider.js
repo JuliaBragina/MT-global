@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const sliders = document.querySelectorAll('.slider-container');
     
     sliders.forEach(slider => {
-        const leftButton = slider.querySelector('.navButton__prev_about, .navButton__prev_reviews, .navButton__prev_database, .navButton__prev_readyProjects');
-        const rightButton = slider.querySelector('.navButton__next_about, .navButton__next_reviews, .navButton__next_database, .navButton__next_readyProjects');
+        const leftButton = slider.querySelector('.navButton__prev_about, .navButton__prev_reviews, .navButton__prev_database, .navButton__prev_readyProjects, .navButton__prev_doneProjects');
+        const rightButton = slider.querySelector('.navButton__next_about, .navButton__next_reviews, .navButton__next_database, .navButton__next_readyProjects, .navButton__next_doneProjects');
         const slides = slider.querySelectorAll('.slider__item');
         const slideCount = slides.length;
         const sliderItems = slider.querySelector('.slider__items');

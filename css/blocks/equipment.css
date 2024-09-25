@@ -5,7 +5,7 @@
 .equipment__container {
     width: 64%;
     margin: 0 auto;
-    padding: 93px 0 160px;
+    padding: 93px 0 40px;
 }
 
 .equipment__title {
@@ -62,7 +62,7 @@
 @media screen and (max-width: 1300px) {
     .equipment__container {
         width: 94%;
-        padding: 47px 0;
+        padding: 47px 0 23px;
     }
 
     .equipment__title {
