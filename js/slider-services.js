@@ -48,10 +48,24 @@ function updateServiceContent(index) {
 
     serviceButtons.forEach(btn => btn.classList.remove('services__link_active'));
     serviceButtons[index].classList.add('services__link_active');
+
+    updateNavigationButtons();
+}
+
+function updateNavigationButtons() {
+    prevButton.style.opacity = currentIndex === 0 ? '0.5' : '1';
+    nextButton.style.opacity = currentIndex === servicesData.length - 1 ? '0.5' : '1';
+
+    prevButton.disabled = currentIndex === 0;
+    nextButton.disabled = currentIndex === servicesData.length - 1;
 }
 
 function changeService(direction) {
-    currentIndex = (currentIndex + direction + servicesData.length) % servicesData.length;
+    if (direction === -1 && currentIndex > 0) {
+        currentIndex--;
+    } else if (direction === 1 && currentIndex < servicesData.length - 1) {
+        currentIndex++;
+    }
     updateServiceContent(currentIndex);
 }
 

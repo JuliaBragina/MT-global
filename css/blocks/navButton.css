@@ -3,7 +3,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 53px;
+}
+
+.navButton__containerButtons{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
 }
 
 .navButton__container_longMargin{
@@ -20,6 +27,11 @@
     border-radius: 20px;
     cursor: pointer;
     border: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navButton__prev_color_pink, .navButton__prev_color_pink{
@@ -27,7 +39,4 @@
 }
 
 @media screen and (max-width: 1300px) {
-    .navButton__container{
-        margin-bottom: 23px;
-    }
 }

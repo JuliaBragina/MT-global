@@ -9,6 +9,7 @@
 .about__container{
     width: 64%;
     margin: auto;
+    margin-bottom: 53px;
 }
 
 .about__navContainer{
@@ -18,11 +19,7 @@
 }
 
 .about__title{
-    font-family: 'Montserrat';
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 48.76px;
-    margin: 0;
+    width: 100%;
 }
 
 .about__paragraph{

@@ -96,10 +96,9 @@
 .services__navContainer {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: 8px;
-    padding-bottom: 72px;
-    padding-top: 10px;
+    margin: 10px 0 120px;
 }
 
 .services__counter {
@@ -141,10 +140,13 @@
     cursor: pointer;
 }
 
-.services__img {
+.services__imgContainer {
     width: 200px;
     height: 200px;
-    padding-bottom: 16px;
+}
+
+.services__img {
+    width: 100%;
 }
 
 .services__paragraph {
@@ -223,7 +225,7 @@
         height: 1px;
         position: absolute;
         left: 0;
-        top: 44%;
+        top: 40%;
         transform: translateY(-50%);
     }
 
