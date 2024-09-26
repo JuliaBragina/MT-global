@@ -1,7 +1,5 @@
 const videos = [
-    './img/video.mp4', 
-    './img/video-2.mp4', 
-    './img/video-3.mp4'
+    './img/video4.mp4',
 ];
 
 let currentVideo = 0;
