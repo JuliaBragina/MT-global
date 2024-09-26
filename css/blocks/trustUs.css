@@ -3,6 +3,11 @@
 }
 
 .trustUs__container {
+    width: 64%;
+    margin: 0 auto;
+}
+
+.trustUs__container_runningLine {
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -102,6 +107,14 @@
         width: 84%;
     }
 
+    .trustUs__container {
+        width: 84%;
+    }
+
+    .trustUs__container_runningLine {
+        width: 100%;
+    }
+
     .trustUs__item {
         border-radius: 10px;
     }
@@ -111,6 +124,15 @@
     .trustUs__containerTitle {
         width: 94%;
     }
+
+    .trustUs__container {
+        width: 94%;
+    }
+
+    .trustUs__container_runningLine {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 1024px) {

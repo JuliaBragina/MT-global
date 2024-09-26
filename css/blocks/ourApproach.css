@@ -4,7 +4,11 @@
 
 .ourApproach__container{
     width: 64%;
-    margin: auto;
+    margin: 100px auto;
+}
+
+.ourApproach__title{
+    padding-bottom: 55px;
 }
 
 .ourApproach__steps{
@@ -17,7 +21,7 @@
 .ourApproach__step {
     background-color: var(--color-white);
     border-radius: 30px;
-    padding: 45px;
+    padding: 51px;
 }
 
 .ourApproach__img {
@@ -27,17 +31,36 @@
     border-radius: 25px;
     border: 2px solid var(--color-accent-blue);
     padding: 10px;
+
+    margin-bottom: 38px;
+}
+
+.ourApproach__img_color_lightBlue{
+    border: 2px solid var(--color-accent-sky-blue);
 }
 
 .ourApproach__subTitleContainer {
     width: 90%;
     display: flex;
     justify-content: flex-start;
+    align-items: flex-start;
     gap: 20px;
 }
 
 .ourApproach__number, .ourApproach__divider {
     color: var(--color-accent-blue);
+}
+
+.ourApproach__number {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.ourApproach__list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 36px;
 }
 
 .ourApproach__listItem {
@@ -46,8 +69,81 @@
     font-weight: 500;
     line-height: 21px;
     margin: 0;
+    list-style-type: none;
+    margin: 14px 0;
+
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
 }
 
 .ourApproach__listItem::before {
+    content: url('../../img/point-list.svg');
+    display: inline-block;
+    margin-right: 10px;
+    width: 15px; 
+    height: 15px;
+    vertical-align: middle;
+}
 
+
+@media screen and (max-width: 1700px) {
+    .ourApproach__container {
+        width: 84%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .ourApproach__container {
+        width: 94%;
+
+        margin: 47px auto;
+    }
+
+    .ourApproach__step {
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .ourApproach__steps {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ourApproach__headerContainer {
+        display: flex;
+        justify-content: flex-start;
+        gap: 14px;
+    }
+    
+    .ourApproach__title{
+        padding-bottom: 32px;
+    }
+
+
+    .ourApproach__step {
+        padding: 21px;
+    }
+
+    .ourApproach__img {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        padding: 15px;
+    }
+
+    .ourApproach__number, .ourApproach__subTitle {
+        font-size: 16px;
+        line-height: 19.5px;
+    }
+
+    .ourApproach__subTitleContainer {
+        padding-top: 10px;
+        gap: 8px;
+        width: min-content;
+    }
+
+    .ourApproach__img {
+        margin-bottom: 18px;
+    }
 }
