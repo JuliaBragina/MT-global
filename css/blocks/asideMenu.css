@@ -2,6 +2,7 @@
     position: absolute;
     top: 0;
     left: 77px;
+    z-index: 4;
 }
 
 .asideMenu__nav_padding{
@@ -29,6 +30,23 @@
 
 .asideMenu__link_color_white{
     color: var(--color-white);
+}
+
+.asideMenu__item_active .asideMenu__link {
+    color: var(--color-accent-pink);
+    position: relative;
+}
+
+.asideMenu__item_active .asideMenu__link::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-accent-pink); 
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 1750px) {

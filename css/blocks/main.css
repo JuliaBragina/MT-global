@@ -168,11 +168,12 @@
 
     .main__description {
         flex-basis: auto;
-        padding: 30px 0;
+        margin: 30px 0;
     }
 
     
     .main__container_spacebetween{
+        margin-top: 30px;
         flex-direction: column-reverse;
     }
 

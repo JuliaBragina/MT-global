@@ -1,5 +1,8 @@
 .footer {
     background-color: var(--color-accent-blue);
+}
+
+.footer__containerImg{
     background-image: url(../../img/img-main.png);
 }
 
@@ -8,7 +11,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 107px 0;
+    padding: 107px 0 25px;
     box-sizing: border-box;
 }
 
@@ -100,7 +103,7 @@
     }
 
     .footer__container_small {
-        padding: 40px 0;
+        padding: 0;
     }
 
     .footer__list_direction_row {
