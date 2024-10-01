@@ -8,13 +8,6 @@
     transition: top 0.3s ease;
     height: 100vh;
     background-color: var(--color-black-opacity-burger);
-    
-}
-
-@media (max-width: 1300px) {
-    .burgerMenu {
-        top: 92px;
-    }
 }
 
 .burgerMenu_hidden {
@@ -35,6 +28,7 @@
 
 .burgerMenu__link {
     width: 64%;
+    max-width: 1248px;
     margin: auto;
     display: block;
     text-decoration: none;
@@ -57,4 +51,21 @@
     background-repeat: no-repeat;
     width: 12px;
     height: 12px;
+}
+
+@media (max-width: 1750px) {
+    .burgerMenu__link {
+        width: 84%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .burgerMenu {
+        top: 92px;
+    }
+
+    .burgerMenu__link {
+        width: 94%;
+    }
 }
