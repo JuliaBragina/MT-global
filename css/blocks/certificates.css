@@ -60,4 +60,8 @@
     .certificates__img_row_second:first-child{
         width: 60%
     }
+
+    .certificates__img_row_second:last-child{
+        width: 30%
+    }
 }

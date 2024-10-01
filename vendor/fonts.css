@@ -45,3 +45,11 @@
   font-display: swap;
   src: url('Inter-Regular.otf') format('opentype')
 }
+
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('Play-Regular.ttf') format('truetype')
+}

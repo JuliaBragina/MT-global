@@ -3,6 +3,10 @@
     margin: 93px auto;
 }
 
+.typicalSolutions__navigation {
+    margin-bottom: 20px;
+}
+
 .typicalSolutions__list {
     padding: 0;
     margin: 0;
@@ -18,7 +22,7 @@
 
 .typicalSolutions__button {
     width: 100%;
-    padding: 30px;
+    height: 84px;
     background-color: var(--color-white);
     border-radius: 30px;
     border: 0;
@@ -50,7 +54,7 @@
 }
 
 .typicalSolutions__title {
-    margin-bottom: 40px;
+    margin-bottom: 52px;
 }
 
 .typicalSolutions__subTitle {
@@ -79,7 +83,6 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 30.4px;
-    padding: 8px 0;
 }
 
 .typicalSolutions__article ul:last-of-type {
@@ -88,7 +91,7 @@
 
 .typicalSolutions__article ul:last-of-type li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
 }
 
@@ -101,6 +104,8 @@
     background-repeat: no-repeat;
     background-position: center;
     flex-shrink: 0;
+
+    margin-top: 7px;
 }
 
 .typicalSolutions__illustration {
@@ -110,7 +115,7 @@
 .typicalSolutions__img {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .typicalSolutions__legend {
@@ -127,6 +132,14 @@
     gap: 10px;
 }
 
+.typicalSolutions__legend-text {
+    font-family: 'Play';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.04px;
+    
+}
+
 @media screen and (max-width: 1700px) {
     .typicalSolutions__container {
         width: 84%;
@@ -136,6 +149,7 @@
 @media screen and (max-width: 1300px) {
     .typicalSolutions__container {
         width: 94%;
+        margin: 44px auto;
     }
 }
 
@@ -148,14 +162,51 @@
         width: 100%;
     }
 
+    .typicalSolutions__article{
+        border-radius: 10px;
+        padding: 20px;
+    }
+
     .typicalSolutions__list {
         flex-direction: column;
-        gap: 20px;
+        gap: 3px;
         margin-bottom: 20px;
     }
 
     .typicalSolutions__item {
         width: 100%;
+    }
+
+    .typicalSolutions__button {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17.07px;
+        height: 54px;
+        border-radius: 10px;
+    }
+
+    .typicalSolutions__navigation, .typicalSolutions__list {
+        margin-bottom: 10px;
+    }
+
+    .typicalSolutions__description {
+        gap: 8px;
+    }
+
+    .typicalSolutions__subTitle-article {
+        margin-bottom: 8px;
+    }
+
+    .typicalSolutions__item-article {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24.6px;
+    }
+
+    .typicalSolutions__title {
+        margin-bottom: 30px;
     }
 }
 
