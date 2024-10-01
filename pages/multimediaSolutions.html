@@ -49,11 +49,21 @@
         </div>
         <nav class="header__nav">
             <ul class="header__list">
-                <li class="header__item"><a class="header__link" href="#solutions">Решения</a></li>
-                <li class="header__item"><a class="header__link" href="#equipments">Оборудование</a></li>
-                <li class="header__item"><a class="header__link" href="#doneProjects">Кейсы</a></li>
-                <li class="header__item"><a class="header__link" href="#ourApproach">Наш подход</a></li>
-                <li class="header__item"><a class="header__link" href="#sertificates">Сертификаты</a></li>
+                <li class="header__item"><button type="button" class="header__burger-button" aria-label="Кнопка бургерного меню">Услуги</button></li>
+                <li class="header__item"><a class="header__link" href="#">Кейсы</a></li>
+                <li class="header__item"><a class="header__link" href="#">Блог</a></li>
+                <li class="header__item"><a class="header__link" href="#">О компании</a></li>
+                <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <nav class="burgerMenu burgerMenu_hidden">
+            <ul class="burgerMenu__list">
+                <li class="burgerMenu__item"><a class="burgerMenu__link" href="#">Мультимедийные решения</a></li>
+                <li class="burgerMenu__item"><a class="burgerMenu__link" href="#">МИТ-Инфраструктура</a></li>
+                <li class="burgerMenu__item"><a class="burgerMenu__link" href="#">Импортозамещение</a></li>
+                <li class="burgerMenu__item"><a class="burgerMenu__link" href="#">Автоматизация 1С</a></li>
+                <li class="burgerMenu__item"><a class="burgerMenu__link" href="#">ИТ-Консалтинг</a></li>
             </ul>
         </nav>
     </header>    
@@ -668,5 +678,6 @@
     <script src="../js/slider-services.js" defer></script>
     <script src="../js/slider.js" defer></script>
     <script src="../js/compass.js" defer></script>
+    <script src="../js/menuShower.js" defer></script>
   </body>
 </html>

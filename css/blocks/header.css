@@ -112,7 +112,7 @@
     margin: auto;
 }
 
-.header__item {
+.header__item, .header__burger-button  {
     list-style-type: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -123,6 +123,12 @@
 
 .header__link {
     text-decoration: none;
+    color: var(--color-black);
+}
+
+.header__burger-button {
+    background-color: transparent;
+    border: 0;
     color: var(--color-black);
 }
 
