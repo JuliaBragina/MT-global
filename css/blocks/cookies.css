@@ -1,0 +1,104 @@
+
+.cookies {
+    width: 64%;
+    height: 184px;
+    margin: auto;
+
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+
+.cookies__container {
+    width: 718px;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--color-white);
+    border-radius: 10px;
+
+    box-shadow: 0px 4px 100px 0px #1D1F291A;
+}
+
+.cookies__titleContainer {
+    flex-basis: 55%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.cookies__title {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    margin: 0;
+}
+
+.cookies__paragraph {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+}
+
+.cookies__link {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    color: var(--color-accent-pink);
+}
+
+.cookies__button {
+    background-color: transparent;
+    height: 68px;
+    width: 154px;
+    border-radius: 100px;
+
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1700px) {
+    .cookies {
+        width: 84%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .cookies {
+        width: 94%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .cookies {
+        height: 280px;
+        width: 100%;
+    }
+
+    .cookies__container {
+        width: 100%;
+        left: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .cookies__button {
+        width: 100%;
+    }
+}
