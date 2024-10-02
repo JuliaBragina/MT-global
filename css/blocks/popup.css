@@ -1,4 +1,4 @@
-.popup-overlay {
+.popup-overlay, .popup-overlay-getCatalog, .popup-overlay-needProject {
     display: none;
     position: fixed;
     top: 0;
@@ -30,6 +30,10 @@
     width: 737px;
 }
 
+.popup_getCatalog, .popup_needProject {
+    width: 581px;
+}
+
 .popup__close-button {
     background-image: url(../../img/close-button.svg);
     background-position: center;
@@ -42,6 +46,10 @@
     position: absolute;
     top: -5px;
     right: -35px;
+}
+
+.popup__title_pink {
+    color: var(--color-accent-pink);
 }
 
 .popup__paragraph {
@@ -65,12 +73,21 @@
     justify-content: space-between;
 }
 
+.popup__inputs_getCatalog, .popup__inputs_needProject {
+    flex-direction: column;
+    gap: 30px;
+}
+
 .popup__field {
     width: 40%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+}
+
+.popup__field_getCatalog, .popup__field_needProject {
+    width: 100%;
 }
 
 .popup__input {
@@ -94,6 +111,10 @@
     line-height: 24px;
     color: var(--color-accent-blue);
     opacity: .3;
+}
+
+.popup__button {
+    width: 100%;
 }
 
 .popup__checkboxContainer {
