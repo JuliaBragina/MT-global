@@ -4,11 +4,13 @@
   --color-white-opacity: rgba(255, 255, 255, .1);
 
   --color-black-opacity: rgba(34, 33, 40, 0.1);
+  --color-black-opacity-burger: rgba(34, 33, 40, 0.5);
   --color-background-light: #F5F5F5;
   --color-accent-blue: #1F40E5;
   --color-accent-pink: #ED7180;
   --color-accent-pink-opacity: rgba(238, 114, 129, .1);
   --color-accent-light-blue: #E8EDFD;
+  --color-accent-sky-blue: #BDE3FE;
 }
 
 .root{

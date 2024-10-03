@@ -1,0 +1,135 @@
+.solutions{
+    position: relative;
+    background-color: var(--color-accent-blue);
+}
+
+.solutions__container{
+    width: 64%;
+    margin: 0 auto;
+    padding: 100px 0 160px;
+}
+
+.solutions_title{
+    padding-bottom: 54px;
+}
+
+.solutions__imgs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 321px);
+    gap: 20px;
+}
+
+.solutions__item{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    position: relative;
+}
+
+.solutions__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.solutions__gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(177.47deg, rgba(0, 0, 0, 0) 60.47%, #1F40E5 97.88%);
+}
+
+.solutions__item_span_1 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.solutions__item_span_2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.solutions__item_span_3 {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.solutions__item_span_4 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.solutions__caption{
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    margin: 0;
+    color: var(--color-white);
+
+    position: absolute;
+    bottom: 17px;
+    left: 10px;
+}
+
+@media screen and (max-width: 1700px) {
+    .solutions__container{
+        width: 84%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .solutions__container {
+        width: 94%;
+        padding: 50px 0 49px;
+    }
+
+    .solutions_title {
+        padding-bottom: 27px;
+    }
+    
+    .solutions__img {
+        border-radius: 10px;
+    }
+
+    .solutions__caption {
+        font-size: 14px;
+        line-height: 17.07px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .solutions__imgs{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 157px 157px repeat(4, 180px);
+        gap: 15px;
+    }
+
+    .solutions__item:first-of-type{
+        height: 317px;
+    }
+
+    .solutions__item_span_1 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .solutions__item_span_2 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    
+    .solutions__item_span_3 {
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+    
+    .solutions__item_span_4 {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}

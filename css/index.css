@@ -2,11 +2,20 @@
 @import url(../css/blocks/root.css);
 @import url(../vendor/fonts.css);
 
+@import url(../css/blocks/content.css);
 @import url(../css/blocks/title.css);
 
+@import url(../css/blocks/slider.css);
+@import url(../css/blocks/navButton.css);
+@import url(../css/blocks/conpass.css);
+
 @import url(../css/blocks/header.css);
+@import url(../css/blocks/burgerMenu.css);
+
 @import url(../css/blocks/bredcrumbs.css);
 @import url(../css/blocks/main.css);
+@import url(../css/blocks/asideMenu.css);
+
 @import url(../css/blocks/services.css);
 @import url(../css/blocks/trustUs.css);
 @import url(../css/blocks/about.css);
@@ -16,8 +25,19 @@
 @import url(../css/blocks/readyProjects.css);
 @import url(../css/blocks/reviews.css);
 @import url(../css/blocks/contactForm.css);
-@import url(../css/blocks/footer.css);
 
-@import url(../css/blocks/slider.css);
-@import url(../css/blocks/navButton.css);
-@import url(../css/blocks/conpass.css);
+@import url(../css/blocks/solutions.css);
+@import url(../css/blocks/equipment.css);
+@import url(../css/blocks/getCalculation.css);
+@import url(../css/blocks/quiz.css);
+@import url(../css/blocks/doneProjects.css);
+@import url(../css/blocks/ourApproach.css);
+@import url(../css/blocks/certificates.css);
+@import url(../css/blocks/textBlock.css);
+
+@import url(../css/blocks/ourSolutions.css);
+@import url(../css/blocks/typicalSolutions.css);
+
+@import url(../css/blocks/modernTecnologies.css);
+
+@import url(../css/blocks/footer.css);

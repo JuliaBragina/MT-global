@@ -1,0 +1,102 @@
+.modernTecnologies {
+    background-color: var(--color-accent-pink);
+    background-image: url(../../img/img-main.png);
+}
+
+.modernTecnologies__container {
+    width: 64%;
+    padding: 109px 0 112px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modernTecnologies__titleContainer {
+    width: 50%;
+}
+
+.modernTecnologies__title {
+    margin-bottom: 65px;
+}
+
+.modernTecnologies__list {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+    padding-left: 0;
+    counter-reset: list-item;
+}
+
+.modernTecnologies__item {
+    padding: 35px;
+    margin-bottom: 10px;
+    background-color: var(--color-white);
+    color: var(--color-accent-pink);
+    border-radius: 30px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    counter-increment: list-item;
+    gap: 15px;
+}
+
+.modernTecnologies__item::before {
+    content: "0" counter(list-item);
+    color: var(--color-accent-pink);
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.01px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1750px) {
+    .modernTecnologies__container {
+        width: 84%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .modernTecnologies__container {
+        width: 94%;
+        padding: 49px 0;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .modernTecnologies__item {
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 10px;
+    }
+
+    .modernTecnologies__titleContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .modernTecnologies__title {
+        margin-bottom: 26px;
+    }
+
+    .modernTecnologies__img {
+        margin: 0;
+        width: 108px;
+        height: 108px;
+    }
+
+    .modernTecnologies__item {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.5px;
+
+        padding: 17px 26px 21px;
+    }
+}

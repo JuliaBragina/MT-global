@@ -1,3 +1,4 @@
+
 const compass = document.querySelector('.compass');
 const needle = document.querySelector('.compass__needle');
 const directionsContainer = document.querySelector('.compass__directions');
@@ -55,8 +56,8 @@ document.querySelector('.whyWe').addEventListener('mousemove', (event) => {
     const baseX = compassCenterX + baseRadius * Math.cos(angle);
     const baseY = compassCenterY + baseRadius * Math.sin(angle);
 
-    const offsetX = -10;
-    const offsetY = -10;
+    const offsetX = -12;
+    const offsetY = -12;
     needle.style.left = `${baseX - rect.left + offsetX}px`;
     needle.style.top = `${baseY - rect.top + offsetY}px`;
 
@@ -94,18 +95,19 @@ function createDirectionLabels() {
 
         const radian = angle * (Math.PI / 180);
         const offset = 215;
-        const x = Math.cos(radian) * (offset + 1) - 4;
-        const y = Math.sin(radian) * offset - 6;
+        const x = Math.cos(radian) * offset;
+        const y = Math.sin(radian) * offset;
 
         direction.style.left = `calc(50% + ${x}px)`;
         direction.style.top = `calc(50% + ${y}px)`;
-        const styleAngle = angle + 90;
-        direction.style.transform += `rotate(${styleAngle}deg)`;
+
+        direction.style.transform = `translate(-50%, -50%) rotate(${angle + 90}deg)`;
         directionsContainer.appendChild(direction);
     });
 }
 
 createDirectionLabels();
+
 
 const listItems = document.querySelectorAll('.whyWe__item');
 

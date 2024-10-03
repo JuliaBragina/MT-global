@@ -1,0 +1,17 @@
+.quiz{
+    height: 719px;
+}
+
+.quiz__container {
+    height: 100%;
+    width: 94%;
+    margin: 0 auto;
+    background-color: var(--color-accent-blue);
+    border-radius: 30px;
+}
+
+@media (max-width: 1024px) {
+    .quiz{
+        height: 554px;
+    }
+}

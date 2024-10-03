@@ -146,6 +146,12 @@
 }
 
 @media screen and (max-width: 1400px) {
+
+    .whyWe {
+        height: 1304px;
+        padding-bottom: 0;
+    }
+
     .whyWe__list {
         display: flex;
         flex-direction: column;

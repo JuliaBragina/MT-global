@@ -2,12 +2,16 @@
     background-color: var(--color-accent-blue);
 }
 
+.footer__containerImg{
+    background-image: url(../../img/img-main.png);
+}
+
 .footer__container {
     width: 65%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 107px 0;
+    padding: 107px 0 25px;
     box-sizing: border-box;
 }
 
@@ -58,6 +62,18 @@
     padding-right: 10px;
 }
 
+.footer__container_small {
+    padding: 60px 0;
+    display: block;
+    margin: auto;
+}
+
+.footer__list_direction_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .footer__phone, .footer__support-button{
     color: var(--color-white);
 }
@@ -84,6 +100,14 @@
     .footer__container {
        flex-direction: column;
        align-items: center;
+    }
+
+    .footer__container_small {
+        padding: 0;
+    }
+
+    .footer__list_direction_row {
+        flex-direction: column;
     }
 
     .footer__list {

@@ -1,0 +1,36 @@
+.breadcrumbs__list{
+    width: 64%;
+    margin: 58px auto 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    gap: 14px;
+}
+
+.breadcrumbs__item{
+    font-family: 'Inter';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.15px;
+}
+
+.breadcrumbs__link{
+    color: var(--color-main);
+    text-decoration: none;
+}
+
+.breadcrumbs__link_isnt_active{
+    opacity: .3;
+}
+
+@media screen and (max-width: 1750px) {
+    .breadcrumbs__list{
+        width: 84%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .breadcrumbs__list{
+        width: 94%;
+    }
+}
