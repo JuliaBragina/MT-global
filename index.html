@@ -59,7 +59,19 @@
 
         <nav class="burgerMenu burgerMenu_hidden">
             <ul class="burgerMenu__list">
-                <li class="burgerMenu__item"><a class="burgerMenu__link" href="#">Мультимедийные решения</a></li>
+                <li class="burgerMenu__item">
+                    <span class="burgerMenu__link">Мультимедийные решения</span>
+                    <ul class="burgerMenu__subList burgerMenu__subList_hidden">
+                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Переговорная комната</a></li>
+                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Диспетчерский пункт и ситуационный центр</a></li>
+                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Музеи и арт пространства"</a></li>
+                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Конференц-зал</a></li>
+                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Учебный класс</a></li>
+                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Digital Signage</a></li>
+                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Корпоративное ТВ</a></li>
+                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Кабинет топ-менеджера</a></li>
+                    </ul>
+                </li>
                 <li class="burgerMenu__item"><a class="burgerMenu__link" href="#">МИТ-Инфраструктура</a></li>
                 <li class="burgerMenu__item"><a class="burgerMenu__link" href="#">Импортозамещение</a></li>
                 <li class="burgerMenu__item"><a class="burgerMenu__link" href="#">Автоматизация 1С</a></li>
@@ -102,7 +114,7 @@
                 <div class="main__description">
                     <h1 class="main__title title__first">Управление технологичной ИТ-инфраструктурой и мультимедийные инновации для Бизнеса</h1>
                     <p class="main__slogan">Помогаем справиться с современными вызовами</p>
-                    <button type="button" class="main__button">Запланировать встречу
+                    <button type="button" class="main__button openCallBackPopup">Запланировать встречу
                         <img class="main__button-img" src="./img/button-arrow.svg" alt="Arrow Icon">
                     </button>
                 </div>
@@ -567,18 +579,55 @@
             </div>
         </div>
         
-
         <ul class="footer__container footer__container_small footer__list footer__list_direction_row">
             <li class="footer__item"><a class="footer__link">Политика конфиденциальности</a></li>
             <li class="footer__item"><a class="footer__link">Разработка сайта</a></li>
             <li class="footer__item"><a class="footer__link">ООО «Медиа Технологии» © 2011–2024</a></li>
         </ul>
     </footer>
+
+    <section class="cookies">
+        <div class="cookies__container">
+            <div class="cookies__titleContainer">
+                <h2 class="cookies__title title__second">Мы используем файлы cookie</h2>
+                <p class="cookies__paragraph">Чтобы улучшить работу сайта и сделать его удобнее для вас</p>
+                <a class="cookies__link" href="#">Подробнее о cookies</a>
+            </div>
+            <button type="submit" class="cookies__button">OK</button>
+        </div>
+    </section>
+
+    <div class="popup-overlay">
+        <section class="popup popup_callBack">
+            <button class="popup__close-button" id="closePopup"></button>
+            <h1 class="popup__title title__second">Запланировать встречу</h1>
+            <p class="popup__paragraph">Оставьте свои контактные данные  для назначения онлайн или офлайн-встречи</p>
+            <form class="popup__form">
+                <div class="popup__inputs">
+                    <div class="popup__field">
+                        <label class="popup__label" for="name">Имя</label>
+                        <input class="popup__input" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="popup__field">
+                        <label class="popup__label" for="phone">Телефон</label>
+                        <input class="popup__input" type="phone" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <button type="button" class="main__button popup__button">Запланировать встречу</button>
+
+                <div class="popup__checkboxContainer">
+                    <input type="checkbox" id="popup-checkbox" class="popup__checkbox">
+                    <label for="popup-checkbox" class="popup__checkboxLabel">Оставляя заявку, я подтверждаю, что ознакомился и принимаю Политику конфиденциальности</label>
+                </div>                
+            </form>
+        </section>
+    </div>
     
     <script src="./js/slider-timer.js" defer></script>
     <script src="./js/slider-services.js" defer></script>
     <script src="./js/slider.js" defer></script>
     <script src="./js/compass.js" defer></script>
     <script src="./js/menuShower.js" defer></script>
+    <script src="./js/popup.js" defer></script>
   </body>
 </html>

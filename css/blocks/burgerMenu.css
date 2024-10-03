@@ -8,13 +8,6 @@
     transition: top 0.3s ease;
     height: 100vh;
     background-color: var(--color-black-opacity-burger);
-    
-}
-
-@media (max-width: 1300px) {
-    .burgerMenu {
-        top: 92px;
-    }
 }
 
 .burgerMenu_hidden {
@@ -26,6 +19,7 @@
     padding: 0;
     margin: 0;
     background-color: var(--color-background-light);
+    list-style-position: inside;
 }
 
 .burgerMenu__item {
@@ -33,8 +27,22 @@
     padding: 30px 0;
 }
 
+.burgerMenu__item_active{
+    background-color: var(--color-accent-blue-opacity);
+    color: var(--color-accent-blue);
+}
+
+.burgerMenu__item_active .burgerMenu__subItem::before {
+    color: var(--color-accent-blue);
+}
+
+.burgerMenu__item_active .burgerMenu__link::after {
+    background-image: url(../../img/img-arrow-blue.svg);
+}
+
 .burgerMenu__link {
     width: 64%;
+    max-width: 1210px;
     margin: auto;
     display: block;
     text-decoration: none;
@@ -57,4 +65,79 @@
     background-repeat: no-repeat;
     width: 12px;
     height: 12px;
+}
+
+.burgerMenu__subList {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 61%;
+    max-width: 1180px;
+
+    padding: 0;
+    padding-top: 30px;
+    margin: 0 auto;
+
+    list-style-position: inside;
+}
+
+.burgerMenu__subList_hidden {
+    display: none;
+}
+
+.burgerMenu__subItem {
+    position: relative;
+    list-style-type: none;
+}
+
+.burgerMenu__subItem::before {
+    content: "\2022";
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+
+.burgerMenu__subLink {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    margin: 0;
+
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-accent-blue);
+}
+
+@media (max-width: 1750px) {
+    .burgerMenu__link {
+        width: 84%;
+        max-width: 100%;
+    }
+
+    .burgerMenu__subList {
+        width: 81%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .burgerMenu {
+        top: 92px;
+    }
+
+    .burgerMenu__link {
+        width: 94%;
+    }
+
+    .burgerMenu__subList {
+        width: 91%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .burgerMenu__subList {
+        flex-direction: column;
+    }
 }
