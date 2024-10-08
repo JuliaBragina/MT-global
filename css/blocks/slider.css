@@ -1,23 +1,11 @@
 .slider {
-  width: 82.4%;
+  width: 100%;
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
   margin-left: auto;
   margin-right: 0;
-}
-
-.slider_readyProjects{
-  width: 64%;
-  margin: auto;
-  padding-bottom: 56px;
-}
-
-.slider_reviews, .slider_doneProjects{
-  width: 64%;
-  margin: auto;
-  margin-bottom: 83px;
 }
 
 .slider__items {
@@ -30,28 +18,10 @@
   transition: transform 0.3s ease;
 }
 
-.slider__items_doneProjects{
-  margin: 0 auto;
-  width: 100%;
-}
-
 .slider__item {
-  width: 292px;
   background-color: var(--color-white);
   border-radius: 30px;
-  padding: 28px 14px;
   box-sizing: border-box;
-  padding: 45px 36px 28px 36px;
-}
-
-.slider__item_readyProjects{
-  padding: 0;
-}
-
-.slider__item_reviews, .slider__item_doneProjects{
-  width: 100%;
-  background-color: transparent;
-  padding: 0;
 }
 
 .slider__img {
@@ -83,30 +53,7 @@
   transition: transform 0.3s ease;
 }
 
-@media screen and (max-width: 1700px) {
-  .slider {
-     width: 92%;
-  }
-
-  .slider_readyProjects{
-    width: 84%;
-  }
-
-  .slider_reviews{
-    width: 84%;
-  }
-}
-
 @media screen and (max-width: 1300px) {
-  .slider {
-     width: 97%;
-  }
-
-  
-  .slider_reviews{
-    width: 94%;
-  }
-
   .slider__items {
     list-style-type: none;
     margin: 0;

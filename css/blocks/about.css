@@ -2,14 +2,15 @@
     margin-bottom: 94px;
 }
 
-.about__slider{
-    margin-bottom: 86px;
-}
-
 .about__container{
     width: 64%;
     margin: auto;
     margin-bottom: 53px;
+}
+
+.about__sliderContainer {
+    width: 82.4%;
+    margin-bottom: 86px;
 }
 
 .about__navContainer{
@@ -31,9 +32,15 @@
     padding-bottom: 30px;
 }
 
-.about__img{
-    width: 181px;
-    height: 181px;
+.about__item {
+    padding: 40px;
+}
+
+.about__img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
     padding-bottom: 30px;
 }
 
@@ -49,11 +56,18 @@
     .about__container{
         width: 84%;
     }
+
+    .about__sliderContainer {
+        width: 92%;
+    }
 }
 
 @media screen and (max-width: 1300px) {
     .about__container{
         width: 94%;
+    }
+    .about__sliderContainer {
+        width: 97%;
     }
 
     .about__navContainer{
