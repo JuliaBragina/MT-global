@@ -6,15 +6,18 @@ document.addEventListener("DOMContentLoaded", () => {
         about: 5
     };
 
+    const dragSize = 400;
+
     document.querySelectorAll('.swiper').forEach(slider => {
         const uniqueClass = slider.classList[0];
 
         const swiperContainer = slider.querySelector('.swiper-container');
         const nextButton = slider.querySelector('.swiper-button-next');
         const prevButton = slider.querySelector('.swiper-button-prev');
+        const scrollbarEl = slider.querySelector('.swiper-scrollbar');
 
         if (swiperContainer && nextButton && prevButton) {
-            new Swiper(swiperContainer, {
+            const swiper = new Swiper(swiperContainer, {
                 loop: true,
                 navigation: {
                     nextEl: nextButton,
@@ -43,6 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
                         slidesPerView: 1,
                     },
                 },
+                scrollbar: {
+                    el: scrollbarEl,
+                    draggable: true,
+                    dragSize: dragSize
+                }
             });
         } else {
             console.error('Не удалось найти элементы для инициализации Swiper', { swiperContainer, nextButton, prevButton });

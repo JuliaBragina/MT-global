@@ -31,7 +31,7 @@
 }
 
 .slider__line {
-  height: 2px;
+  height: 3px;
   width: 100%;
   background-color: var(--color-accent-pink-opacity);
   bottom: 10px;
@@ -40,17 +40,6 @@
   display: flex;
   align-items: center;
   position: relative;
-}
-
-.slider__line_pink {
-  top: 0;
-  position: absolute;
-  height: 2px;
-  width: 50%;
-  background-color: var(--color-accent-pink);
-  bottom: 10px;
-  border-radius: 20px;
-  transition: transform 0.3s ease;
 }
 
 @media screen and (max-width: 1300px) {
@@ -63,4 +52,9 @@
     align-items: center;
     transition: transform 0.3s ease;
   }
+}
+
+.swiper-scrollbar-drag {
+  height: 3px;
+  background-color: var(--color-accent-pink);
 }
