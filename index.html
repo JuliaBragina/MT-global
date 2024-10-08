@@ -44,12 +44,19 @@
                     <img class="header__icon" src="./img/phone-circle.svg" alt="Иконка телефона">
                     <img class="header__iconPhone" src="./img/phone.svg"alt="Иконка телефона">
                 </button>
-                <button type="button" class="header__burger-button" aria-label="Кнопка бургерного меню"></button>
+                <button type="button" class="header__burger-button" aria-label="Кнопка бургерного меню">
+                    <span class="header__burger-button-img"></span>
+                </button>
             </div>
         </div>
+
         <nav class="header__nav">
             <ul class="header__list">
-                <li class="header__item"><button type="button" class="header__burger-button" aria-label="Кнопка бургерного меню">Услуги</button></li>
+                <li class="header__item">
+                    <button type="button" class="header__burger-button" aria-label="Кнопка бургерного меню">Услуги
+                        <span class="header__burger-button-img"></span>
+                    </button>
+                </li>
                 <li class="header__item"><a class="header__link" href="#">Кейсы</a></li>
                 <li class="header__item"><a class="header__link" href="#">Блог</a></li>
                 <li class="header__item"><a class="header__link" href="#">О компании</a></li>
@@ -57,22 +64,15 @@
             </ul>
         </nav>
 
-        <nav class="burgerMenu burgerMenu_hidden">
+        <nav class="burgerMenu" aria-hidden="true" aria-expanded="false">
+            <div class="burgerMenu__overlay"></div>
             <ul class="burgerMenu__list">
                 <li class="burgerMenu__item">
-                    <span class="burgerMenu__link">Ссылки на страницы</span>
-                    <ul class="burgerMenu__subList burgerMenu__subList_hidden">
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="/pages/multimediaSolutions.html">Решения под ключ</a></li>
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="/pages/multimediaSolutionsBusines.html">Решения для бизнеса</a></li>
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="/pages/multimediaSolutionsNegotiationRooms.html">Решения для переговорных комнат</a></li>
-                    </ul>
-                </li>
-                <li class="burgerMenu__item">
-                    <span class="burgerMenu__link">Мультимедийные решения</span>
-                    <ul class="burgerMenu__subList burgerMenu__subList_hidden">
+                    <a class="burgerMenu__link" href="#">Мультимедийные решения</a>
+                    <ul class="burgerMenu__subList burgerMenu__subList_hidden" aria-hidden="true">
                         <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Переговорная комната</a></li>
                         <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Диспетчерский пункт и ситуационный центр</a></li>
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Музеи и арт пространства"</a></li>
+                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Музеи и арт пространства</a></li>
                         <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Конференц-зал</a></li>
                         <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Учебный класс</a></li>
                         <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Digital Signage</a></li>
@@ -242,7 +242,7 @@
                 <li class="whyWe__item whyWe__item_right"><p class="whyWe__advantage">Ответственность</p><p class="whyWe__description whyWe__description_right">Финансово отвечаем за SLA и непрерывность ИТ</p><div class="whyWe__numberContainer whyWe__numberContainer_right"><span class="whyWe__number">02</span></div></li>
                 <li class="whyWe__item whyWe__item_right"><p class="whyWe__advantage">«Под ключ»</p><p class="whyWe__description whyWe__description_right">Отслеживаем актуальные технологии и делимся опытом лучших мировых практик</p><div class="whyWe__numberContainer whyWe__numberContainer_right"><span class="whyWe__number">03</span></div></li>
                 <li class="whyWe__item whyWe__item_right"><p class="whyWe__advantage">Актуальность</p><p class="whyWe__description whyWe__description_right">Отслеживаем актуальные технологии и делимся опытом лучших мировых практик</p><div class="whyWe__numberContainer whyWe__numberContainer_right"><span class="whyWe__number">04</span></div></li>
-                <li class="whyWe__item whyWe__item_center whyWe__item_bottom"><p class="whyWe__advantage">Специалисты</p><p class="whyWe__description whyWe__description_center">Собственные компетенции  и сертифицированные специалисты</p><div class="whyWe__numberContainer whyWe__numberContainer_bottom"><span class="whyWe__number">05</span></div></li>
+                <li class="whyWe__item whyWe__item_center whyWe__item_bottom"><p class="whyWe__advantage">Специалисты</p><p class="whyWe__description whyWe__description_center">Собственные компетенции и сертифицированные специалисты</p><div class="whyWe__numberContainer whyWe__numberContainer_bottom"><span class="whyWe__number">05</span></div></li>
                 <li class="whyWe__item whyWe__item_left"><p class="whyWe__advantage">Качество</p><p class="whyWe__description whyWe__description_left">Качественный сервис и поддержка 24 на 7</p><div class="whyWe__numberContainer whyWe__numberContainer_left"><span class="whyWe__number">06</span></div></li>
                 <li class="whyWe__item whyWe__item_left"><p class="whyWe__advantage">Проактивная позиция</p><p class="whyWe__description whyWe__description_left">Результат нашей работы — довольный Заказчик</p><div class="whyWe__numberContainer whyWe__numberContainer_left"><span class="whyWe__number">07</span></div></li>
                 <li class="whyWe__item whyWe__item_left"><p class="whyWe__advantage">Наша задача</p><p class="whyWe__description whyWe__description_left">Внедрение цифровых технологий с заботой о вас</p><div class="whyWe__numberContainer whyWe__numberContainer_left"><span class="whyWe__number">08</span></div></li>
@@ -609,7 +609,7 @@
         <section class="popup popup_callBack">
             <button class="popup__close-button" id="closePopup"></button>
             <h1 class="popup__title title__second">Запланировать встречу</h1>
-            <p class="popup__paragraph">Оставьте свои контактные данные  для назначения онлайн или офлайн-встречи</p>
+            <p class="popup__paragraph">Оставьте свои контактные данные для назначения онлайн или офлайн-встречи</p>
             <form class="popup__form">
                 <div class="popup__inputs">
                     <div class="popup__field">
