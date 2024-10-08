@@ -31,10 +31,23 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 24.38px;
+    cursor: pointer;
+}
+
+.typicalSolutions__button:hover {
+    transition: background-color 0.3s ease;
+    background-color: var(--color-accent-pink);
+    color: var(--color-white);
 }
 
 .typicalSolutions__button_active {
     background-color: var( --color-accent-blue);
+    color: var(--color-white);
+}
+
+.typicalSolutions__button_active:hover {
+    transition: background-color 0.3s ease;
+    background-color: var(--color-accent-pink);
     color: var(--color-white);
 }
 
@@ -83,6 +96,8 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 30.4px;
+    position: relative;
+    padding-left: 35px;
 }
 
 .typicalSolutions__article ul:last-of-type {
@@ -96,16 +111,23 @@
 }
 
 .typicalSolutions__article ul:last-of-type li::before {
-    content: '';
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    background-image: url('../../img/point-list.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    flex-shrink: 0;
+    background-color: var(--color-accent-pink);
+    border-radius: 10px;
 
-    margin-top: 7px;
+    background-image: url('../../img/point-list-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: center;
+    padding: 5px;
+    box-sizing: border-box;
+    flex-shrink: 0;
 }
 
 .typicalSolutions__illustration {
@@ -199,9 +221,7 @@
     }
 
     .typicalSolutions__item-article {
-        font-family: 'Montserrat';
         font-size: 14px;
-        font-weight: 500;
         line-height: 24.6px;
     }
 
