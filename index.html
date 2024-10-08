@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>МТ global — цифровые решения для бизнеса</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 </head>
 <body class="root">
     <header class="header">
@@ -131,7 +132,7 @@
                 <div class="main__description">
                     <h1 class="main__title title__first">Управление технологичной ИТ-инфраструктурой и мультимедийные инновации для Бизнеса</h1>
                     <p class="main__slogan">Помогаем справиться с современными вызовами</p>
-                    <button type="button" class="main__button openCallBackPopup">Запланировать встречу
+                    <button type="button" class="main__button" data-fancybox="popup__callback" data-src="#popup__callBack">Запланировать встречу
                         <img class="main__button-img" src="./img/button-arrow.svg" alt="Arrow Icon">
                     </button>
                 </div>
@@ -614,37 +615,37 @@
 <!--        </div>-->
 <!--    </section>-->
 
-    <div class="popup-overlay">
-        <section class="popup popup_callBack">
-            <button class="popup__close-button" id="closePopup"></button>
-            <h1 class="popup__title title__second">Запланировать встречу</h1>
-            <p class="popup__paragraph">Оставьте свои контактные данные для назначения онлайн или офлайн-встречи</p>
-            <form class="popup__form">
-                <div class="popup__inputs">
-                    <div class="popup__field">
-                        <label class="popup__label" for="name">Имя</label>
-                        <input class="popup__input" type="text" id="name" name="name" required>
-                    </div>
-                    <div class="popup__field">
-                        <label class="popup__label" for="phone">Телефон</label>
-                        <input class="popup__input" type="phone" id="phone" name="phone" required>
-                    </div>
+    <section class="popup popup_callBack" style="display: none;" id="popup__callBack">
+        <button class="popup__close-button" id="closePopup"></button>
+        <h1 class="popup__title title__second">Запланировать встречу</h1>
+        <p class="popup__paragraph">Оставьте свои контактные данные для назначения онлайн или офлайн-встречи</p>
+        <form class="popup__form">
+            <div class="popup__inputs">
+                <div class="popup__field">
+                    <label class="popup__label" for="name">Имя</label>
+                    <input class="popup__input" type="text" id="name" name="name" required>
                 </div>
-                <button type="button" class="main__button popup__button">Запланировать встречу</button>
+                <div class="popup__field">
+                    <label class="popup__label" for="phone">Телефон</label>
+                    <input class="popup__input" type="phone" id="phone" name="phone" required>
+                </div>
+            </div>
+            <button type="button" class="main__button popup__button">Запланировать встречу</button>
 
-                <div class="popup__checkboxContainer">
-                    <input type="checkbox" id="popup-checkbox" class="popup__checkbox">
-                    <label for="popup-checkbox" class="popup__checkboxLabel">Оставляя заявку, я подтверждаю, что ознакомился и принимаю Политику конфиденциальности</label>
-                </div>                
-            </form>
-        </section>
-    </div>
+            <div class="popup__checkboxContainer">
+                <input type="checkbox" id="popup-checkbox" class="popup__checkbox">
+                <label for="popup-checkbox" class="popup__checkboxLabel">Оставляя заявку, я подтверждаю, что ознакомился и принимаю Политику конфиденциальности</label>
+            </div>                
+        </form>
+    </section>
+
     
     <script src="./js/slider-timer.js" defer></script>
     <script src="./js/slider-services.js" defer></script>
     <script src="./js/slider.js" defer></script>
     <script src="./js/compass.js" defer></script>
     <script src="./js/menuShower.js" defer></script>
-    <script src="./js/popup.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js" defer></script>
+    <script src="./js/fancybox.js" defer></script>
   </body>
 </html>

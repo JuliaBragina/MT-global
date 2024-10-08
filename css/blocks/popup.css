@@ -34,18 +34,11 @@
     width: 581px;
 }
 
-.popup__close-button {
-    background-image: url(../../img/close-button.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    border: none;
-    width: 14px;
-    height: 14px;
+.f-button {
     cursor: pointer;
     position: absolute;
-    top: -5px;
-    right: -35px;
+    top: -5px !important;
+    right: -35px !important;
 }
 
 .popup__title_pink {
@@ -165,10 +158,13 @@
         padding: 30px 20px;
     }
 
-    .popup__close-button {
-        top: 15px;
-        right: 15px;
-        background-image: url(../../img/close-button-black.svg);
+    .f-button {
+        top: 15px !important;
+        right: 15px !important;
+    }
+
+    .f-button svg {
+        fill: #222128 !important;
     }
 
     .popup__inputs {
@@ -179,4 +175,10 @@
     .popup__field {
         width: 100%;
     }
+}
+
+.f-button.is-next,
+.f-button.is-prev,
+.f-thumbs__viewport {
+    display: none !important;
 }
