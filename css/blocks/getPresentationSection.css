@@ -65,19 +65,6 @@
     color: var(--color-white);
 }
 
-.getPresentationForm__button{
-    width: 200px;
-    height: 67px;
-    border-radius: 100px;
-    font-family: 'Montserrat';
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19.5px;
-    background-color: var(--color-white);
-    color: var(--color-accent-pink);
-    border: 0;
-    cursor: pointer;
-}
 
 .getPresentationSection__img{
     position: absolute;

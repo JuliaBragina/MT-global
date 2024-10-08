@@ -96,11 +96,6 @@ function positionListItems() {
     });
 }
 
-function handleItemHover(event) {
-    if (event.target.classList.contains('whyWe__item')) {
-        event.target.classList.toggle('whyWe__item_color_pink', event.type === 'mouseover');
-    }
-}
 
 function updateNeedlePosition(event) {
     const rect = compass.getBoundingClientRect();
@@ -143,8 +138,6 @@ function init() {
     createDirectionLabels();
     positionListItems();
 
-    listItemsContainer.addEventListener('mouseover', handleItemHover);
-    listItemsContainer.addEventListener('mouseout', handleItemHover);
     listItemsContainer.addEventListener('mousemove', onMouseMove);
 
     needle.style.transform = `translate(-50%, -100%) rotate(${initialAngle}deg)`;

@@ -1,0 +1,56 @@
+.btn {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btn-primary {
+    background-color: var(--color-accent-pink);
+    border: 1px solid var(--color-accent-pink);
+    border-radius: 100px;
+    color: var(--color-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-accent-pink);
+    color: var(--color-accent-pink);
+}
+
+.btn-secondary {
+    border: 1px solid var(--color-accent-pink);
+    color: var(--color-accent-pink);
+    background-color: transparent;
+}
+
+.btn-secondary:hover {
+    color: white;
+    background-color: var(--color-accent-pink);
+}
+
+.btn-secondary-grey {
+    background-color: var(--color-white);
+    color: var(--color-accent-pink);
+    border: 1px solid var(--color-white);
+}
+
+.btn-secondary-grey:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.btn-arrow:after {
+    position: relative;
+    right: 0;
+    top: 3px;
+    content: "\1F865";
+    font-size: 20px;
+}
+
+.btn-arrow:hover .arrow {
+    fill: white;
+}
+

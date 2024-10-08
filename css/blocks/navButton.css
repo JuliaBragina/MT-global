@@ -14,12 +14,14 @@
 }
 
 .navButton__container_longMargin{
-    margin-bottom: 77px;
+    margin-bottom: 52px;
 }
 
 .navButton__container_short_margin{
     margin-bottom: 33px;
 }
+
+
 
 .navButton__prev, .navButton__next {
     width: 41px;

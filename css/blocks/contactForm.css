@@ -170,7 +170,7 @@
 }
 
 .contactForm__checkbox {
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     cursor: pointer;
     width: 28px;
@@ -192,7 +192,7 @@
 }
 
 .contactForm__checkbox:checked + .contactForm__checkboxContainer::after {
-    content: '';
+    content: '\2714';
     position: absolute;
     left: 7px; /* Положение галочки по горизонтали */
     top: 10px; /* Положение галочки по вертикали */

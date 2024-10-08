@@ -76,7 +76,7 @@
 .burgerMenu__link::after {
     content: '';
     position: absolute;
-    top: 27%;
+    top: 45%;
     left: 0;
     background-image: url(../../img/arrow-black.svg);
     background-position: center;

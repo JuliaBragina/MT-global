@@ -51,6 +51,11 @@
     color: var(--color-white);
     margin: 0;
     text-decoration: none;
+
+}
+
+.footer__link:hover {
+    color: var(--color-accent-pink);
 }
 
 .footer__subItem{
