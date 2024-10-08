@@ -44,12 +44,19 @@
                     <img class="header__icon" src="../img/phone-circle.svg" alt="Иконка телефона">
                     <img class="header__iconPhone" src="../img/phone.svg"alt="Иконка телефона">
                 </button>
-                <button type="button" class="header__burger-button" aria-label="Кнопка бургерного меню"></button>
+                <button type="button" class="header__burger-button" aria-label="Кнопка бургерного меню">
+                    <span class="header__burger-button-img"></span>
+                </button>
             </div>
         </div>
+
         <nav class="header__nav">
             <ul class="header__list">
-                <li class="header__item"><button type="button" class="header__burger-button" aria-label="Кнопка бургерного меню">Услуги</button></li>
+                <li class="header__item">
+                    <button type="button" class="header__burger-button" aria-label="Кнопка бургерного меню">Услуги
+                        <span class="header__burger-button-img"></span>
+                    </button>
+                </li>
                 <li class="header__item"><a class="header__link" href="#">Кейсы</a></li>
                 <li class="header__item"><a class="header__link" href="#">Блог</a></li>
                 <li class="header__item"><a class="header__link" href="#">О компании</a></li>
@@ -57,22 +64,24 @@
             </ul>
         </nav>
 
-        <nav class="burgerMenu burgerMenu_hidden">
+        <nav class="burgerMenu" aria-hidden="true" aria-expanded="false">
+            <div class="burgerMenu__overlay"></div>
             <ul class="burgerMenu__list">
                 <li class="burgerMenu__item">
-                    <span class="burgerMenu__link">Ссылки на страницы</span>
-                    <ul class="burgerMenu__subList burgerMenu__subList_hidden">
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="/pages/multimediaSolutions.html">Решения под ключ</a></li>
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="/pages/multimediaSolutionsBusines.html">Решения для бизнеса</a></li>
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="/pages/multimediaSolutionsNegotiationRooms.html">Решения для переговорных комнат</a></li>
+                    <a class="burgerMenu__link" href="/index.html">Страницы для просмотра</a>
+                    <ul class="burgerMenu__subList" aria-hidden="true">
+                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="/">Главная</a></li>
+                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="./multimediaSolutions.html">Мультимедийные решения</a></li>
+                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="/pages/multimediaSolutionsBusines.html">Мультимедийные решения для бизнеса</a></li>
+                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="./multimediaSolutionsNegotiationRooms.html">Мультимедийные решения для переговорных комнат</a></li>
                     </ul>
                 </li>
                 <li class="burgerMenu__item">
-                    <span class="burgerMenu__link">Мультимедийные решения</span>
-                    <ul class="burgerMenu__subList burgerMenu__subList_hidden">
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Переговорная комната</a></li>
+                    <a class="burgerMenu__link" href="./pages/multimediaSolutions.html">Мультимедийные решения</a>
+                    <ul class="burgerMenu__subList" aria-hidden="true">
+                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="./pages/multimediaSolutionsNegotiationRooms.html">Переговорная комната</a></li>
                         <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Диспетчерский пункт и ситуационный центр</a></li>
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Музеи и арт пространства"</a></li>
+                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Музеи и арт пространства</a></li>
                         <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Конференц-зал</a></li>
                         <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Учебный класс</a></li>
                         <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Digital Signage</a></li>
