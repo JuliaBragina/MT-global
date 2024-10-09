@@ -22,7 +22,7 @@
 }
 
 .main__description {
-    flex-basis: 689px;
+    min-width: 700px;
     margin: 90px 0 192px;
     z-index: 1;
 }
@@ -40,6 +40,10 @@
     margin-bottom: 37px;
 }
 
+.main__slogan_smaill {
+    font-size: 20px;
+    line-height: 30px;
+}
 
 .main__video-container {
     position: absolute;
@@ -88,7 +92,7 @@
     font-weight: 500;
     line-height: 38px;
     position: relative;
-    padding-left: 40px;
+    padding-left: 35px;
 }
 
 .main__actionItem::before {
@@ -97,15 +101,27 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 24px;
-    height: 24px;
-    background: url('../../img/point-list.svg') no-repeat center center;
-    background-size: contain;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-accent-pink);
+    border-radius: 10px;
+
+    background-image: url('../../img/point-list-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: center;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 .main__img {
     width: 560.92px;
     height: 574px;
+}
+
+.main__img_screen {
+    width: 516px;
+    height: 516px;
 }
 
 @media screen and (max-width: 1750px) {
@@ -120,6 +136,10 @@
 }
 
 @media screen and (max-width: 1300px) {
+    .main__description {
+        min-width: auto;
+    }
+
     .main__container {
         width: 94%;
     }
@@ -156,10 +176,8 @@
     }
 
     .main__description {
-        flex-basis: auto;
         margin: 30px 0;
     }
-
 
     .main__container_spacebetween {
         margin-top: 30px;

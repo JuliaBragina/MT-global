@@ -42,6 +42,26 @@
   position: relative;
 }
 
+.slider__link {
+  text-decoration: none;
+  color: var(--color-main);
+}
+
+.slider__item_hover:hover {
+  transition: background-color 0.3s ease;
+  background-color: var(--color-accent-pink);
+}
+
+.slider__item_hover:hover .slider__title {
+  transition: color 0.3s ease;
+  color: var(--color-white);
+}
+
+.slider__item_hover:hover .slider__descriptioin {
+  transition: color 0.3s ease;
+  color: var(--color-white);
+}
+
 @media screen and (max-width: 1300px) {
   .slider__items {
     list-style-type: none;

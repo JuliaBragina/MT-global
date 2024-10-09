@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 .btn {
     font-size: 16px;
     font-weight: 700;
