@@ -71,20 +71,25 @@
         <div class="burgerMenu__overlay"></div>
         <ul class="burgerMenu__list">
             <li class="burgerMenu__item">
-                <a class="burgerMenu__link" href="#">Мультимедийные решения</a>
-                <ul class="burgerMenu__subList burgerMenu__subList_hidden" aria-hidden="true">
-                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Переговорная комната</a>
-                    </li>
-                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Диспетчерский пункт и
-                        ситуационный центр</a></li>
-                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Музеи и арт пространства</a>
-                    </li>
+                <a class="burgerMenu__link" href="/index.html">Страницы для просмотра</a>
+                <ul class="burgerMenu__subList" aria-hidden="true">
+                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="/">Главная</a></li>
+                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="./pages/multimediaSolutions.html">Мультимедийные решения</a></li>
+                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="./pages/multimediaSolutionsBusines.html">Мультимедийные решения для бизнеса</a></li>
+                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="./pages/multimediaSolutionsNegotiationRooms.html">Мультимедийные решения для переговорных комнат</a></li>
+                </ul>
+            </li>
+            <li class="burgerMenu__item">
+                <a class="burgerMenu__link" href="./pages/multimediaSolutions.html">Мультимедийные решения</a>
+                <ul class="burgerMenu__subList" aria-hidden="true">
+                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="./pages/multimediaSolutionsNegotiationRooms.html">Переговорная комната</a></li>
+                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Диспетчерский пункт и ситуационный центр</a></li>
+                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Музеи и арт пространства</a></li>
                     <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Конференц-зал</a></li>
                     <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Учебный класс</a></li>
                     <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Digital Signage</a></li>
                     <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Корпоративное ТВ</a></li>
-                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Кабинет топ-менеджера</a>
-                    </li>
+                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Кабинет топ-менеджера</a></li>
                 </ul>
             </li>
             <li class="burgerMenu__item"><a class="burgerMenu__link" href="#">МИТ-Инфраструктура</a></li>
@@ -94,109 +99,24 @@
         </ul>
     </nav>
 </header>
+ 
 
 <main class="content">
     <section class="main">
         <div class="main__video-container first-video">
-            <video class="main__video" autoplay muted loop controls playsinline>
+            <video class="main__video" autoplay muted loop>
                 <source src="./img/video4.mp4" type="video/mp4">
             </video>
             <svg class="main__mask" width="829" height="876" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <mask id="video-mask" maskUnits="userSpaceOnUse">
-                        <rect width="100%" height="100%" fill="black"/>
-                        <path d="M467.159 2.96016C359.203 14.2423 282.109 96.7486 202.431 170.505C117.661 248.974 0.453918 319.847 0.00128174 435.399C-0.451904 551.09 115.996 623.255 200.347 702.378C280.48 777.544 357.854 862.802 467.159 873.6C585.863 885.326 719.187 855.077 792.424 760.868C861.705 671.747 807.601 548.307 807.811 435.399C808.021 322.091 863.732 197.707 793.633 108.72C720.022 15.2741 585.427 -9.39961 467.159 2.96016Z"
-                              fill="white"/>
+                        <rect width="100%" height="100%" fill="black" />
+                        <path d="M467.159 2.96016C359.203 14.2423 282.109 96.7486 202.431 170.505C117.661 248.974 0.453918 319.847 0.00128174 435.399C-0.451904 551.09 115.996 623.255 200.347 702.378C280.48 777.544 357.854 862.802 467.159 873.6C585.863 885.326 719.187 855.077 792.424 760.868C861.705 671.747 807.601 548.307 807.811 435.399C808.021 322.091 863.732 197.707 793.633 108.72C720.022 15.2741 585.427 -9.39961 467.159 2.96016Z" fill="white" />
                     </mask>
                 </defs>
             </svg>
         </div>
-
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item">
-                    <button type="button" class="header__burger-button" aria-label="Кнопка бургерного меню">Услуги
-                        <span class="header__burger-button-img"></span>
-                    </button>
-                </li>
-                <li class="header__item"><a class="header__link" href="#">Кейсы</a></li>
-                <li class="header__item"><a class="header__link" href="#">Блог</a></li>
-                <li class="header__item"><a class="header__link" href="#">О компании</a></li>
-                <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
-            </ul>
-        </nav>
-
-        <nav class="burgerMenu" aria-hidden="true" aria-expanded="false">
-            <div class="burgerMenu__overlay"></div>
-            <ul class="burgerMenu__list">
-                <li class="burgerMenu__item">
-                    <a class="burgerMenu__link" href="/">Страницы для просмотра</a>
-                    <ul class="burgerMenu__subList" aria-hidden="true">
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="/">Главная</a></li>
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="./pages/multimediaSolutions.html">Мультимедийные решения</a></li>
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="./pages/multimediaSolutionsBusines.html">Мультимедийные решения для бизнеса</a></li>
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="./pages/multimediaSolutionsNegotiationRooms.html">Мультимедийные решения для переговорных комнат</a></li>
-                    </ul>
-                </li>
-                <li class="burgerMenu__item">
-                    <a class="burgerMenu__link" href="./pages/multimediaSolutions.html">Мультимедийные решения</a>
-                    <ul class="burgerMenu__subList" aria-hidden="true">
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="./pages/multimediaSolutionsNegotiationRooms.html">Переговорная комната</a></li>
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Диспетчерский пункт и ситуационный центр</a></li>
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Музеи и арт пространства</a></li>
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Конференц-зал</a></li>
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Учебный класс</a></li>
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Digital Signage</a></li>
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Корпоративное ТВ</a></li>
-                        <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Кабинет топ-менеджера</a></li>
-                    </ul>
-                </li>
-                <li class="burgerMenu__item"><a class="burgerMenu__link" href="#">МИТ-Инфраструктура</a></li>
-                <li class="burgerMenu__item"><a class="burgerMenu__link" href="#">Импортозамещение</a></li>
-                <li class="burgerMenu__item"><a class="burgerMenu__link" href="#">Автоматизация 1С</a></li>
-                <li class="burgerMenu__item"><a class="burgerMenu__link" href="#">ИТ-Консалтинг</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="content">
-        <section class="main">
-            <div class="main__video-container first-video">
-                <video class="main__video" autoplay muted loop>
-                    <source src="./img/video4.mp4" type="video/mp4">
-                </video>
-                <svg class="main__mask" width="829" height="876" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <mask id="video-mask" maskUnits="userSpaceOnUse">
-                            <rect width="100%" height="100%" fill="black" />
-                            <path d="M467.159 2.96016C359.203 14.2423 282.109 96.7486 202.431 170.505C117.661 248.974 0.453918 319.847 0.00128174 435.399C-0.451904 551.09 115.996 623.255 200.347 702.378C280.48 777.544 357.854 862.802 467.159 873.6C585.863 885.326 719.187 855.077 792.424 760.868C861.705 671.747 807.601 548.307 807.811 435.399C808.021 322.091 863.732 197.707 793.633 108.72C720.022 15.2741 585.427 -9.39961 467.159 2.96016Z" fill="white" />
-                        </mask>
-                    </defs>
-                </svg>
-            </div>
-        
-            <div class="main__video-container main__video-container_second second-video">
-                <video class="main__video" autoplay muted loop>
-                    <source src="./img/video4.mp4" type="video/mp4">
-                </video>
-                <svg class="main__mask" width="829" height="876" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <mask id="video-mask-2" maskUnits="userSpaceOnUse">
-                            <rect width="100%" height="100%" fill="black" />
-                            <path d="M688.881 69.5428C603.191 2.93821 490.504 9.03752 382.006 7.04131C266.574 4.91749 132.993 -25.1381 52.7446 57.8388C-27.6007 140.916 6.49923 273.548 12.6302 388.976C18.4545 498.631 15.3078 613.651 86.6992 697.105C164.229 787.734 281.34 858.229 399.339 841.024C510.963 824.748 557.307 698.316 635.551 617.076C714.073 535.548 840.298 484.46 851.272 371.789C862.796 253.472 782.756 142.509 688.881 69.5428Z" fill="white" />
-                        </mask>
-                    </defs>
-                </svg>
-            </div>
-        
-            <div class="main__container">
-                <div class="main__description">
-                    <h1 class="main__title title__first">Управление технологичной ИТ-инфраструктурой и мультимедийные инновации для Бизнеса</h1>
-                    <p class="main__slogan">Помогаем справиться с современными вызовами</p>
-                    <button type="button" class="main__button" data-fancybox="popup__callback" data-src="#popup__callBack">Запланировать встречу
-                        <img class="main__button-img" src="./img/button-arrow.svg" alt="Arrow Icon">
-                    </button>
-                </div>
+    
         <div class="main__video-container main__video-container_second second-video">
             <video class="main__video" autoplay muted loop>
                 <source src="./img/video4.mp4" type="video/mp4">
@@ -204,21 +124,33 @@
             <svg class="main__mask" width="829" height="876" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <mask id="video-mask-2" maskUnits="userSpaceOnUse">
-                        <rect width="100%" height="100%" fill="black"/>
-                        <path d="M688.881 69.5428C603.191 2.93821 490.504 9.03752 382.006 7.04131C266.574 4.91749 132.993 -25.1381 52.7446 57.8388C-27.6007 140.916 6.49923 273.548 12.6302 388.976C18.4545 498.631 15.3078 613.651 86.6992 697.105C164.229 787.734 281.34 858.229 399.339 841.024C510.963 824.748 557.307 698.316 635.551 617.076C714.073 535.548 840.298 484.46 851.272 371.789C862.796 253.472 782.756 142.509 688.881 69.5428Z"
-                              fill="white"/>
+                        <rect width="100%" height="100%" fill="black" />
+                        <path d="M688.881 69.5428C603.191 2.93821 490.504 9.03752 382.006 7.04131C266.574 4.91749 132.993 -25.1381 52.7446 57.8388C-27.6007 140.916 6.49923 273.548 12.6302 388.976C18.4545 498.631 15.3078 613.651 86.6992 697.105C164.229 787.734 281.34 858.229 399.339 841.024C510.963 824.748 557.307 698.316 635.551 617.076C714.073 535.548 840.298 484.46 851.272 371.789C862.796 253.472 782.756 142.509 688.881 69.5428Z" fill="white" />
                     </mask>
                 </defs>
             </svg>
         </div>
-
+    
         <div class="main__container">
             <div class="main__description">
-                <h1 class="main__title title__first">Управление технологичной ИТ-инфраструктурой и мультимедийные
-                    инновации для Бизнеса</h1>
+                <h1 class="main__title title__first">Управление технологичной ИТ-инфраструктурой и мультимедийные инновации для Бизнеса</h1>
                 <p class="main__slogan">Помогаем справиться с современными вызовами</p>
-                <a class="btn btn-arrow btn-secondary main__button openCallBackPopup">Запланировать встречу
-                </a>
+                <button type="button" class="btn btn-arrow btn-secondary main__button" data-fancybox="popup__callback" data-src="#popup__callBack">Запланировать встречу
+                </button>
+            </div>
+            <div class="main__video-container main__video-container_second second-video">
+                <video class="main__video" autoplay muted loop>
+                    <source src="./img/video4.mp4" type="video/mp4">
+                </video>
+                <svg class="main__mask" width="829" height="876" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <mask id="video-mask-2" maskUnits="userSpaceOnUse">
+                            <rect width="100%" height="100%" fill="black"/>
+                            <path d="M688.881 69.5428C603.191 2.93821 490.504 9.03752 382.006 7.04131C266.574 4.91749 132.993 -25.1381 52.7446 57.8388C-27.6007 140.916 6.49923 273.548 12.6302 388.976C18.4545 498.631 15.3078 613.651 86.6992 697.105C164.229 787.734 281.34 858.229 399.339 841.024C510.963 824.748 557.307 698.316 635.551 617.076C714.073 535.548 840.298 484.46 851.272 371.789C862.796 253.472 782.756 142.509 688.881 69.5428Z"
+                                fill="white"/>
+                        </mask>
+                    </defs>
+                </svg>
             </div>
         </div>
     </section>
@@ -916,7 +848,6 @@
 
 
     <section class="popup popup_callBack" style="display: none;" id="popup__callBack">
-        <button class="popup__close-button" id="closePopup"></button>
         <h1 class="popup__title title__second">Запланировать встречу</h1>
         <p class="popup__paragraph">Оставьте свои контактные данные для назначения онлайн или офлайн-встречи</p>
         <form class="popup__form">
