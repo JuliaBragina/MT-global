@@ -45,7 +45,7 @@
     padding: 30px 0;
 }
 
-.burgerMenu__item_active{
+.burgerMenu__item_active {
     background-color: var(--color-accent-blue-opacity);
     color: var(--color-accent-blue);
 }
@@ -86,20 +86,26 @@
 }
 
 .burgerMenu__subList {
-    display: none;
+    display: flex;
     flex-direction: row; 
     gap: 30px;
     flex-wrap: wrap;
     width: 61%;
     max-width: 1180px;
     padding: 0;
-    padding-top: 30px;
     margin: 0 auto;
     list-style-position: inside;
+
+    max-height: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(-1000px);
 }
 
 .burgerMenu__item:hover .burgerMenu__subList {
-    display: flex;
+    max-height: 500px;
+    transform: translateY(0);
+
+    padding-top: 30px;
 }
 
 .burgerMenu__subItem {
