@@ -3,10 +3,20 @@
 }
 
 .reviews__container{
-    
+    width: 64%;
+    margin: 0 auto;
+    margin-bottom: 53px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.slider__items_reviews{
+.reviews__sliderContainer {
+    padding-bottom: 56px;
+}
+
+.reviews__items{
     margin: 0 auto;
     width: 100%;
 }
@@ -18,6 +28,10 @@
     justify-content: space-between;
     align-items: start;
     gap: 20px;
+
+    width: 100%;
+    background-color: transparent;
+    padding: 0;
 }
 
 .reviews__diploma{
@@ -123,6 +137,10 @@
 
 
 @media screen and (max-width: 1700px) {
+    .reviews__container{
+        width: 84%;
+    }
+
     .reviews__item{
         min-width: 100%;
         grid-template-columns: .7fr 1fr;
@@ -130,6 +148,10 @@
 }
 
 @media screen and (max-width: 1300px) {
+    .reviews__container {
+        width: 94%;
+    }
+
     .reviews__paragraph, .reviews__position {
         font-size: 14px;
         line-height: 21px;
@@ -137,7 +159,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .reviews{
+    .reviews {
         margin-bottom: 20px;
     }
 

@@ -21,11 +21,12 @@
     cursor: pointer;
 }
 
-.footer__list{
+.footer__list {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    margin: 0 51px 0 80px;
+    min-width: 100px;
+    max-width: 240px;
 }
 
 .footer__title{
@@ -43,6 +44,56 @@
     padding: 10px 0;
 }
 
+.footer__contact-block {
+    display: flex;
+    gap: 23px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 232px;
+}
+
+.footer__contact-block:first-child {
+    padding-right: 123px;
+}
+
+.footer__phone-container {
+    width: 32px;
+    height: 32px;
+    position: relative
+}
+
+.footer__phone {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    opacity: .7;
+    margin: 0;
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.footer__iconPhone {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -56%);
+    width: 16px;
+    height: 16px;
+}
+
+.footer__support-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--color-accent-blue);
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: 0;
+}
+
 .footer__link, .footer__item{
     font-family: 'Montserrat';
     font-size: 16px;
@@ -51,6 +102,14 @@
     color: var(--color-white);
     margin: 0;
     text-decoration: none;
+}
+
+.footer__link {
+    opacity: .7;
+}
+
+.footer__link:hover {
+    color: var(--color-accent-pink);
 }
 
 .footer__subItem{
@@ -68,10 +127,11 @@
     margin: auto;
 }
 
-.footer__list_direction_row {
+.footer__listRow {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style-type: none;
 }
 
 .footer__phone, .footer__support-button{
@@ -100,27 +160,41 @@
     .footer__container {
        flex-direction: column;
        align-items: center;
+       width: 100%;
+    }
+
+    .footer__containerImg{
+        background-image: none;
+    }
+
+    .footer__contact-block {
+        margin: auto;
     }
 
     .footer__container_small {
         padding: 0;
     }
 
-    .footer__list_direction_row {
+    .footer__listRow {
         flex-direction: column;
+        padding-bottom: 30px;
     }
 
     .footer__list {
-        padding-bottom: 46px;
+        padding: 30px 0;
         margin: auto;
         text-align: center;
+        border-bottom: 1px solid var(--color-white-opacity);
+
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .footer__contact-block:first-child {
+        padding: 0;
     }
 
     .footer__link {
         margin-bottom: 44px;
-    }
-
-    .footer__list h4.footer__title:last-of-type {
-        display: none;
     }
 }

@@ -5,19 +5,23 @@
 .readyProjects__container {
     width: 64%;
     margin: 0 auto;
-    margin-bottom: 53px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.readyProjects__sliderContainer {
+    padding-bottom: 56px;
+}
+
 .readyProjects__title {
     padding-bottom: 19px;
+    width: 100%;
 }
 
 .readyProjects__text{
-    padding: 32px 13px;
+    padding: 32px 23px;
 }
 
 .readyProjects__description {
@@ -43,6 +47,7 @@
     .readyProjects {
         margin-bottom: 20px;
     }
+    
     .readyProjects__container {
       width: 94%;
     }
