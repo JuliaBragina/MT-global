@@ -1,9 +1,9 @@
-.getPresentationSection{
+.getPresentationSection {
     position: relative;
-    
+
 }
 
-.getPresentationSection__container{
+.getPresentationSection__container {
     width: 64%;
     margin: 0 auto;
     margin-bottom: 139px;
@@ -16,14 +16,14 @@
     box-sizing: border-box;
 }
 
-.getPresentationForm{
+.getPresentationForm {
     width: 322px;
 
     display: flex;
     flex-direction: column;
 }
 
-.getPresentationSection__title{
+.getPresentationSection__title {
     font-family: 'Montserrat';
     font-size: 40px;
     font-weight: 700;
@@ -34,7 +34,7 @@
     color: var(--color-white);
 }
 
-.getPresentationForm__field{
+.getPresentationForm__field {
     height: 50px;
     margin-bottom: 30px;
 
@@ -42,7 +42,7 @@
     flex-direction: column;
 }
 
-.getPresentationForm__input{
+.getPresentationForm__input {
     border: 0;
     border-bottom: 2px solid var(--color-white);
     background-color: transparent;
@@ -51,13 +51,14 @@
     font-size: 16px;
     outline: none;
     transition: border-bottom-color 0.3s;
+    color: white;
 }
 
 .getPresentationForm__input:focus {
     border-bottom-color: darken(var(--color-accent-blue), 10%);
 }
 
-.getPresentationForm__label{
+.getPresentationForm__label {
     font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 500;
@@ -66,44 +67,44 @@
 }
 
 
-.getPresentationSection__img{
+.getPresentationSection__img {
     position: absolute;
     bottom: 0;
     right: 23%;
 }
 
 @media screen and (max-width: 1700px) {
-    .getPresentationSection__container{
+    .getPresentationSection__container {
         width: 84%;
     }
 
-    .getPresentationSection__img{
+    .getPresentationSection__img {
         right: 6%;
     }
 }
 
 @media screen and (max-width: 1300px) {
-    .getPresentationSection__container{
+    .getPresentationSection__container {
         width: 100%;
         margin-bottom: 52px;
     }
 
-    .getPresentationSection__title{
+    .getPresentationSection__title {
         font-size: 32px;
         line-height: 39.01px;
         padding-bottom: 24px;
     }
 
-    .getPresentationForm__field{
+    .getPresentationForm__field {
         margin-bottom: 20px;
     }
 
-    .getPresentationForm__input{
+    .getPresentationForm__input {
         font-size: 16px;
         line-height: 24px;
     }
 
-    .getPresentationForm__button{
+    .getPresentationForm__button {
         font-size: 16px;
         line-height: 19.5px;
         width: 100%;
@@ -111,17 +112,17 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .getPresentationSection__container { 
+    .getPresentationSection__container {
         flex-direction: column;
         padding: 32px 32px 0 32px;
     }
 
-    .getPresentationForm{
+    .getPresentationForm {
         margin: 0 auto;
         width: 100%;
     }
 
-    .getPresentationSection__img{
+    .getPresentationSection__img {
         position: static;
         width: 103%;
     }

@@ -37,7 +37,8 @@
                     <button type="button" class="header__support-button">Тех.поддержка 24/7</button>
                 </div>
             </div>
-            <button type="button" class="btn btn-primary header__callback-button" aria-label="Запросить обратный звонок">Обратный
+            <button type="button" class="btn btn-primary header__callback-button"
+                    aria-label="Запросить обратный звонок">Обратный
                 звонок
             </button>
         </div>
@@ -51,7 +52,6 @@
             </button>
         </div>
     </div>
-
     <nav class="header__nav">
         <ul class="header__list">
             <li class="header__item">
@@ -65,10 +65,27 @@
             <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
         </ul>
     </nav>
-
     <nav class="burgerMenu" aria-hidden="true" aria-expanded="false">
         <div class="burgerMenu__overlay"></div>
         <ul class="burgerMenu__list">
+            <li class="burgerMenu__item">
+                <a class="burgerMenu__link" href="#">Страницы для тестирования</a>
+                <ul class="burgerMenu__subList burgerMenu__subList_hidden" aria-hidden="true">
+                    <li class="burgerMenu__subItem">
+                        <a class="burgerMenu__subLink" href="/">Главная</a>
+                    </li>
+                    <li class="burgerMenu__subItem">
+                        <a class="burgerMenu__subLink" href="/pages/multimediaSolutions.html">Мультимедийные решения</a>
+                    </li>
+                    <li class="burgerMenu__subItem">
+                        <a class="burgerMenu__subLink" href="/pages/multimediaSolutionsBusines.html">Мультимедийные
+                            решения для бизнеса</a>
+                    </li>
+                    <li class="burgerMenu__subItem">
+                        <a class="burgerMenu__subLink" href="/pages/multimediaSolutionsNegotiationRooms.html">Мультимедийные
+                            решения для переговорных комнат</a></li>
+                </ul>
+            </li>
             <li class="burgerMenu__item">
                 <a class="burgerMenu__link" href="#">Мультимедийные решения</a>
                 <ul class="burgerMenu__subList burgerMenu__subList_hidden" aria-hidden="true">
@@ -224,7 +241,7 @@
                 <li class="slider__item about__item swiper-slide">
                     <p class="about__paragraph">14 лет</p>
                     <img
-                        class="about__img" src="./img/img-about.png">
+                            class="about__img" src="./img/img-about.png">
                     <p class="about__description">Успешного бизнеса с заказчиками</p></li>
                 <li class="slider__item about__item swiper-slide"><p class="about__paragraph">14 лет</p><img
                         class="about__img" src="./img/img-about.png">
@@ -252,62 +269,83 @@
     </section>
 
     <section class="whyWe">
-        <div class="compass">
-            <div class="compass__base"></div>
-            <svg class="compass__needle" width="31" height="49" viewBox="0 0 31 49" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.4992 0L30.6546 48.75L15.4993 46L0.34375 48.75L15.4992 0Z" fill="#ED7180"/>
-            </svg>
-            <svg class="compass__ticks" width="400" height="400" viewBox="0 0 400 400">
-            </svg>
-            <div class="compass__directions"></div>
-        </div>
+        <div class="about__container container">
+            <h2 class="title__second">Почему MT global?</h2>
+            <div class="wrapper">
+                <div class="compass">
+                    <div class="compass__base"></div>
+                    <svg class="compass__needle" width="31" height="49" viewBox="0 0 31 49" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.4992 0L30.6546 48.75L15.4993 46L0.34375 48.75L15.4992 0Z" fill="#ED7180"/>
+                    </svg>
+                    <svg class="compass__ticks" width="400" height="400" viewBox="0 0 400 400">
+                    </svg>
+                    <div class="compass__directions"></div>
+                </div>
+                <ul class="whyWe__list">
+                    <li class="whyWe__item whyWe__item_center whyWe__item_top"><p class="whyWe__advantage">Наша цель</p>
+                        <p class="whyWe__description whyWe__description_center">Рост вашего бизнеса</p>
+                        <div class="whyWe__numberContainer whyWe__numberContainer_top"><span
+                                class="whyWe__number">01</span>
+                        </div>
+                    </li>
+                    <li class="whyWe__item whyWe__item_right"><p class="whyWe__advantage">Ответственность</p>
+                        <p class="whyWe__description whyWe__description_right">Финансово отвечаем за SLA
+                            и непрерывность ИТ</p>
+                        <div class="whyWe__numberContainer whyWe__numberContainer_right"><span
+                                class="whyWe__number">02</span>
+                        </div>
+                    </li>
+                    <li class="whyWe__item whyWe__item_right"><p class="whyWe__advantage">«Под ключ»</p>
+                        <p class="whyWe__description whyWe__description_right">Отслеживаем актуальные технологии
+                            и делимся
+                            опытом лучших мировых практик</p>
+                        <div class="whyWe__numberContainer whyWe__numberContainer_right"><span
+                                class="whyWe__number">03</span>
+                        </div>
+                    </li>
+                    <li class="whyWe__item whyWe__item_right"><p class="whyWe__advantage">Актуальность</p>
+                        <p class="whyWe__description whyWe__description_right">Отслеживаем актуальные технологии
+                            и делимся
+                            опытом лучших мировых практик</p>
+                        <div class="whyWe__numberContainer whyWe__numberContainer_right"><span
+                                class="whyWe__number">04</span>
+                        </div>
+                    </li>
+                    <li class="whyWe__item whyWe__item_center whyWe__item_bottom"><p class="whyWe__advantage">
+                        Специалисты</p>
+                        <p class="whyWe__description whyWe__description_center">Собственные компетенции
+                            и сертифицированные
+                            специалисты</p>
+                        <div class="whyWe__numberContainer whyWe__numberContainer_bottom"><span
+                                class="whyWe__number">05</span>
+                        </div>
+                    </li>
+                    <li class="whyWe__item whyWe__item_left"><p class="whyWe__advantage">Качество</p>
+                        <p class="whyWe__description whyWe__description_left">Качественный сервис и поддержка
+                            24 на 7</p>
+                        <div class="whyWe__numberContainer whyWe__numberContainer_left"><span
+                                class="whyWe__number">06</span>
+                        </div>
+                    </li>
+                    <li class="whyWe__item whyWe__item_left"><p class="whyWe__advantage">Проактивная позиция</p>
+                        <p class="whyWe__description whyWe__description_left">Результат нашей работы — довольный
+                            Заказчик</p>
+                        <div class="whyWe__numberContainer whyWe__numberContainer_left"><span
+                                class="whyWe__number">07</span>
+                        </div>
+                    </li>
+                    <li class="whyWe__item whyWe__item_left"><p class="whyWe__advantage">Наша задача</p>
+                        <p class="whyWe__description whyWe__description_left">Внедрение цифровых технологий с заботой
+                            о вас</p>
+                        <div class="whyWe__numberContainer whyWe__numberContainer_left"><span
+                                class="whyWe__number">08</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-        <ul class="whyWe__list">
-            <li class="whyWe__item whyWe__item_center whyWe__item_top"><p class="whyWe__advantage">Наша цель</p>
-                <p class="whyWe__description whyWe__description_center">Рост вашего бизнеса</p>
-                <div class="whyWe__numberContainer whyWe__numberContainer_top"><span class="whyWe__number">01</span>
-                </div>
-            </li>
-            <li class="whyWe__item whyWe__item_right"><p class="whyWe__advantage">Ответственность</p>
-                <p class="whyWe__description whyWe__description_right">Финансово отвечаем за SLA и непрерывность ИТ</p>
-                <div class="whyWe__numberContainer whyWe__numberContainer_right"><span class="whyWe__number">02</span>
-                </div>
-            </li>
-            <li class="whyWe__item whyWe__item_right"><p class="whyWe__advantage">«Под ключ»</p>
-                <p class="whyWe__description whyWe__description_right">Отслеживаем актуальные технологии и делимся
-                    опытом лучших мировых практик</p>
-                <div class="whyWe__numberContainer whyWe__numberContainer_right"><span class="whyWe__number">03</span>
-                </div>
-            </li>
-            <li class="whyWe__item whyWe__item_right"><p class="whyWe__advantage">Актуальность</p>
-                <p class="whyWe__description whyWe__description_right">Отслеживаем актуальные технологии и делимся
-                    опытом лучших мировых практик</p>
-                <div class="whyWe__numberContainer whyWe__numberContainer_right"><span class="whyWe__number">04</span>
-                </div>
-            </li>
-            <li class="whyWe__item whyWe__item_center whyWe__item_bottom"><p class="whyWe__advantage">Специалисты</p>
-                <p class="whyWe__description whyWe__description_center">Собственные компетенции и сертифицированные
-                    специалисты</p>
-                <div class="whyWe__numberContainer whyWe__numberContainer_bottom"><span class="whyWe__number">05</span>
-                </div>
-            </li>
-            <li class="whyWe__item whyWe__item_left"><p class="whyWe__advantage">Качество</p>
-                <p class="whyWe__description whyWe__description_left">Качественный сервис и поддержка 24 на 7</p>
-                <div class="whyWe__numberContainer whyWe__numberContainer_left"><span class="whyWe__number">06</span>
-                </div>
-            </li>
-            <li class="whyWe__item whyWe__item_left"><p class="whyWe__advantage">Проактивная позиция</p>
-                <p class="whyWe__description whyWe__description_left">Результат нашей работы — довольный Заказчик</p>
-                <div class="whyWe__numberContainer whyWe__numberContainer_left"><span class="whyWe__number">07</span>
-                </div>
-            </li>
-            <li class="whyWe__item whyWe__item_left"><p class="whyWe__advantage">Наша задача</p>
-                <p class="whyWe__description whyWe__description_left">Внедрение цифровых технологий с заботой о вас</p>
-                <div class="whyWe__numberContainer whyWe__numberContainer_left"><span class="whyWe__number">08</span>
-                </div>
-            </li>
-        </ul>
+        </div>
     </section>
 
     <section class="results">
@@ -610,7 +648,8 @@
                     </div>
                 </fieldset>
 
-                <button type="submit" class="btn btn-primary contactForm__submit header__callback-button">Отправить</button>
+                <button type="submit" class="btn btn-primary contactForm__submit header__callback-button">Отправить
+                </button>
 
                 <label class="contactForm__checkboxContainer">
                     <input type="checkbox" name="agreement" class="contactForm__checkbox" required>
@@ -691,13 +730,20 @@
                     <path d="M22.1127 57.8491H26.4789V80.8829H22.1127V57.8491Z" fill="white"/>
                     <path d="M51.0942 57.8491H55.4604V80.8829H51.0942V57.8491Z" fill="white"/>
                     <path d="M93.611 57.8491H97.9772V80.8829H93.611V57.8491Z" fill="white"/>
-                    <path d="M40.6888 0.456543H48.5898V44.0611H39.0796V20.2387L27.7782 37.9383H20.8182L9.44854 20.5456V44.0629H0.00657116V0.456543H7.97796L24.4027 26.4848L40.6888 0.456543Z" fill="white"/>
-                    <path d="M72.3194 44.0611V8.23375H56.3768V0.456547H98V8.23375H82.0593V44.0611H72.3194Z" fill="white"/>
-                    <path d="M38.8911 64.6704C33.9229 64.6704 29.8937 68.3559 29.8937 72.9017C29.8937 77.4474 33.9229 81.1329 38.8911 81.1329C43.8591 81.1329 47.8883 77.4474 47.8883 72.9017C47.8883 68.3559 43.8591 64.6704 38.8911 64.6704ZM38.8911 77.6753C36.3428 77.6753 34.2786 75.5376 34.2786 72.9017C34.2786 70.2657 36.3449 68.128 38.8911 68.128C41.4392 68.128 43.5034 70.2657 43.5034 72.9017C43.5034 75.5376 41.4372 77.6753 38.8911 77.6753Z" fill="white"/>
-                    <path d="M60.1142 64.6704C55.1461 64.6704 51.1169 68.3559 51.1169 72.9017C51.1169 77.4474 55.1461 81.1329 60.1142 81.1329C65.0824 81.1329 69.1115 77.4474 69.1115 72.9017C69.1115 68.3559 65.0824 64.6704 60.1142 64.6704ZM60.1142 77.6753C57.566 77.6753 55.5018 75.5376 55.5018 72.9017C55.5018 70.2657 57.5681 68.128 60.1142 68.128C62.6624 68.128 64.7267 70.2657 64.7267 72.9017C64.7267 75.5376 62.6604 77.6753 60.1142 77.6753Z" fill="white"/>
-                    <path d="M89.7245 72.9017C89.7245 72.8668 89.7225 72.8318 89.7225 72.7969V72.7307H89.7204C89.6211 68.2641 85.6334 64.6704 80.7273 64.6704C75.757 64.6704 71.7301 68.3559 71.7301 72.9017C71.7301 77.4474 75.757 81.1329 80.7273 81.1329C82.4192 81.1329 84.0035 80.7047 85.3541 79.9602V80.8811H89.7204V73.0065C89.7225 72.9715 89.7245 72.9366 89.7245 72.9017ZM80.7273 77.6753C78.179 77.6753 76.1149 75.5376 76.1149 72.9017C76.1149 70.2657 78.179 68.128 80.7273 68.128C83.2754 68.128 85.3396 70.2657 85.3396 72.9017C85.3417 75.5376 83.2754 77.6753 80.7273 77.6753Z" fill="white"/>
-                    <path d="M8.99728 64.6704C4.02912 64.6704 0 68.3559 0 72.9017C0 74.1645 0.320592 75.3556 0.874907 76.4255C1.64019 77.8978 2.86465 79.1257 4.38488 79.9602C4.38488 79.9602 4.38488 79.9529 4.38488 79.9492C4.38488 79.9529 4.38488 79.9565 4.38488 79.9565C5.73551 80.701 7.30952 81.1329 8.99728 81.1329C10.6851 81.1329 12.2591 80.6992 13.6097 79.9602V79.9565C15.13 79.1276 16.3544 77.8978 17.1196 76.4255C17.674 75.3556 17.9946 74.1645 17.9946 72.9017C17.9946 68.3559 13.9654 64.6704 8.99728 64.6704ZM12.1019 76.4255C11.2828 77.1992 10.1948 77.6753 8.99728 77.6753C7.79971 77.6753 6.71177 77.1992 5.8927 76.4255C4.96816 75.5523 4.38488 74.2987 4.38488 72.9017C4.38488 72.9017 4.38488 72.8944 4.38488 72.8907C4.39109 70.2602 6.45322 68.128 8.99728 68.128C11.5413 68.128 13.6035 70.2584 13.6097 72.8907C13.6097 72.8944 13.6097 72.898 13.6097 72.898C13.6097 74.2987 13.0264 75.5523 12.1019 76.4255Z" fill="white"/>
-                    <path d="M13.5352 84.9287C12.9726 86.9341 11.1897 88.4009 9.07176 88.4009C6.95378 88.4009 5.16881 86.9341 4.60828 84.9287H0.130328C0.831495 88.8733 4.56278 91.8861 9.07383 91.8861C13.5849 91.8861 17.3141 88.8715 18.0174 84.9287H13.5352Z" fill="white"/>
+                    <path d="M40.6888 0.456543H48.5898V44.0611H39.0796V20.2387L27.7782 37.9383H20.8182L9.44854 20.5456V44.0629H0.00657116V0.456543H7.97796L24.4027 26.4848L40.6888 0.456543Z"
+                          fill="white"/>
+                    <path d="M72.3194 44.0611V8.23375H56.3768V0.456547H98V8.23375H82.0593V44.0611H72.3194Z"
+                          fill="white"/>
+                    <path d="M38.8911 64.6704C33.9229 64.6704 29.8937 68.3559 29.8937 72.9017C29.8937 77.4474 33.9229 81.1329 38.8911 81.1329C43.8591 81.1329 47.8883 77.4474 47.8883 72.9017C47.8883 68.3559 43.8591 64.6704 38.8911 64.6704ZM38.8911 77.6753C36.3428 77.6753 34.2786 75.5376 34.2786 72.9017C34.2786 70.2657 36.3449 68.128 38.8911 68.128C41.4392 68.128 43.5034 70.2657 43.5034 72.9017C43.5034 75.5376 41.4372 77.6753 38.8911 77.6753Z"
+                          fill="white"/>
+                    <path d="M60.1142 64.6704C55.1461 64.6704 51.1169 68.3559 51.1169 72.9017C51.1169 77.4474 55.1461 81.1329 60.1142 81.1329C65.0824 81.1329 69.1115 77.4474 69.1115 72.9017C69.1115 68.3559 65.0824 64.6704 60.1142 64.6704ZM60.1142 77.6753C57.566 77.6753 55.5018 75.5376 55.5018 72.9017C55.5018 70.2657 57.5681 68.128 60.1142 68.128C62.6624 68.128 64.7267 70.2657 64.7267 72.9017C64.7267 75.5376 62.6604 77.6753 60.1142 77.6753Z"
+                          fill="white"/>
+                    <path d="M89.7245 72.9017C89.7245 72.8668 89.7225 72.8318 89.7225 72.7969V72.7307H89.7204C89.6211 68.2641 85.6334 64.6704 80.7273 64.6704C75.757 64.6704 71.7301 68.3559 71.7301 72.9017C71.7301 77.4474 75.757 81.1329 80.7273 81.1329C82.4192 81.1329 84.0035 80.7047 85.3541 79.9602V80.8811H89.7204V73.0065C89.7225 72.9715 89.7245 72.9366 89.7245 72.9017ZM80.7273 77.6753C78.179 77.6753 76.1149 75.5376 76.1149 72.9017C76.1149 70.2657 78.179 68.128 80.7273 68.128C83.2754 68.128 85.3396 70.2657 85.3396 72.9017C85.3417 75.5376 83.2754 77.6753 80.7273 77.6753Z"
+                          fill="white"/>
+                    <path d="M8.99728 64.6704C4.02912 64.6704 0 68.3559 0 72.9017C0 74.1645 0.320592 75.3556 0.874907 76.4255C1.64019 77.8978 2.86465 79.1257 4.38488 79.9602C4.38488 79.9602 4.38488 79.9529 4.38488 79.9492C4.38488 79.9529 4.38488 79.9565 4.38488 79.9565C5.73551 80.701 7.30952 81.1329 8.99728 81.1329C10.6851 81.1329 12.2591 80.6992 13.6097 79.9602V79.9565C15.13 79.1276 16.3544 77.8978 17.1196 76.4255C17.674 75.3556 17.9946 74.1645 17.9946 72.9017C17.9946 68.3559 13.9654 64.6704 8.99728 64.6704ZM12.1019 76.4255C11.2828 77.1992 10.1948 77.6753 8.99728 77.6753C7.79971 77.6753 6.71177 77.1992 5.8927 76.4255C4.96816 75.5523 4.38488 74.2987 4.38488 72.9017C4.38488 72.9017 4.38488 72.8944 4.38488 72.8907C4.39109 70.2602 6.45322 68.128 8.99728 68.128C11.5413 68.128 13.6035 70.2584 13.6097 72.8907C13.6097 72.8944 13.6097 72.898 13.6097 72.898C13.6097 74.2987 13.0264 75.5523 12.1019 76.4255Z"
+                          fill="white"/>
+                    <path d="M13.5352 84.9287C12.9726 86.9341 11.1897 88.4009 9.07176 88.4009C6.95378 88.4009 5.16881 86.9341 4.60828 84.9287H0.130328C0.831495 88.8733 4.56278 91.8861 9.07383 91.8861C13.5849 91.8861 17.3141 88.8715 18.0174 84.9287H13.5352Z"
+                          fill="white"/>
                 </svg>
 
             </a>
@@ -783,16 +829,16 @@
     </ul>
 </footer>
 
-<!--    <section class="cookies">-->
-<!--        <div class="cookies__container">-->
-<!--            <div class="cookies__titleContainer">-->
-<!--                <h2 class="cookies__title title__second">Мы используем файлы cookie</h2>-->
-<!--                <p class="cookies__paragraph">Чтобы улучшить работу сайта и сделать его удобнее для вас</p>-->
-<!--                <a class="cookies__link" href="#">Подробнее о cookies</a>-->
-<!--            </div>-->
-<!--            <button type="submit" class="cookies__button">OK</button>-->
-<!--        </div>-->
-<!--    </section>-->
+<section class="cookies">
+    <div class="cookies__container">
+        <div class="cookies__titleContainer">
+            <h2 class="cookies__title title__second">Мы используем файлы cookie</h2>
+            <p class="cookies__paragraph">Чтобы улучшить работу сайта и сделать его удобнее для вас</p>
+            <a class="cookies__link" href="#">Подробнее о cookies</a>
+        </div>
+        <button type="submit" class="cookies__button">OK</button>
+    </div>
+</section>
 
 <div class="popup-overlay">
     <section class="popup popup_callBack">
@@ -821,10 +867,11 @@
     </section>
 </div>
 
-<script src="./js/slider-services.js" defer></script>
-<script src="./js/compass.js" defer></script>
-<script src="./js/menuShower.js" defer></script>
-<script src="./js/popup.js" defer></script>
-<script type="module" src="./js/swiper.js" defer></script>
+<script src="/js/slider-services.js" defer></script>
+<script src="/js/compass.js" defer></script>
+<script src="/js/menuShower.js" defer></script>
+<script src="/js/popup.js" defer></script>
+<script type="module" src="/js/swiper.js" defer></script>
+<script src="/js/main.js" defer></script>
 </body>
 </html>

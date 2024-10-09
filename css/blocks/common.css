@@ -54,3 +54,17 @@
     fill: white;
 }
 
+.container {
+    width: 64%;
+    margin: auto;
+    margin-bottom: 53px;
+}
+
+section:not(.no-effect) {
+    position: relative;
+    opacity: 0;
+    top: 50px;
+    -webkit-transition: top 0.5s, opacity 0.5s;
+    -o-transition: top 0.5s, opacity 0.5s;
+    transition: top 0.5s, opacity 0.5s;
+}

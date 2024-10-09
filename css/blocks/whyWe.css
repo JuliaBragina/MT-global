@@ -1,11 +1,19 @@
 .whyWe {
+    background-color: var(--color-accent-blue);
+}
+.whyWe .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 1024px;
-    background-color: var(--color-accent-blue);
+
     position: relative;
     padding-bottom: 50px;
+}
+
+.whyWe h2 {
+    color: var(--color-white);
+    display: none;
 }
 
 .whyWe__list {
@@ -200,5 +208,21 @@
     .whyWe__advantage{
         font-size: 18px;
         line-height: 25px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .whyWe h2 {
+        color: var(--color-white);
+        display: block;
+        text-align: center;
+    }
+
+    .whyWe {
+        padding-top: 50px;
+    }
+
+    .whyWe .wrapper {
+        height: auto;
+        padding-top: 50px;
     }
 }

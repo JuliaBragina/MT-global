@@ -255,7 +255,7 @@
         padding-top: 8px;
         align-items: center;
         gap: 20px;
-        padding-bottom: 22px;
+        padding-bottom: 0;
     }
 
     .services__counter {

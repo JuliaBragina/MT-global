@@ -25,3 +25,13 @@
     color: var(--color-black);
     font-family: 'Montserrat', sans-serif;
 }
+
+html {
+    scrollbar-color: #768dff var(--color-white);
+    scrollbar-width: thin;
+}
+
+body {
+    scrollbar-color: unset;
+}
+
