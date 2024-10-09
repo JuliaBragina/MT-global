@@ -34,7 +34,7 @@
     transition: background-color 0.3s ease;
 }
 
-.whyWe__item_color_pink {
+.whyWe__item:hover  {
     background-color: var(--color-accent-pink);
 }
 

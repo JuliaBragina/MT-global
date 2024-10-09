@@ -3,14 +3,14 @@
     margin: 0 auto;
 }
 
-.header__details{
+.header__details {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 23px 0;
 }
 
-.header__logo{
+.header__logo {
     width: 70px;
     height: 70px;
 }
@@ -50,22 +50,7 @@
     color: var(--color-black);
 }
 
-.header__callback-button {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19.5px;
-    width: 234px;
-    height: 68px;
-    background-color: var(--color-accent-pink);
-    border: none;
-    border-radius: 100px;
-    color: var(--color-white);
-
-    cursor: pointer;
-}
-
-.header__accreditation, 
+.header__accreditation,
 .header__support-button {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -74,7 +59,6 @@
     color: var(--color-accent-blue);
     padding: 0;
     margin: 0;
-    cursor: pointer
 }
 
 .header__support-button {
@@ -112,7 +96,7 @@
     margin: auto;
 }
 
-.header__item, .header__burger-button  {
+.header__item, .header__burger-button {
     list-style-type: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -124,6 +108,11 @@
 .header__link {
     text-decoration: none;
     color: var(--color-black);
+    transition: color .2s ease;
+}
+
+.header__link:hover {
+    color: var(--color-accent-blue);
 }
 
 .header__burger-button {
@@ -222,7 +211,7 @@
     .header__contact-block:first-child {
         padding-right: 0;
     }
-    
+
     .header__slogan {
         font-size: 12px;
         line-height: 15px;
@@ -234,7 +223,7 @@
         line-height: 12px;
     }
 
-    .header__phone-button{
+    .header__phone-button {
         background: transparent;
         border: none;
         cursor: pointer;
