@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>МТ global — цифровые решения для бизнеса</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 </head>
 <body class="root">
 <header class="header">
@@ -37,8 +38,7 @@
                     <button type="button" class="header__support-button">Тех.поддержка 24/7</button>
                 </div>
             </div>
-            <button type="button" class="btn btn-primary header__callback-button"
-                    aria-label="Запросить обратный звонок">Обратный
+            <button type="button" class="btn btn-primary header__callback-button" aria-label="Запросить обратный звонок">Обратный
                 звонок
             </button>
         </div>
@@ -52,6 +52,7 @@
             </button>
         </div>
     </div>
+
     <nav class="header__nav">
         <ul class="header__list">
             <li class="header__item">
@@ -65,42 +66,30 @@
             <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
         </ul>
     </nav>
+
     <nav class="burgerMenu" aria-hidden="true" aria-expanded="false">
         <div class="burgerMenu__overlay"></div>
         <ul class="burgerMenu__list">
             <li class="burgerMenu__item">
-                <a class="burgerMenu__link" href="#">Страницы для тестирования</a>
-                <ul class="burgerMenu__subList burgerMenu__subList_hidden" aria-hidden="true">
-                    <li class="burgerMenu__subItem">
-                        <a class="burgerMenu__subLink" href="/">Главная</a>
-                    </li>
-                    <li class="burgerMenu__subItem">
-                        <a class="burgerMenu__subLink" href="/pages/multimediaSolutions.html">Мультимедийные решения</a>
-                    </li>
-                    <li class="burgerMenu__subItem">
-                        <a class="burgerMenu__subLink" href="/pages/multimediaSolutionsBusines.html">Мультимедийные
-                            решения для бизнеса</a>
-                    </li>
-                    <li class="burgerMenu__subItem">
-                        <a class="burgerMenu__subLink" href="/pages/multimediaSolutionsNegotiationRooms.html">Мультимедийные
-                            решения для переговорных комнат</a></li>
+                <a class="burgerMenu__link" href="/index.html">Страницы для просмотра</a>
+                <ul class="burgerMenu__subList" aria-hidden="true">
+                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="/">Главная</a></li>
+                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="./pages/multimediaSolutions.html">Мультимедийные решения</a></li>
+                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="./pages/multimediaSolutionsBusines.html">Мультимедийные решения для бизнеса</a></li>
+                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="./pages/multimediaSolutionsNegotiationRooms.html">Мультимедийные решения для переговорных комнат</a></li>
                 </ul>
             </li>
             <li class="burgerMenu__item">
-                <a class="burgerMenu__link" href="#">Мультимедийные решения</a>
-                <ul class="burgerMenu__subList burgerMenu__subList_hidden" aria-hidden="true">
-                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Переговорная комната</a>
-                    </li>
-                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Диспетчерский пункт и
-                        ситуационный центр</a></li>
-                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Музеи и арт пространства</a>
-                    </li>
+                <a class="burgerMenu__link" href="./pages/multimediaSolutions.html">Мультимедийные решения</a>
+                <ul class="burgerMenu__subList" aria-hidden="true">
+                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="./pages/multimediaSolutionsNegotiationRooms.html">Переговорная комната</a></li>
+                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Диспетчерский пункт и ситуационный центр</a></li>
+                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Музеи и арт пространства</a></li>
                     <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Конференц-зал</a></li>
                     <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Учебный класс</a></li>
                     <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Digital Signage</a></li>
                     <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Корпоративное ТВ</a></li>
-                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Кабинет топ-менеджера</a>
-                    </li>
+                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="#">Кабинет топ-менеджера</a></li>
                 </ul>
             </li>
             <li class="burgerMenu__item"><a class="burgerMenu__link" href="#">МИТ-Инфраструктура</a></li>
@@ -148,8 +137,22 @@
                 <h1 class="main__title title__first">Управление технологичной ИТ-инфраструктурой и мультимедийные
                     инновации для Бизнеса</h1>
                 <p class="main__slogan">Помогаем справиться с современными вызовами</p>
-                <a class="btn btn-arrow btn-secondary main__button openCallBackPopup">Запланировать встречу
-                </a>
+                <button type="button" class="btn btn-arrow btn-secondary main__button" data-fancybox="popup__callback" data-src="#popup__callBack">Запланировать встречу
+                </button>
+            </div>
+            <div class="main__video-container main__video-container_second second-video">
+                <video class="main__video" autoplay muted loop>
+                    <source src="./img/video4.mp4" type="video/mp4">
+                </video>
+                <svg class="main__mask" width="829" height="876" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <mask id="video-mask-2" maskUnits="userSpaceOnUse">
+                            <rect width="100%" height="100%" fill="black"/>
+                            <path d="M688.881 69.5428C603.191 2.93821 490.504 9.03752 382.006 7.04131C266.574 4.91749 132.993 -25.1381 52.7446 57.8388C-27.6007 140.916 6.49923 273.548 12.6302 388.976C18.4545 498.631 15.3078 613.651 86.6992 697.105C164.229 787.734 281.34 858.229 399.339 841.024C510.963 824.748 557.307 698.316 635.551 617.076C714.073 535.548 840.298 484.46 851.272 371.789C862.796 253.472 782.756 142.509 688.881 69.5428Z"
+                                fill="white"/>
+                        </mask>
+                    </defs>
+                </svg>
             </div>
         </div>
     </section>
@@ -438,41 +441,55 @@
         </div>
         <div class="readyProjects__container readyProjects__sliderContainer slider swiper-container">
             <ul class="slider__items swiper-wrapper">
-                <li class="slider__item swiper-slide"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
-                    <div class="readyProjects__text"><h3 class="readyProjects__title title__third">Мультимедийные
-                        решения для бизнеса</h3>
-                        <p class="readyProjects__description">#маркёр тематики</p></div>
-                </li>
-                <li class="slider__item swiper-slide"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
-                    <div class="readyProjects__text"><h3 class="readyProjects__title title__third">Мультимедийные
-                        решения для бизнеса</h3>
-                        <p class="readyProjects__description">#маркёр тематики</p></div>
-                </li>
-                <li class="slider__item swiper-slide"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
-                    <div class="readyProjects__text"><h3 class="readyProjects__title title__third">Мультимедийные
-                        решения для бизнеса</h3>
-                        <p class="readyProjects__description">#маркёр тематики</p></div>
-                </li>
-                <li class="slider__item swiper-slide"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
-                    <div class="readyProjects__text"><h3 class="readyProjects__title title__third">Мультимедийные
-                        решения для бизнеса</h3>
-                        <p class="readyProjects__description">#маркёр тематики</p></div>
-                </li>
-                <li class="slider__item swiper-slide"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
-                    <div class="readyProjects__text"><h3 class="readyProjects__title title__third">Мультимедийные
-                        решения для бизнеса</h3>
-                        <p class="readyProjects__description">#маркёр тематики</p></div>
-                </li>
-                <li class="slider__item swiper-slide"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
-                    <div class="readyProjects__text"><h3 class="readyProjects__title title__third">Мультимедийные
-                        решения для бизнеса</h3>
-                        <p class="readyProjects__description">#маркёр тематики</p></div>
-                </li>
-                <li class="slider__item swiper-slide"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
-                    <div class="readyProjects__text"><h3 class="readyProjects__title title__third">Мультимедийные
-                        решения для бизнеса</h3>
-                        <p class="readyProjects__description">#маркёр тематики</p></div>
-                </li>
+                <a class="slider__link swiper-slide" href="#">
+                    <li class="slider__item slider__item_hover"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
+                        <div class="readyProjects__text"><h3 class="slider__title readyProjects__title title__third">Мультимедийные
+                            решения для бизнеса</h3>
+                            <p class="slider__descriptioin readyProjects__description">#маркёр тематики</p></div>
+                    </li>
+                </a>
+                <a class="slider__link swiper-slide" href="#">
+                    <li class="slider__item slider__item_hover"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
+                        <div class="readyProjects__text"><h3 class="slider__title readyProjects__title title__third">Мультимедийные
+                            решения для бизнеса</h3>
+                            <p class="slider__descriptioin readyProjects__description">#маркёр тематики</p></div>
+                    </li>
+                </a>
+                <a class="slider__link swiper-slide" href="#">
+                    <li class="slider__item slider__item_hover"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
+                        <div class="readyProjects__text"><h3 class="slider__title readyProjects__title title__third">Мультимедийные
+                            решения для бизнеса</h3>
+                            <p class="slider__descriptioin readyProjects__description">#маркёр тематики</p></div>
+                    </li>
+                </a>
+                <a class="slider__link swiper-slide" href="#">
+                    <li class="slider__item slider__item_hover"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
+                        <div class="readyProjects__text"><h3 class="slider__title readyProjects__title title__third">Мультимедийные
+                            решения для бизнеса</h3>
+                            <p class="slider__descriptioin readyProjects__description">#маркёр тематики</p></div>
+                    </li>
+                </a>
+                <a class="slider__link swiper-slide" href="#">
+                    <li class="slider__item slider__item_hover"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
+                        <div class="readyProjects__text"><h3 class="slider__title readyProjects__title title__third">Мультимедийные
+                            решения для бизнеса</h3>
+                            <p class="slider__descriptioin readyProjects__description">#маркёр тематики</p></div>
+                    </li>
+                </a>
+                <a class="slider__link swiper-slide" href="#">
+                    <li class="slider__item slider__item_hover"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
+                        <div class="readyProjects__text"><h3 class="slider__title readyProjects__title title__third">Мультимедийные
+                            решения для бизнеса</h3>
+                            <p class="slider__descriptioin readyProjects__description">#маркёр тематики</p></div>
+                    </li>
+                </a>
+                <a class="slider__link swiper-slide" href="#">
+                    <li class="slider__item slider__item_hover"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
+                        <div class="readyProjects__text"><h3 class="slider__title readyProjects__title title__third">Мультимедийные
+                            решения для бизнеса</h3>
+                            <p class="slider__descriptioin readyProjects__description">#маркёр тематики</p></div>
+                    </li>
+                </a>
             </ul>
         </div>
         <div class="readyProjects__container">
@@ -678,41 +695,62 @@
         </div>
         <div class="readyProjects__container readyProjects__sliderContainer slider swiper-container">
             <ul class="slider__items swiper-wrapper">
-                <li class="slider__item swiper-slide"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
-                    <div class="readyProjects__text"><p
-                            class="readyProjects__description readyProjects__description_color_pink">маркёр тематики</p>
-                        <h3 class="readyProjects__title title__third">Мультимедийные решения для бизнеса</h3></div>
-                </li>
-                <li class="slider__item swiper-slide"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
-                    <div class="readyProjects__text"><p
-                            class="readyProjects__description readyProjects__description_color_pink">маркёр тематики</p>
-                        <h3 class="readyProjects__title title__third">Мультимедийные решения для бизнеса</h3></div>
-                </li>
-                <li class="slider__item swiper-slide"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
-                    <div class="readyProjects__text"><p
-                            class="readyProjects__description readyProjects__description_color_pink">маркёр тематики</p>
-                        <h3 class="readyProjects__title title__third">Мультимедийные решения для бизнеса</h3></div>
-                </li>
-                <li class="slider__item swiper-slide"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
-                    <div class="readyProjects__text"><p
-                            class="readyProjects__description readyProjects__description_color_pink">маркёр тематики</p>
-                        <h3 class="readyProjects__title title__third">Мультимедийные решения для бизнеса</h3></div>
-                </li>
-                <li class="slider__item swiper-slide"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
-                    <div class="readyProjects__text"><p
-                            class="readyProjects__description readyProjects__description_color_pink">маркёр тематики</p>
-                        <h3 class="readyProjects__title title__third">Мультимедийные решения для бизнеса</h3></div>
-                </li>
-                <li class="slider__item swiper-slide"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
-                    <div class="readyProjects__text"><p
-                            class="readyProjects__description readyProjects__description_color_pink">маркёр тематики</p>
-                        <h3 class="readyProjects__title title__third">Мультимедийные решения для бизнеса</h3></div>
-                </li>
-                <li class="slider__item swiper-slide"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
-                    <div class="readyProjects__text"><p
-                            class="readyProjects__description readyProjects__description_color_pink">маркёр тематики</p>
-                        <h3 class="readyProjects__title title__third">Мультимедийные решения для бизнеса</h3></div>
-                </li>
+                <a class="slider__link swiper-slide" href="#">
+                    <li class="slider__item slider__item_hover"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
+                        <div class="readyProjects__text"><p
+                                class="slider__descriptioin readyProjects__description readyProjects__description_color_pink">маркёр тематики</p>
+                            <h3 class="slider__title readyProjects__title title__third">Мультимедийные решения для бизнеса</h3>
+                        </div>
+                    </li>
+                </a>
+                <a class="slider__link swiper-slide" href="#">
+                    <li class="slider__item slider__item_hover"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
+                        <div class="readyProjects__text"><p
+                                class="slider__descriptioin readyProjects__description readyProjects__description_color_pink">маркёр тематики</p>
+                            <h3 class="slider__title readyProjects__title title__third">Мультимедийные решения для бизнеса</h3>
+                        </div>
+                    </li>
+                </a>
+                <a class="slider__link swiper-slide" href="#">
+                    <li class="slider__item slider__item_hover"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
+                        <div class="readyProjects__text"><p
+                                class="slider__descriptioin readyProjects__description readyProjects__description_color_pink">маркёр тематики</p>
+                            <h3 class="slider__title readyProjects__title title__third">Мультимедийные решения для бизнеса</h3>
+                        </div>
+                    </li>
+                </a>
+                <a class="slider__link swiper-slide" href="#">
+                    <li class="slider__item slider__item_hover"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
+                        <div class="readyProjects__text"><p
+                                class="slider__descriptioin readyProjects__description readyProjects__description_color_pink">маркёр тематики</p>
+                            <h3 class="slider__title readyProjects__title title__third">Мультимедийные решения для бизнеса</h3>
+                        </div>
+                    </li>
+                </a>
+                <a class="slider__link swiper-slide" href="#">
+                    <li class="slider__item slider__item_hover"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
+                        <div class="readyProjects__text"><p
+                                class="slider__descriptioin readyProjects__description readyProjects__description_color_pink">маркёр тематики</p>
+                            <h3 class="slider__title readyProjects__title title__third">Мультимедийные решения для бизнеса</h3>
+                        </div>
+                    </li>
+                </a>
+                <a class="slider__link swiper-slide" href="#">
+                    <li class="slider__item slider__item_hover"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
+                        <div class="readyProjects__text"><p
+                                class="slider__descriptioin readyProjects__description readyProjects__description_color_pink">маркёр тематики</p>
+                            <h3 class="slider__title eadyProjects__title title__third">Мультимедийные решения для бизнеса</h3>
+                        </div>
+                    </li>
+                </a>
+                <a class="slider__link swiper-slide" href="#">
+                    <li class="slider__item slider__item_hover"><img class="slider__img" src="./img/img-readyProjects.png" alt="">
+                        <div class="readyProjects__text"><p
+                                class="slider__descriptioin readyProjects__description readyProjects__description_color_pink">маркёр тематики</p>
+                            <h3 class="slider__title readyProjects__title title__third">Мультимедийные решения для бизнеса</h3>
+                        </div>
+                    </li>
+                </a>
             </ul>
         </div>
 
@@ -775,28 +813,28 @@
             <ul class="footer__list">
                 <h4 class="footer__title">Телефон</h4>
                 <li class="footer__item">
-                    <div class="header__contact-block">
+                    <div class="footer__contact-block">
                         <div class="header__phone-container">
-                            <img class="header__icon" src="./img/social-circle.svg" alt="Иконка телефона">
-                            <img class="header__iconPhone" src="./img/phone-pink.svg" alt="Иконка телефона">
+                            <img class="footer__icon" src="./img/social-circle.svg" alt="Иконка телефона">
+                            <img class="footer__iconPhone" src="./img/phone-pink.svg" alt="Иконка телефона">
                         </div>
-                        <div class="header__description">
-                            <a href="tel:+74995021817" class="header__phone footer__phone">+7 499 502-18-17</a>
-                            <button type="button" class="header__support-button footer__support-button">Тех.поддержка
+                        <div class="footer__description">
+                            <a href="tel:+74995021817" class="footer__phone">+7 499 502-18-17</a>
+                            <button type="button" class="footer__support-button">Тех.поддержка
                                 24/7
                             </button>
                         </div>
                     </div>
                 </li>
                 <li class="footer__item">
-                    <div class="header__contact-block">
-                        <div class="header__phone-container">
-                            <img class="header__icon" src="./img/social-circle.svg" alt="Иконка телефона">
-                            <img class="header__iconPhone" src="./img/phone-pink.svg" alt="Иконка телефона">
+                    <div class="footer__contact-block">
+                        <div class="footer__phone-container">
+                            <img class="footer__icon" src="./img/social-circle.svg" alt="Иконка телефона">
+                            <img class="footer__iconPhone" src="./img/phone-pink.svg" alt="Иконка телефона">
                         </div>
-                        <div class="header__description">
-                            <a href="tel:88003334000" class="header__phone footer__phone">8 800 333-40-00</a>
-                            <button type="button" class="header__support-button footer__support-button">Получить
+                        <div class="footer__description">
+                            <a href="tel:88003334000" class="footer__phone">8 800 333-40-00</a>
+                            <button type="button" class="footer__support-button">Получить
                                 консультацию
                             </button>
                         </div>
@@ -822,27 +860,26 @@
         </div>
     </div>
 
-    <ul class="footer__container footer__container_small footer__list footer__list_direction_row">
+    <ul class="footer__container footer__container_small footer__listRow">
         <li class="footer__item"><a class="footer__link">Политика конфиденциальности</a></li>
         <li class="footer__item"><a class="footer__link">Разработка сайта</a></li>
         <li class="footer__item"><a class="footer__link">ООО «Медиа Технологии» © 2011–2024</a></li>
     </ul>
 </footer>
 
-<section class="cookies">
-    <div class="cookies__container">
-        <div class="cookies__titleContainer">
-            <h2 class="cookies__title title__second">Мы используем файлы cookie</h2>
-            <p class="cookies__paragraph">Чтобы улучшить работу сайта и сделать его удобнее для вас</p>
-            <a class="cookies__link" href="#">Подробнее о cookies</a>
-        </div>
-        <button type="submit" class="cookies__button">OK</button>
-    </div>
-</section>
+<!--    <section class="cookies">-->
+<!--        <div class="cookies__container">-->
+<!--            <div class="cookies__titleContainer">-->
+<!--                <h2 class="cookies__title title__second">Мы используем файлы cookie</h2>-->
+<!--                <p class="cookies__paragraph">Чтобы улучшить работу сайта и сделать его удобнее для вас</p>-->
+<!--                <a class="cookies__link" href="#">Подробнее о cookies</a>-->
+<!--            </div>-->
+<!--            <button type="submit" class="cookies__button">OK</button>-->
+<!--        </div>-->
+<!--    </section>-->
 
-<div class="popup-overlay">
-    <section class="popup popup_callBack">
-        <button class="popup__close-button" id="closePopup"></button>
+
+    <section class="popup popup_callBack" style="display: none;" id="popup__callBack">
         <h1 class="popup__title title__second">Запланировать встречу</h1>
         <p class="popup__paragraph">Оставьте свои контактные данные для назначения онлайн или офлайн-встречи</p>
         <form class="popup__form">
@@ -860,18 +897,18 @@
 
             <div class="popup__checkboxContainer">
                 <input type="checkbox" id="popup-checkbox" class="popup__checkbox">
-                <label for="popup-checkbox" class="popup__checkboxLabel">Оставляя заявку, я подтверждаю, что ознакомился
-                    и принимаю Политику конфиденциальности</label>
+                <label for="popup-checkbox" class="popup__checkboxLabel">Оставляя заявку, я подтверждаю, что ознакомился и принимаю Политику конфиденциальности</label>
             </div>
         </form>
     </section>
 </div>
 
-<script src="/js/slider-services.js" defer></script>
-<script src="/js/compass.js" defer></script>
-<script src="/js/menuShower.js" defer></script>
-<script src="/js/popup.js" defer></script>
-<script type="module" src="/js/swiper.js" defer></script>
-<script src="/js/main.js" defer></script>
-</body>
+    <script src="./js/slider-services.js" defer></script>
+    <script src="./js/compass.js" defer></script>
+    <script src="./js/menuShower.js" defer></script>
+    <script type="module" src="./js/swiper.js" defer></script>
+    <script src="./js/cookies.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js" defer></script>
+    <script src="./js/fancybox.js" defer></script>
+  </body>
 </html>

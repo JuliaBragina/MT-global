@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const subList = item.querySelector('.burgerMenu__subList');
             if (subList) {
-                subList.style.display = 'flex';
                 subList.setAttribute('aria-hidden', 'false');
             }
         });
@@ -51,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
             item.classList.remove('burgerMenu__item_active');
             const subList = item.querySelector('.burgerMenu__subList');
             if (subList) {
-                subList.style.display = 'none';
                 subList.setAttribute('aria-hidden', 'true');
             }
         });
