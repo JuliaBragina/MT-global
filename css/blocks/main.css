@@ -22,7 +22,7 @@
 }
 
 .main__description {
-    min-width: 700px;
+    max-width: 688px;
     margin: 90px 0 192px;
     z-index: 1;
 }

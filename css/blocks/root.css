@@ -27,7 +27,7 @@
 }
 
 html {
-    scrollbar-color: #768dff var(--color-white);
+    scrollbar-color: var(--color-accent-pink) var(--color-white);
     scrollbar-width: thin;
 }
 

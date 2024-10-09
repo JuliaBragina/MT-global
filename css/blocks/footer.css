@@ -40,7 +40,6 @@
 }
 
 .footer__item{
-    cursor: pointer;
     padding: 10px 0;
 }
 
@@ -67,7 +66,6 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 22px;
-    opacity: .7;
     margin: 0;
     text-decoration: none;
     color: var(--color-black);
@@ -104,9 +102,7 @@
     text-decoration: none;
 }
 
-.footer__link {
-    opacity: .7;
-}
+
 
 .footer__link:hover {
     color: var(--color-accent-pink);
