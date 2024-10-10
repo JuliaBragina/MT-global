@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let blocks = document.querySelectorAll('section:not(.no-effect)');
 
     function checkBlocksVisibility() {
-        console.log('123')
         let windowHeight = window.innerHeight;
 
         blocks.forEach(block => {

@@ -29,6 +29,7 @@
 html {
     scrollbar-color: var(--color-accent-pink) var(--color-white);
     scrollbar-width: thin;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {

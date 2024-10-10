@@ -1,47 +1,47 @@
 @font-face {
-  font-family: 'Montserrat';
-  font-style:  normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../vendor/Montserrat-Bold.ttf") format("truetype")
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../../vendor/Montserrat-Bold.ttf") format("truetype")
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  font-style:  normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("../vendor/Montserrat-SemiBold.ttf") format("truetype")
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../../vendor/Montserrat-SemiBold.ttf") format("truetype")
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  font-style:  normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../vendor/Montserrat-Medium.ttf") format("truetype")
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../../vendor/Montserrat-Medium.ttf") format("truetype")
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../vendor/Montserrat-Regular.ttf") format("truetype")
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../../vendor/Montserrat-Regular.ttf") format("truetype")
 }
 
 @font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('../vendor/Inter-Regular.otf') format('opentype')
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../../vendor/Inter-Regular.otf') format('opentype')
 }
 
 @font-face {
-  font-family: 'Play';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('../vendor/Play-Regular.ttf') format('truetype')
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../../vendor/Play-Regular.ttf') format('truetype')
 }
