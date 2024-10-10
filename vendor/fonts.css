@@ -3,7 +3,7 @@
   font-style:  normal;
   font-weight: 700;
   font-display: swap;
-  src: url("Montserrat-Bold.ttf") format("truetype")
+  src: url("../vendor/Montserrat-Bold.ttf") format("truetype")
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-style:  normal;
   font-weight: 600;
   font-display: swap;
-  src: url("Montserrat-SemiBold.ttf") format("truetype")
+  src: url("../vendor/Montserrat-SemiBold.ttf") format("truetype")
 }
 
 @font-face {
@@ -19,15 +19,7 @@
   font-style:  normal;
   font-weight: 500;
   font-display: swap;
-  src: url("Montserrat-Medium.ttf") format("truetype")
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url("Montserrat-Italic.ttf") format("truetype")
+  src: url("../vendor/Montserrat-Medium.ttf") format("truetype")
 }
 
 @font-face {
@@ -35,7 +27,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("Montserrat-Regular.ttf") format("truetype")
+  src: url("../vendor/Montserrat-Regular.ttf") format("truetype")
 }
 
 @font-face {
@@ -43,7 +35,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('Inter-Regular.otf') format('opentype')
+  src: url('../vendor/Inter-Regular.otf') format('opentype')
 }
 
 @font-face {
@@ -51,5 +43,5 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('Play-Regular.ttf') format('truetype')
+  src: url('../vendor/Play-Regular.ttf') format('truetype')
 }
