@@ -34,24 +34,4 @@ document.addEventListener('DOMContentLoaded', function() {
             toggleMenu(false);
         }
     });
-
-    burgerMenuItems.forEach(item => {
-        item.addEventListener('mouseenter', () => {
-            burgerMenuItems.forEach(i => i.classList.remove('burgerMenu__item_active'));
-            item.classList.add('burgerMenu__item_active');
-
-            const subList = item.querySelector('.burgerMenu__subList');
-            if (subList) {
-                subList.setAttribute('aria-hidden', 'false');
-            }
-        });
-
-        item.addEventListener('mouseleave', () => {
-            item.classList.remove('burgerMenu__item_active');
-            const subList = item.querySelector('.burgerMenu__subList');
-            if (subList) {
-                subList.setAttribute('aria-hidden', 'true');
-            }
-        });
-    });
 });

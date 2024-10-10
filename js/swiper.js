@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 },
                 slidesPerView: slidesPerView[uniqueClass] || 4,
                 spaceBetween: 20,
-                spaceBetween: 0,
                 breakpoints: {
                     1300: {
                         slidesPerView: uniqueClass === 'reviews' ? 1 : (uniqueClass === 'about' && 5) || 4,

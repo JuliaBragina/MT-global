@@ -201,4 +201,13 @@
     .main__button {
         width: 100%;
     }
+
+    .main__video {
+        display: none;
+    }
+
+    .main__video-container {
+        background: url("../../img/main-bg-mobile.jpg") no-repeat;
+        background-size: cover;
+    }
 }

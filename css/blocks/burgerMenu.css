@@ -45,24 +45,17 @@
     padding: 30px 0;
 }
 
-.burgerMenu__item_active {
+.burgerMenu__item:hover {
     background-color: var(--color-accent-blue-opacity);
     color: var(--color-accent-blue);
 }
 
-.burgerMenu__item_active .burgerMenu__subItem::before {
-    color: var(--color-accent-blue);
-}
-
-.burgerMenu__item_active .burgerMenu__link::after {
-    background-image: url(../../img/img-arrow-blue.svg);
-}
 
 .burgerMenu__link {
     width: 64%;
     max-width: 1210px;
     margin: auto;
-    display: block;
+    display: flex;
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
@@ -70,41 +63,32 @@
     color: var(--color-main);
     position: relative;
     padding-left: 20px;
+    align-items: center;
+    grid-column-gap: 10px;
 }
 
-.burgerMenu__link::after {
-    content: '';
-    position: absolute;
-    top: 45%;
-    left: 0;
-    background-image: url(../../img/arrow-black.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 12px;
-    height: 12px;
+.burgerMenu__link::before {
+    content: '\1F865';
+    position: relative;
 }
 
 .burgerMenu__subList {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     gap: 30px;
     flex-wrap: wrap;
     width: 61%;
     max-width: 1180px;
-    padding: 0;
     margin: 0 auto;
     list-style-position: inside;
-
-    max-height: 0;
-    transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
-    transform: translateY(-1000px);
+    transition: height 0.5s ease, opacity 0.5s ease;
+    height: 0;
+    overflow: hidden;
 }
 
 .burgerMenu__item:hover .burgerMenu__subList {
-    max-height: 500px;
-    transform: translateY(0);
-
-    padding-top: 30px;
+    height: auto;
+    padding: 20px 0;
 }
 
 .burgerMenu__subItem {
@@ -112,19 +96,11 @@
     list-style-type: none;
 }
 
-.burgerMenu__subItem::before {
-    content: "\2022";
-    position: absolute;
-    top: 0;
-    left: -10px;
-}
-
 .burgerMenu__subLink {
     font-size: 14px;
     font-weight: 400;
     line-height: 17.07px;
     margin: 0;
-
     text-decoration: none;
     cursor: pointer;
     color: var(--color-accent-blue);

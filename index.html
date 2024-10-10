@@ -74,16 +74,23 @@
             <li class="burgerMenu__item">
                 <a class="burgerMenu__link" href="/index.html">Страницы для просмотра</a>
                 <ul class="burgerMenu__subList" aria-hidden="true">
-                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink" href="/">Главная</a></li>
-                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink"
-                                                       href="./pages/multimediaSolutions.html">Мультимедийные
-                        решения</a></li>
-                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink"
-                                                       href="./pages/multimediaSolutionsBusines.html">Мультимедийные
-                        решения для бизнеса</a></li>
-                    <li class="burgerMenu__subItem"><a class="burgerMenu__subLink"
-                                                       href="./pages/multimediaSolutionsNegotiationRooms.html">Мультимедийные
-                        решения для переговорных комнат</a></li>
+                    <li class="burgerMenu__subItem">
+                        <a class="burgerMenu__subLink" href="/">Главная</a></li>
+                    <li class="burgerMenu__subItem">
+                        <a class="burgerMenu__subLink"
+                           href="./pages/multimediaSolutions.html">Мультимедийные
+                            решения</a>
+                    </li>
+                    <li class="burgerMenu__subItem">
+                        <a class="burgerMenu__subLink"
+                           href="./pages/multimediaSolutionsBusines.html">Мультимедийные
+                            решения для бизнеса</a>
+                    </li>
+                    <li class="burgerMenu__subItem">
+                        <a class="burgerMenu__subLink"
+                           href="./pages/multimediaSolutionsNegotiationRooms.html">Мультимедийные
+                            решения для переговорных комнат</a>
+                    </li>
                 </ul>
             </li>
             <li class="burgerMenu__item">
@@ -115,8 +122,8 @@
 <main class="content">
     <section class="main">
         <div class="main__video-container first-video">
-            <video class="main__video" autoplay muted loop controls playsinline>
-                <source src="./img/video4.mp4" type="video/mp4">
+            <video class="main__video" autoplay muted loop playsinline>
+                <source src="/img/video4.mp4" type="video/mp4">
             </video>
             <svg class="main__mask" width="829" height="876" xmlns="http://www.w3.org/2000/svg">
                 <defs>
@@ -131,7 +138,7 @@
 
         <div class="main__video-container main__video-container_second second-video">
             <video class="main__video" autoplay muted loop>
-                <source src="./img/video4.mp4" type="video/mp4">
+                <source src="/img/video4.mp4" type="video/mp4">
             </video>
             <svg class="main__mask" width="829" height="876" xmlns="http://www.w3.org/2000/svg">
                 <defs>
@@ -954,8 +961,12 @@
 
 <script src="/js/slider-services.js" defer></script>
 <script src="/js/compass.js" defer></script>
+<script src="/js/slider-typicalSolutions.js" defer></script>
 <script src="/js/menuShower.js" defer></script>
-<script type="module" src="/js/swiper.js" defer></script>
+<script type="module" src="../js/swiper.js" defer></script>
+<script src="/js/cookies.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js" defer></script>
+<script src="/js/fancybox.js" defer></script>
 <script src="/js/main.js" defer></script>
 </body>
 </html>
