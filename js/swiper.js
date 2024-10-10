@@ -36,8 +36,14 @@ document.addEventListener("DOMContentLoaded", () => {
                         slidesPerView: uniqueClass === 'reviews' ? 1 : 4,
                     },
                     425: {
+                        slidesPerView: uniqueClass === 'reviews' ? 1 : 2,
+                    },
+                    360: {
                         slidesPerView: 1,
-                    }
+                    },
+                    320: {
+                        slidesPerView: 1,
+                    },
                 },
                 scrollbar: {
                     el: scrollbarEl,

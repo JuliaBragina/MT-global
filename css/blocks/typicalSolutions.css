@@ -42,7 +42,7 @@
 }
 
 .typicalSolutions__button_active {
-    background-color: var( --color-accent-blue);
+    background-color: var(--color-accent-pink);
     color: var(--color-white);
 }
 
