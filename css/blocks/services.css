@@ -105,12 +105,9 @@
     display: flex;
     gap: 10px;
     align-items: baseline;
-
-    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 600;
-    line-height: 17.07px;
-    opacity: .5;
+    line-height: 17px;
 }
 
 .services__currentCounter {
@@ -122,10 +119,10 @@
 
 .services__maxCounter {
     display: block;
+    opacity: .5;
 }
 
 .services__currentTitle {
-    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 24.38px;
@@ -242,7 +239,6 @@
     }
 
     .services__currentTitle {
-        font-family: 'Montserrat';
         font-size: 14px;
         line-height: 17.07px;
         max-width: 224px;
@@ -256,6 +252,7 @@
         align-items: center;
         gap: 20px;
         padding-bottom: 0;
+        margin-bottom: 20px;
     }
 
     .services__counter {

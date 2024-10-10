@@ -164,9 +164,9 @@
 .contactForm__checkboxContainer {
     position: relative;
     cursor: pointer;
-
     display: flex;
     justify-content: space-between;
+    grid-column-gap: 10px;
 }
 
 .contactForm__checkbox {

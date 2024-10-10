@@ -81,14 +81,6 @@
 }
 
 .doneProjects__button{
-    background-color: var(--color-accent-pink);
-    color: var(--color-white);
-    margin: auto;
-
-    margin-top: auto;
-    align-self: center;
-    background-color: var(--color-accent-pink);
-    color: var(--color-white);
 }
 
 .doneProjects__reviewContainer:after {
@@ -123,6 +115,7 @@
     .doneProjects__item {
         flex-direction: column-reverse;
         height: auto;
+        min-width: unset;
     }
 
     .doneProjects__scrollContainer {
@@ -135,7 +128,7 @@
     }
 
     .doneProjects__button {
-        width: 292px;
+        width: 100%;
     }
 
     .doneProjects__imgContainer {

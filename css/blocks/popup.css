@@ -34,11 +34,11 @@
     width: 581px;
 }
 
-.f-button {
+.popup .f-button {
     cursor: pointer;
     position: absolute;
-    top: -5px !important;
-    right: -35px !important;
+    background-color: transparent;
+    color: black;
 }
 
 .popup__title_pink {
