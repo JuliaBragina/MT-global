@@ -23,25 +23,29 @@
     width: 100%;
 }
 
+.about__item {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 432px;
+}
+
 .about__paragraph{
     font-family: 'Montserrat';
     font-size: 36px;
     font-weight: 700;
     line-height: 43.88px;
     margin: 0;
-    padding-bottom: 30px;
-}
-
-.about__item {
-    padding: 40px;
 }
 
 .about__img {
     display: flex;
     justify-content: center;
     width: 100%;
+    max-height: 224px;
     height: auto;
-    padding-bottom: 30px;
 }
 
 .about__description{
