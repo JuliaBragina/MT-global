@@ -30,6 +30,7 @@
     justify-content: space-between;
     align-items: flex-start;
     height: 432px;
+    background-color: var(--color-white);
 }
 
 .about__paragraph{
