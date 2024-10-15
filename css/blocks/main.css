@@ -27,10 +27,6 @@
     z-index: 1;
 }
 
-.main__title {
-    padding-bottom: 32px;
-}
-
 .main__slogan {
     font-family: 'Montserrat', sans-serif;
     font-size: 26px;
@@ -187,10 +183,6 @@
     .main__img {
         width: 236.48px;
         height: 242px;
-    }
-
-    .main__title {
-        padding-bottom: 22px;
     }
 
     .main__slogan {

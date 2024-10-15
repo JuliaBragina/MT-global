@@ -13,10 +13,6 @@
     box-sizing: border-box;
 }
 
-.contactForm__title {
-    padding-bottom: 20px;
-}
-
 .contactForm__submission {
     min-width: 50%;
     background-color: var(--color-accent-blue);

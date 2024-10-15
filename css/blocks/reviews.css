@@ -10,7 +10,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 56px;
 }
 
 .reviews__items {
@@ -158,10 +157,6 @@
 @media screen and (max-width: 1024px) {
     .reviews {
         margin-bottom: 20px;
-    }
-
-    .reviews__container {
-        margin-bottom: 0;
     }
 
     .reviews__item {

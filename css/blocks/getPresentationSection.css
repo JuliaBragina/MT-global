@@ -23,17 +23,6 @@
     flex-direction: column;
 }
 
-.getPresentationSection__title {
-    font-family: 'Montserrat';
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 48.76px;
-    margin: 0;
-
-    padding-bottom: 34px;
-    color: var(--color-white);
-}
-
 .getPresentationForm__field {
     height: 50px;
     margin-bottom: 30px;
