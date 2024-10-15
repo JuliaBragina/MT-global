@@ -1,15 +1,3 @@
-.popup-overlay, .popup-overlay-getCatalog, .popup-overlay-needProject {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
 
 .popup {
     position: relative;
@@ -34,6 +22,11 @@
     width: 581px;
 }
 
+.popup_showMoreInfo {
+    width: 1228px;
+    padding: 0;
+}
+
 .popup .f-button {
     cursor: pointer;
     position: absolute;
@@ -41,8 +34,46 @@
     color: black;
 }
 
+.popup__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.popup__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popup__containerImg {
+    background-color: var(--color-accent-grey);
+    height: 100%;
+    width: 396px;
+    min-width: 396px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup__containerDescription {
+    padding: 47px;
+}
+
+.popup__title {
+    margin-bottom: 20px;
+}
+
 .popup__title_pink {
     color: var(--color-accent-pink);
+}
+
+.popup__img {
+    max-width: 308px;
+    max-height: 220px;
+    object-fit: contain;
 }
 
 .popup__paragraph {
@@ -51,13 +82,7 @@
     font-weight: 500;
     line-height: 24px;
     margin: 0;
-}
-
-.popup__form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
+    margin-bottom: 20px;
 }
 
 .popup__inputs {
@@ -153,9 +178,49 @@
     opacity: .3;
 }
 
+.popup__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.popup__item {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 10px;
+}
+
+.popup__item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-accent-pink);
+    border-radius: 10px;
+
+    background-image: url('../../img/point-list-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: center;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
 @media screen and (max-width: 1024px) {
     .popup {
         padding: 30px 20px;
+    }
+
+    .popup_showMoreInfo {
+        padding: 0;
     }
 
     .f-button {
@@ -174,6 +239,21 @@
 
     .popup__field {
         width: 100%;
+    }
+
+    .popup__container {
+        flex-direction: column-reverse;
+    }
+
+    .popup__containerImg {
+        width: 100%;
+        min-width: 100%;
+        min-height: 276px;
+    }
+
+    .popup__img {
+        max-width: 270px;
+        max-height: 193px;
     }
 }
 
