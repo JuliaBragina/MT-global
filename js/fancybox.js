@@ -19,3 +19,10 @@ Fancybox.bind("[data-fancybox='popup__needProject']", {
     keyboard: false,
     dragToClose: false,
 });
+
+Fancybox.bind("[data-fancybox='popup__showMoreInfo']", {
+    carousel: false,
+    infinite: false,
+    keyboard: false,
+    dragToClose: false,
+});
