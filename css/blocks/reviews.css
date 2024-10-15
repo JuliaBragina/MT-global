@@ -10,9 +10,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.reviews__sliderContainer {
     padding-bottom: 56px;
 }
 

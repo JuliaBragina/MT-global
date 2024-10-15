@@ -19,7 +19,6 @@
 }
 
 .slider__item {
-    background-color: var(--color-white);
     border-radius: 30px;
     box-sizing: border-box;
 }
