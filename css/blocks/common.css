@@ -67,3 +67,126 @@ section:not(.no-effect) {
     -o-transition: top 0.5s, opacity 0.5s;
     transition: top 0.5s, opacity 0.5s;
 }
+
+.slider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 56px;
+}
+
+.slider__items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.slider__item {
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.slider__img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.slider__line {
+    background-color: var(--color-accent-pink-opacity);
+    cursor: pointer;
+}
+
+
+.slider__link {
+    text-decoration: none;
+    color: var(--color-main);
+}
+
+.slider__item_hover:hover {
+    transition: background-color 0.3s ease;
+    background-color: var(--color-accent-pink);
+}
+
+.slider__item_hover:hover .slider__title {
+    transition: color 0.3s ease;
+    color: var(--color-white);
+}
+
+.slider__item_hover:hover .slider__descriptioin {
+    transition: color 0.3s ease;
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 1300px) {
+    .slider__items {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        transition: transform 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .slider__line {
+        display: none;
+    }
+}
+
+.swiper-scrollbar-drag {
+    height: 3px;
+    background-color: var(--color-accent-pink);
+}
+
+.navButton_bottom-margin_long {
+    margin: 0 auto;
+    margin-bottom: 52px;
+}
+
+.navButton_bottom-margin_short {
+    margin: 0 auto;
+    margin-bottom: 33px;
+}
+
+.navButton__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navButton__containerButtons{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+.navButton__prev, .navButton__next {
+    width: 41px;
+    height: 41px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navButton__prev_color_pink, .navButton__prev_color_pink{
+    background-color: var(--color-accent-pink);
+}
