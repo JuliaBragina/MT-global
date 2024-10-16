@@ -5,14 +5,6 @@
 .projects__container {
     width: 64%;
     margin: 0 auto;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.projects__sliderContainer {
-    padding-bottom: 56px;
 }
 
 .projects__title {

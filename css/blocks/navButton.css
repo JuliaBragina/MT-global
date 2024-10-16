@@ -1,3 +1,13 @@
+.navButton_bottom-margin_long {
+    margin: 0 auto;
+    margin-bottom: 52px;
+}
+
+.navButton_bottom-margin_short {
+    margin: 0 auto;
+    margin-bottom: 33px;
+}
+
 .navButton__container{
     width: 100%;
     display: flex;
@@ -12,16 +22,6 @@
     align-items: center;
     gap: 5px;
 }
-
-.navButton__container_longMargin{
-    margin-bottom: 52px;
-}
-
-.navButton__container_short_margin{
-    margin-bottom: 33px;
-}
-
-
 
 .navButton__prev, .navButton__next {
     width: 41px;

@@ -6,6 +6,7 @@
     overflow: hidden;
     margin-left: auto;
     margin-right: 0;
+    margin-bottom: 56px;
 }
 
 .slider__items {
@@ -30,15 +31,8 @@
 }
 
 .slider__line {
-    height: 3px;
-    width: 100%;
     background-color: var(--color-accent-pink-opacity);
-    bottom: 10px;
-    border-radius: 20px;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    position: relative;
 }
 
 

@@ -1,11 +1,12 @@
 .doneProjects {
     position: relative;
+
+    margin: 110px 0 0px;
 }
 
 .doneProjects__container {
     width: 64%;
     margin: 0 auto;
-    padding: 110px 0 0px;
 }
 
 .doneProjects__slider{
