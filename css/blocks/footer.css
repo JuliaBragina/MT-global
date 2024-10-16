@@ -7,7 +7,6 @@
 }
 
 .footer__container {
-    width: 65%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -135,10 +134,6 @@
 }
 
 @media screen and (max-width: 1700px) {
-    .footer__container {
-        width: 84%;
-    }
-
     .footer__list{
         margin: 0;
     }
@@ -146,7 +141,6 @@
 
 @media screen and (max-width: 1300px) {
     .footer__container {
-        width: 94%;
         flex-wrap: wrap;
         padding: 47px 0;
     }

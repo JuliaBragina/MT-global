@@ -4,7 +4,6 @@
 }
 
 .getPresentationSection__container {
-    width: 64%;
     margin: 0 auto;
     margin-bottom: 139px;
     background-color: var(--color-accent-pink);
@@ -63,9 +62,6 @@
 }
 
 @media screen and (max-width: 1700px) {
-    .getPresentationSection__container {
-        width: 84%;
-    }
 
     .getPresentationSection__img {
         right: 6%;
@@ -74,7 +70,6 @@
 
 @media screen and (max-width: 1300px) {
     .getPresentationSection__container {
-        width: 100%;
         margin-bottom: 52px;
     }
 

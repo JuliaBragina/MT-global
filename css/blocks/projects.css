@@ -3,7 +3,6 @@
 }
 
 .projects__container {
-    width: 64%;
     margin: 0 auto;
 }
 
@@ -28,18 +27,8 @@
     color: var(--color-accent-pink);
 }
 
-@media screen and (max-width: 1700px) {
-    .projects__container{
-      width: 84%;
-    }
-}
-
 @media screen and (max-width: 1300px) {
     .projects {
         margin-bottom: 20px;
-    }
-    
-    .projects__container {
-      width: 94%;
     }
 }

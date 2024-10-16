@@ -9,7 +9,6 @@
 }
 
 .main__container {
-    width: 65%;
     margin: auto;
     display: flex;
     justify-content: flex-start;
@@ -121,10 +120,6 @@
 }
 
 @media screen and (max-width: 1750px) {
-    .main__container {
-        width: 84%;
-    }
-
     .main__slogan {
         font-size: 24px;
         line-height: 36px;
@@ -134,10 +129,6 @@
 @media screen and (max-width: 1300px) {
     .main__description {
         min-width: auto;
-    }
-
-    .main__container {
-        width: 94%;
     }
 
     .main__mask {

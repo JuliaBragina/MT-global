@@ -1,5 +1,4 @@
 .header__container {
-    width: 64%;
     margin: 0 auto;
 }
 
@@ -181,7 +180,6 @@
 
 @media screen and (max-width: 1300px) {
     .header__container {
-        width: 94%;
         display: flex;
         justify-content: space-between;
         align-items: center;

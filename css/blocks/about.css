@@ -2,10 +2,6 @@
     margin-bottom: 94px;
 }
 
-.about__container{
-    width: 64%;
-}
-
 .about__skrollContainer{
     margin: auto;
 }
@@ -59,19 +55,12 @@
 
 
 @media screen and (max-width: 1700px) {
-    .about__container{
-        width: 84%;
-    }
-
     .about__sliderContainer {
         width: 92%;
     }
 }
 
 @media screen and (max-width: 1300px) {
-    .about__container{
-        width: 94%;
-    }
     .about__sliderContainer {
         width: 97%;
     }

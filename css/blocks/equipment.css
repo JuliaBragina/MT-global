@@ -3,7 +3,6 @@
 }
 
 .equipment__container {
-    width: 64%;
     margin: 0 auto;
     padding: 93px 0 40px;
 }
@@ -52,15 +51,8 @@
     margin: 0;
 }
 
-@media screen and (max-width: 1700px) {
-    .equipment__container {
-        width: 84%;
-    }
-}
-
 @media screen and (max-width: 1300px) {
     .equipment__container {
-        width: 94%;
         padding: 47px 0 23px;
     }
 }

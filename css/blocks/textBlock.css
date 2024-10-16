@@ -1,5 +1,4 @@
 .textBlock__container {
-    width: 64%;
     margin: 98px auto;
 }
 
@@ -17,15 +16,8 @@
     background-color: var(--color-white);
 }
 
-@media screen and (max-width: 1700px) {
-    .textBlock__container{
-        width: 84%;
-    }
-}
-
 @media screen and (max-width: 1300px) {
     .textBlock__container{
-        width: 94%;
         margin: 35px auto;
     }
 

@@ -1,5 +1,4 @@
 .ourSolutions__container {
-    width: 64%;
     margin: 115px auto;
 }
 
@@ -39,15 +38,8 @@
     width: 74%;
 }
 
-@media screen and (max-width: 1700px) {
-    .ourSolutions__container {
-        width: 84%;
-    }
-}
-
 @media screen and (max-width: 1300px) {
     .ourSolutions__container {
-        width: 94%;
         margin: 50px auto 25px;
     }
 }

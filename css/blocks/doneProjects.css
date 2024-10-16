@@ -5,7 +5,6 @@
 }
 
 .doneProjects__container {
-    width: 64%;
     margin: 0 auto;
 }
 
@@ -75,9 +74,6 @@
     box-sizing: border-box;
 }
 
-.doneProjects__button{
-}
-
 .doneProjects__reviewContainer:after {
     content: "";
     position: absolute;
@@ -90,17 +86,7 @@
     border-radius: 30px;
 }
 
-@media screen and (max-width: 1700px) {
-    .doneProjects__container {
-        width: 84%;
-    }
-}
-
 @media screen and (max-width: 1300px) {
-    .doneProjects__container {
-        width: 94%;
-    }
-
     .doneProjects__imgContainer{
         width: 50%;
     }

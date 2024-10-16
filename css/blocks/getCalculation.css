@@ -1,5 +1,4 @@
 .getCalculation__container {
-    width: 64%;
     margin: 0 auto;
     padding: 40px 0 54px;
 }
@@ -18,15 +17,8 @@
     width: 44%;
 }
 
-@media screen and (max-width: 1700px) {
-    .getCalculation__container{
-        width: 84%;
-    }
-}
-
 @media screen and (max-width: 1300px) {
     .getCalculation__container{
-        width: 94%;;
         padding: 7px 0 20px;
     }
 

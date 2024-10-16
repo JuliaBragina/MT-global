@@ -226,3 +226,19 @@ section:not(.no-effect) {
     margin-right: 10px;
     vertical-align: middle;
 }
+
+.container {
+    width: 64%;
+}
+
+@media screen and (max-width: 1700px) {
+    .container{
+        width: 84%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .container{
+        width: 94%;
+    }
+}

@@ -1,6 +1,5 @@
 
 .contactForm__container {
-    width: 64%;
     margin: auto;
     display: flex;
     background-color: var(--color-white);
@@ -208,12 +207,6 @@
     opacity: .5;
     margin: 0;
     width: 93%;
-}
-
-@media screen and (max-width: 1700px) {
-    .contactForm__container {
-        width: 84%;
-    }
 }
 
 @media screen and (max-width: 1300px) {

@@ -1,5 +1,4 @@
 .typicalSolutions__container {
-    width: 64%;
     margin: 93px auto;
 }
 
@@ -135,15 +134,8 @@
     
 }
 
-@media screen and (max-width: 1700px) {
-    .typicalSolutions__container {
-        width: 84%;
-    }
-}
-
 @media screen and (max-width: 1300px) {
     .typicalSolutions__container {
-        width: 94%;
         margin: 44px auto;
     }
 }

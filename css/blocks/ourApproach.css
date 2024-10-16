@@ -3,7 +3,6 @@
 }
 
 .ourApproach__container{
-    width: 64%;
     margin: 100px auto;
 }
 
@@ -66,12 +65,6 @@
     line-height: 21px;
     list-style-type: none;
     margin: 14px 0;
-}
-
-@media screen and (max-width: 1700px) {
-    .ourApproach__container {
-        width: 84%;
-    }
 }
 
 @media screen and (max-width: 1300px) {
