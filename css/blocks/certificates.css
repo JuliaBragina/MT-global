@@ -8,10 +8,6 @@
     margin-bottom: 45px;
 }
 
-.certificates__title {
-    padding-bottom: 57px;
-}
-
 .certificates__flex, .certificates__row {
     display: flex;
     align-items: center;
@@ -29,10 +25,6 @@
         grid-template-columns: repeat(2, auto);
         justify-content: space-between;
         justify-items: center;
-    }
-
-    .certificates__title {
-        padding-bottom: 27px;
     }
 
     .certificates__flex{

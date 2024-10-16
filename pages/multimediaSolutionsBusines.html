@@ -153,7 +153,7 @@
     <section class="main">
         <div class="main__container main__container_spacebetween">
             <div class="main__description">
-                <h1 class="main__title title__first">Мультимедийные решения для бизнеса</h1>
+                <h1 class="main__title title__first title__bottom-margin">Мультимедийные решения для бизнеса</h1>
                 <p class="main__slogan">Разрабатываем оптимальные аудиовизуальные решения для [конечная цель реализации
                     проета]</p>
                 <button type="button" class="btn btn-arrow btn-secondary main__button" data-fancybox="popup__callback"
@@ -219,7 +219,7 @@
 
     <section class="typicalSolutions">
         <div class="typicalSolutions__container">
-            <h2 class="typicalSolutions__title title__second">Типовые решения</h2>
+            <h2 class="typicalSolutions__title title__second title__bottom-margin">Типовые решения</h2>
             <nav class="typicalSolutions__navigation">
                 <ul class="typicalSolutions__list">
                     <li class="typicalSolutions__item">
@@ -421,7 +421,7 @@
 
     <section class="getCalculation">
         <div class="getCalculation__container">
-            <h2 class="getCalculation__title title__second">Получить расчёт стоимости проекта</h2>
+            <h2 class="getCalculation__title title__second title__bottom-margin">Получить расчёт стоимости проекта</h2>
             <p class="getCalculation__paragrapgh">Предлагаем индивидуальные решения в зависимости от целей, бюджета,
                 особенностей помещений или требований к проекту.</p>
         </div>
@@ -445,27 +445,29 @@
             </nav>
         </aside>
 
-        <div class="doneProjects__container navButton">
-            <div class="navButton__container navButton__container_short_margin">
-                <h2 class="doneProjects__title title__second">Реализованные проекты</h2>
-                <nav class="navButton__containerButtons">
-                    <button type="button"
-                            class="navButton__prev navButton__prev_color_pink navButton__prev_doneProjects swiper-button-prev">
-                        <img class="navButton__prevImg" src="/img/prev-button-arrow-white.svg" alt="">
-                    </button>
-                    <button type="button"
-                            class="navButton__next navButton__prev_color_pink navButton__next_doneProjects swiper-button-next">
-                        <img class="navButton__nextImg" src="/img/next-button-arrow-white.svg" alt="">
-                    </button>
-                </nav>
+        <div class="doneProjects__container">
+            <div class="navButton navButton_bottom-margin_long">
+                <div class="navButton__container">
+                    <h2 class="doneProjects__title title__second">Реализованные проекты</h2>
+                    <nav class="navButton__containerButtons">
+                        <button type="button"
+                                class="navButton__prev navButton__prev_color_pink navButton__prev_doneProjects swiper-button-prev">
+                            <img class="navButton__prevImg" src="/img/prev-button-arrow-white.svg" alt="">
+                        </button>
+                        <button type="button"
+                                class="navButton__next navButton__prev_color_pink navButton__next_doneProjects swiper-button-next">
+                            <img class="navButton__nextImg" src="/img/next-button-arrow-white.svg" alt="">
+                        </button>
+                    </nav>
+                </div>
             </div>
-
-            <div class="doneProjects__slider slider swiper-container">
+    
+            <div class="slider swiper-container">
                 <ul class="slider__items swiper-wrapper">
-
+    
                     <li class="slider__item doneProjects__item swiper-slide">
                         <div class="doneProjects__imgContainer">
-                            <img class="doneProjects__img" src="../img/img-doneProjects.png" alt="">
+                            <img class="doneProjects__img" src="/img/img-doneProjects.png" alt="">
                         </div>
                         <div class="doneProjects__reviewContainer">
                             <div class="doneProjects__scrollContainer">
@@ -480,14 +482,16 @@
                                     Lorem Ipsum используют один и тот же текст, который </p>
                                 <div class="doneProjects__gradient"></div>
                             </div>
-                            <button type="button" class="btn btn-primary btn-arrow doneProjects__button"
+                            <button type="button"
+                                    class="btn btn-arrow btn-primary doneProjects__button openGetSolutionsPopup"
                                     data-fancybox="popup__getCatalog" data-src="#popup__getCatalog">Подробнее о проекте
                             </button>
                         </div>
                     </li>
+    
                     <li class="slider__item doneProjects__item swiper-slide">
                         <div class="doneProjects__imgContainer">
-                            <img class="doneProjects__img" src="../img/img-doneProjects.png" alt="">
+                            <img class="doneProjects__img" src="/img/img-doneProjects.png" alt="">
                         </div>
                         <div class="doneProjects__reviewContainer">
                             <div class="doneProjects__scrollContainer">
@@ -502,14 +506,17 @@
                                     Lorem Ipsum используют один и тот же текст, который </p>
                                 <div class="doneProjects__gradient"></div>
                             </div>
-                            <button type="button" class="btn btn-primary btn-arrow doneProjects__button"
+                            <button type="button" class="btn btn-primary doneProjects__button"
                                     data-fancybox="popup__getCatalog" data-src="#popup__getCatalog">Подробнее о проекте
+                                <img class="main__button-img" src="/img/img-arrow-white.svg" alt="Arrow Icon">
                             </button>
                         </div>
                     </li>
-
+    
                 </ul>
             </div>
+    
+            <div class="slider__line swiper-scrollbar"></div>
         </div>
 
         <div class="doneProjects__container">
@@ -520,7 +527,7 @@
     <section class="grid-cards">
         <div class="grid-cards__container grid-cards__container_animation grid-cards__container_runningLine">
             <div class="grid-cards__containerTitle">
-                <h2 class="grid-cards__title title__second">Уже убедились в нашем професионализме</h2>
+                <h2 class="grid-cards__title title__second title__bottom-margin">Уже убедились в нашем професионализме</h2>
             </div>
             <div class="grid-cards__grid grid-cards__grid_animation grid-cards__grid_firstLine">
                 <div class="grid-cards__item"><img class="grid-cards__img" src="/img/img-trustUs.png" alt=""></div>
@@ -663,7 +670,7 @@
             </nav>
         </aside>
         <div class="ourApproach__container">
-            <h2 class="ourApproach__title title__second">Наш подход</h2>
+            <h2 class="ourApproach__title title__second title__bottom-margin">Наш подход</h2>
             <div class="ourApproach__steps">
                 <article class="ourApproach__step">
                     <div class="ourApproach__headerContainer">
@@ -758,7 +765,7 @@
 
     <section class="grid-cards">
         <div class="grid-cards__container">
-            <h2 class="grid-cards__title title__second">Подбираем профессиональные мультимедийные решения от ведущих
+            <h2 class="grid-cards__title title__second title__bottom-margin">Подбираем профессиональные мультимедийные решения от ведущих
                 мировых брендов</h2>
             <div class="grid-cards__grid">
                 <div class="grid-cards__item"><img class="grid-cards__img" src="/img/img-trustUs.png" alt=""></div>
@@ -800,7 +807,7 @@
         </aside>
 
         <div class="certificates__container">
-            <h2 class="certificates__title title__second">Сертификаты</h2>
+            <h2 class="certificates__title title__second title__bottom-margin">Сертификаты</h2>
             <div class="certificates__flex">
                 <div class="certificates__row">
                     <img class="certificates__img" src="/img/certificates1.png" alt="">
@@ -831,94 +838,94 @@
     </section>
 
     <section class="projects swiper">
-        <div class="projects__container navButton">
-            <div class="navButton__container navButton__container_longMargin">
-                <h2 class="projects__title title__second">Реализованные проекты</h2>
-                <nav class="navButton__containerButtons">
-                    <button type="button" class="navButton__prev navButton__prev_color_pink swiper-button-prev">
-                        <img class="navButton__prevImg" src="../img/prev-button-arrow-white.svg" alt="">
-                    </button>
-                    <button type="button" class="navButton__next navButton__prev_color_pink swiper-button-next">
-                        <img class="navButton__nextImg" src="../img/next-button-arrow-white.svg" alt="">
-                    </button>
-                </nav>
-            </div>
-        </div>
-        <div class="projects__container projects__sliderContainer slider swiper-container">
-            <ul class="slider__items swiper-wrapper">
-                <a class="slider__link swiper-slide" href="#">
-                    <li class="slider__item slider__item_hover"><img class="slider__img" src="../img/img-readyProjects.png" alt="">
-                        <div class="projects__text">
-                            <p class="slider__descriptioin projects__description projects__description_color_pink">
-                                маркёр тематики
-                            </p>
-                            <h3 class="slider__title projects__title title__third">Мультимедийные решения для бизнеса</h3>
-                        </div>
-                    </li>
-                </a>
-                <a class="slider__link swiper-slide" href="#">
-                    <li class="slider__item slider__item_hover"><img class="slider__img" src="../img/img-readyProjects.png" alt="">
-                        <div class="projects__text">
-                            <p class="slider__descriptioin projects__description projects__description_color_pink">
-                                маркёр тематики
-                            </p>
-                            <h3 class="slider__title projects__title title__third">Мультимедийные решения для бизнеса</h3>
-                        </div>
-                    </li>
-                </a>
-                <a class="slider__link swiper-slide" href="#">
-                    <li class="slider__item slider__item_hover"><img class="slider__img" src="../img/img-readyProjects.png" alt="">
-                        <div class="projects__text">
-                            <p class="slider__descriptioin projects__description projects__description_color_pink">
-                                маркёр тематики
-                            </p>
-                            <h3 class="slider__title projects__title title__third">Мультимедийные решения для бизнеса</h3>
-                        </div>
-                    </li>
-                </a>
-                <a class="slider__link swiper-slide" href="#">
-                    <li class="slider__item slider__item_hover"><img class="slider__img" src="../img/img-readyProjects.png" alt="">
-                        <div class="projects__text">
-                            <p class="slider__descriptioin projects__description projects__description_color_pink">
-                                маркёр тематики
-                            </p>
-                            <h3 class="slider__title projects__title title__third">Мультимедийные решения для бизнеса</h3>
-                        </div>
-                    </li>
-                </a>
-                <a class="slider__link swiper-slide" href="#">
-                    <li class="slider__item slider__item_hover"><img class="slider__img" src="../img/img-readyProjects.png" alt="">
-                        <div class="projects__text">
-                            <p class="slider__descriptioin projects__description projects__description_color_pink">
-                                маркёр тематики
-                            </p>
-                            <h3 class="slider__title projects__title title__third">Мультимедийные решения для бизнеса</h3>
-                        </div>
-                    </li>
-                </a>
-                <a class="slider__link swiper-slide" href="#">
-                    <li class="slider__item slider__item_hover"><img class="slider__img" src="../img/img-readyProjects.png" alt="">
-                        <div class="projects__text">
-                            <p class="slider__descriptioin projects__description projects__description_color_pink">
-                                маркёр тематики
-                            </p>
-                            <h3 class="slider__title projects__title title__third">Мультимедийные решения для бизнеса</h3>
-                        </div>
-                    </li>
-                </a>
-                <a class="slider__link swiper-slide" href="#">
-                    <li class="slider__item slider__item_hover"><img class="slider__img" src="../img/img-readyProjects.png" alt="">
-                        <div class="projects__text">
-                            <p class="slider__descriptioin projects__description projects__description_color_pink">
-                                маркёр тематики
-                            </p>
-                            <h3 class="slider__title projects__title title__third">Мультимедийные решения для бизнеса</h3>
-                        </div>
-                    </li>
-                </a>
-            </ul>
-        </div>
         <div class="projects__container">
+            <div class="navButton navButton_bottom-margin_long">
+                <div class="navButton__container">
+                    <h2 class="projects__title title__second">База знаний MT GLOBAL</h2>
+                    <nav class="navButton__containerButtons">
+                        <button type="button" class="navButton__prev navButton__prev_color_pink swiper-button-prev">
+                            <img class="navButton__prevImg" src="../img/prev-button-arrow-white.svg" alt="">
+                        </button>
+                        <button type="button" class="navButton__next navButton__prev_color_pink swiper-button-next">
+                            <img class="navButton__nextImg" src="../img/next-button-arrow-white.svg" alt="">
+                        </button>
+                    </nav>
+                </div>
+            </div>
+            <div class="slider swiper-container">
+                <ul class="slider__items swiper-wrapper">
+                    <a class="slider__link swiper-slide" href="#">
+                        <li class="slider__item slider__item_hover"><img class="slider__img" src="../img/img-readyProjects.png" alt="">
+                            <div class="projects__text">
+                                <p class="slider__descriptioin projects__description projects__description_color_pink">
+                                    маркёр тематики
+                                </p>
+                                <h3 class="slider__title projects__title title__third">Мультимедийные решения для бизнеса</h3>
+                            </div>
+                        </li>
+                    </a>
+                    <a class="slider__link swiper-slide" href="#">
+                        <li class="slider__item slider__item_hover"><img class="slider__img" src="../img/img-readyProjects.png" alt="">
+                            <div class="projects__text">
+                                <p class="slider__descriptioin projects__description projects__description_color_pink">
+                                    маркёр тематики
+                                </p>
+                                <h3 class="slider__title projects__title title__third">Мультимедийные решения для бизнеса</h3>
+                            </div>
+                        </li>
+                    </a>
+                    <a class="slider__link swiper-slide" href="#">
+                        <li class="slider__item slider__item_hover"><img class="slider__img" src="../img/img-readyProjects.png" alt="">
+                            <div class="projects__text">
+                                <p class="slider__descriptioin projects__description projects__description_color_pink">
+                                    маркёр тематики
+                                </p>
+                                <h3 class="slider__title projects__title title__third">Мультимедийные решения для бизнеса</h3>
+                            </div>
+                        </li>
+                    </a>
+                    <a class="slider__link swiper-slide" href="#">
+                        <li class="slider__item slider__item_hover"><img class="slider__img" src="../img/img-readyProjects.png" alt="">
+                            <div class="projects__text">
+                                <p class="slider__descriptioin projects__description projects__description_color_pink">
+                                    маркёр тематики
+                                </p>
+                                <h3 class="slider__title projects__title title__third">Мультимедийные решения для бизнеса</h3>
+                            </div>
+                        </li>
+                    </a>
+                    <a class="slider__link swiper-slide" href="#">
+                        <li class="slider__item slider__item_hover"><img class="slider__img" src="../img/img-readyProjects.png" alt="">
+                            <div class="projects__text">
+                                <p class="slider__descriptioin projects__description projects__description_color_pink">
+                                    маркёр тематики
+                                </p>
+                                <h3 class="slider__title projects__title title__third">Мультимедийные решения для бизнеса</h3>
+                            </div>
+                        </li>
+                    </a>
+                    <a class="slider__link swiper-slide" href="#">
+                        <li class="slider__item slider__item_hover"><img class="slider__img" src="../img/img-readyProjects.png" alt="">
+                            <div class="projects__text">
+                                <p class="slider__descriptioin projects__description projects__description_color_pink">
+                                    маркёр тематики
+                                </p>
+                                <h3 class="slider__title projects__title title__third">Мультимедийные решения для бизнеса</h3>
+                            </div>
+                        </li>
+                    </a>
+                    <a class="slider__link swiper-slide" href="#">
+                        <li class="slider__item slider__item_hover"><img class="slider__img" src="../img/img-readyProjects.png" alt="">
+                            <div class="projects__text">
+                                <p class="slider__descriptioin projects__description projects__description_color_pink">
+                                    маркёр тематики
+                                </p>
+                                <h3 class="slider__title projects__title title__third">Мультимедийные решения для бизнеса</h3>
+                            </div>
+                        </li>
+                    </a>
+                </ul>
+            </div>
             <div class="slider__line swiper-scrollbar"></div>
         </div>
     </section>

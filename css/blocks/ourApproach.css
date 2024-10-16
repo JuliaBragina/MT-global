@@ -7,10 +7,6 @@
     margin: 100px auto;
 }
 
-.ourApproach__title{
-    padding-bottom: 55px;
-}
-
 .ourApproach__steps{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -124,10 +120,6 @@
         display: flex;
         justify-content: flex-start;
         gap: 14px;
-    }
-    
-    .ourApproach__title{
-        padding-bottom: 32px;
     }
 
     .ourApproach__step {

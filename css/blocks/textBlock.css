@@ -3,10 +3,6 @@
     margin: 98px auto;
 }
 
-.textBlock__title {
-    padding-bottom: 40px;
-}
-
 .textBlock__paragraph {
     width: 100%;
     box-sizing: border-box;
@@ -31,10 +27,6 @@
     .textBlock__container{
         width: 94%;
         margin: 35px auto;
-    }
-
-    .textBlock__title {
-        padding-bottom: 32px;
     }
 
     .textBlock__paragraph {

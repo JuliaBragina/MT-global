@@ -9,7 +9,6 @@
 }
 
 .equipment__title {
-    padding-bottom: 45px;
     width: 100px;
 }
 
@@ -63,10 +62,6 @@
     .equipment__container {
         width: 94%;
         padding: 47px 0 23px;
-    }
-
-    .equipment__title {
-        padding-bottom: 16px;
     }
 }
 

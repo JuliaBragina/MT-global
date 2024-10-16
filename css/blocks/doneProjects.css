@@ -9,11 +9,6 @@
     margin: 0 auto;
 }
 
-.doneProjects__slider{
-    margin: 0;
-    width: 100%;
-}
-
 .doneProjects__item{
     min-width: 100%;
     max-height: 604px;
@@ -67,7 +62,6 @@
 }
 
 .doneProjects__title{
-    padding-bottom: 19px;
     width: 100px;
 }
 
@@ -122,10 +116,6 @@
     .doneProjects__scrollContainer {
         max-height: 241px;
         margin-bottom: 40px;
-    }
-
-    .doneProjects__title{
-        padding-bottom: 0px;
     }
 
     .doneProjects__button {

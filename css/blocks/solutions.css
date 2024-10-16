@@ -9,10 +9,6 @@
     padding: 100px 0 160px;
 }
 
-.solutions_title{
-    padding-bottom: 54px;
-}
-
 .solutions__imgs{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -86,10 +82,6 @@
     .solutions__container {
         width: 94%;
         padding: 50px 0 49px;
-    }
-
-    .solutions_title {
-        padding-bottom: 27px;
     }
     
     .solutions__img {
