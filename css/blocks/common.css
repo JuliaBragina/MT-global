@@ -202,3 +202,27 @@ section:not(.no-effect) {
 .navButton__prev_color_pink, .navButton__prev_color_pink{
     background-color: var(--color-accent-pink);
 }
+
+.list-item {
+    position: relative;
+    padding-left: 35px;
+}
+
+.list-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-accent-pink);
+    border-radius: 10px;
+    background-image: url(../../img/point-list-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: center;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    vertical-align: middle;
+}

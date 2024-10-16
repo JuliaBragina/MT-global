@@ -189,29 +189,6 @@
     font-weight: 500;
     line-height: 24px;
     position: relative;
-    padding-left: 35px;
-    margin-bottom: 10px;
-}
-
-.popup__item::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    background-color: var(--color-accent-pink);
-    border-radius: 10px;
-
-    background-image: url('../../img/point-list-arrow.svg');
-    background-repeat: no-repeat;
-    background-size: 10px 10px;
-    background-position: center;
-    padding: 5px;
-    box-sizing: border-box;
-    margin-right: 10px;
-    vertical-align: middle;
 }
 
 @media screen and (max-width: 1024px) {

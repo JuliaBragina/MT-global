@@ -66,31 +66,7 @@
     line-height: 21px;
     list-style-type: none;
     margin: 14px 0;
-    padding-left: 35px;
-    position: relative;
 }
-
-.ourApproach__listItem::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    background-color: var(--color-accent-pink);
-    border-radius: 10px;
-
-    background-image: url('../../img/point-list-arrow.svg');
-    background-repeat: no-repeat;
-    background-size: 10px 10px;
-    background-position: center;
-    padding: 5px;
-    box-sizing: border-box;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
 
 @media screen and (max-width: 1700px) {
     .ourApproach__container {

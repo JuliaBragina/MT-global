@@ -97,38 +97,10 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 30.4px;
-    position: relative;
-    padding-left: 35px;
 }
 
 .typicalSolutions__article ul:last-of-type {
     list-style-type: none;
-}
-
-.typicalSolutions__article ul:last-of-type li {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.typicalSolutions__article ul:last-of-type li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    background-color: var(--color-accent-pink);
-    border-radius: 10px;
-
-    background-image: url('../../img/point-list-arrow.svg');
-    background-repeat: no-repeat;
-    background-size: 10px 10px;
-    background-position: center;
-    padding: 5px;
-    box-sizing: border-box;
-    flex-shrink: 0;
 }
 
 .typicalSolutions__illustration {
